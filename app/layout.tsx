@@ -2,6 +2,8 @@ import type { Metadata, Viewport  } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleTagManager } from '@next/third-parties/google'
+import Head from "next/head";
+
 
 const inter = Inter({ subsets: ["latin"] });
 const titleBL = 'Besoll - we create web';
@@ -58,6 +60,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">
+      <Head>
+      <link rel="manifest" href="https://progressier.app/cUuSrk53U7c922ZgPl9U/progressier.json"/><script defer src="https://progressier.app/cUuSrk53U7c922ZgPl9U/script.js"></script> 
+      </Head>
       <GoogleTagManager gtmId="GTM-5TDL8DP8" />
       <body className={inter.className}>
         {children}
