@@ -58,6 +58,7 @@ const config: Config = {
         },
         cean: "#2EC6FE",
         purple: "#8936FF",
+        magenta: "#FF1DCE",
         purple_Light: "#8C7CFF",
         blue_Night: "#224C86",
         blue_Dark: "#013867",
