@@ -3,6 +3,9 @@
 
 // export default nextConfig;
 
+import TerserPlugin from 'terser-webpack-plugin';
+
+
 
 import withPWAInit from "@ducanh2912/next-pwa";
 
@@ -19,5 +22,11 @@ const withPWA = withPWAInit({
 });
 
 export default withPWA({
-  // Your Next.js config
+  webpack: (config, { dev, isServer }) => {
+    if (!dev && !isServer) {
+      config.optimization.minimizer.push(new TerserPlugin());
+    }
+    return config;
+  },
+
 });
