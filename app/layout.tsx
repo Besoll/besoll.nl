@@ -2,8 +2,9 @@ import type { Metadata, Viewport  } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleTagManager } from '@next/third-parties/google'
-import Head from "next/head";
 
+import Script from 'next/script'
+ 
 
 const inter = Inter({ subsets: ["latin"] });
 const titleBL = 'Besoll - we create web';
@@ -18,9 +19,11 @@ export const metadata: Metadata = {
   applicationName: "Landing Page",
   authors: [{ name: "Zongericht", url: "https://zongericht.nl/" }],
   generator: "Next.js",
-  title: titleBL,
+  title: {
+    default: titleBL,
+    template: "%s | Besoll.nl",
+  },
   description: descriptionBL,
-  themeColor: colorBL,
   creator: creatorBL,
   publisher: "Vercel",
   robots: "index, follow",
@@ -46,6 +49,7 @@ export const metadata: Metadata = {
     "twitter:image": imageBL,
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-title": titleBL,
+    
   }
 };
 
@@ -59,12 +63,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl">
-      <Head>
-      <link rel="manifest" href="https://progressier.app/cUuSrk53U7c922ZgPl9U/progressier.json"/><script defer src="https://progressier.app/cUuSrk53U7c922ZgPl9U/script.js"></script> 
-      </Head>
+    <html lang="nl">   
+      <Script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/489a29e11f553b3aa1c0e08d/script.js" />   
       <GoogleTagManager gtmId="GTM-5TDL8DP8" />
-      <body className={inter.className}>
+      <body className={inter.className}>      
         {children}
       </body>
     </html>

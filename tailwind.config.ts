@@ -56,7 +56,7 @@ const config: Config = {
           500: "#A4B8D5",
           800: "#D0DFFF",
         },
-        besoll_Cean: "#2EC6FE",
+        cean: "#2EC6FE",
         purple: "#8936FF",
         purple_Light: "#8C7CFF",
         blue_Night: "#224C86",
