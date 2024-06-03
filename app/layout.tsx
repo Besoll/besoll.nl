@@ -64,7 +64,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">   
-      <Script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/489a29e11f553b3aa1c0e08d/script.js" strategy="beforeInteractive" />   
+      <Script 
+          src="https://cdn-cookieyes.com/client_data/489a29e11f553b3aa1c0e08d/script.js" 
+          strategy="lazyOnload" 
+      />   
       <GoogleTagManager gtmId="GTM-5TDL8DP8" />
       <body className={inter.className}>      
         {children}
