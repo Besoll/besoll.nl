@@ -1,8 +1,8 @@
 import type { Metadata, Viewport  } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import dynamic from 'next/dynamic';
-import { GoogleTagManager } from '@next/third-parties/google'
+// import dynamic from 'next/dynamic';
+// import { GoogleTagManager } from '@next/third-parties/google'
 
 // const ScriptCookies = dynamic(() => import('next/script'))
 
@@ -70,9 +70,9 @@ export default function RootLayout({
     <html lang="nl">   
       {/* <ScriptCookies 
           src="https://cdn-cookieyes.com/client_data/489a29e11f553b3aa1c0e08d/script.js" 
-          strategy="afterInteractive" 
+          strategy="beforeInteractive" 
       />    */}
-      <GoogleTagManager gtmId="GTM-5TDL8DP8" />
+      {/* <GoogleTagManager gtmId="GTM-5TDL8DP8" /> */}
       <body className={inter.className}>      
         {children}
       </body>
