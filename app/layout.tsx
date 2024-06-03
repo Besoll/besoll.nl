@@ -1,9 +1,13 @@
 import type { Metadata, Viewport  } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import dynamic from 'next/dynamic';
 import { GoogleTagManager } from '@next/third-parties/google'
-import Script from 'next/script'
+
+const ScriptCookies = dynamic(() => import('next/script'))
+
+
+
  
 
 const inter = Inter({ subsets: ["latin"] });
@@ -64,7 +68,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">   
-      <Script 
+      <ScriptCookies 
           src="https://cdn-cookieyes.com/client_data/489a29e11f553b3aa1c0e08d/script.js" 
           strategy="afterInteractive" 
       />   
