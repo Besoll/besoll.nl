@@ -21,17 +21,17 @@ const withPWA = withPWAInit({
     //   },
 });
 
-export default withPWA({  
-});
+// export default withPWA({  
+// });
 
 
 // back up module
-// export default withPWA({
-//   webpack: (config, { dev, isServer }) => {
-//     if (!dev && !isServer) {
-//       config.optimization.minimizer.push(new TerserPlugin());
-//     }
-//     return config;
-//   },
+export default withPWA({
+  webpack: (config, { dev, isServer }) => {
+    if (!dev && !isServer) {
+      config.optimization.minimizer.push(new TerserPlugin());
+    }
+    return config;
+  },
 
-// });
+});
