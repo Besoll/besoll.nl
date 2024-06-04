@@ -1,4 +1,5 @@
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -32,7 +33,7 @@ export const BentoGridItem = ({
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  id: number;
+  id?: number;
   img?: string;
   imgClassName?: string;
   titleClassName?: string;
@@ -46,9 +47,33 @@ export const BentoGridItem = ({
       )}
       style={{
         background: 'rgb(4,7,29)',
-        backgroundColor: 'gradient...'
+        backgroundColor: 'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
       }}
     >
+        <div className={`${id === 6} && 'flex justify-center h-full`}>
+            <div className="w-full h-full absolute">
+                {img && (
+                    <Image
+                        src={img} 
+                        alt={img} 
+                        width={20} 
+                        height={20} 
+                        className={cn(imgClassName, 'object-cover, object-center')} 
+                    />
+                )}
+            </div>
+            <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
+                {spareImg && (
+                    <Image
+                        src={spareImg} 
+                        alt={spareImg} 
+                        width={20} 
+                        height={20} 
+                        className={'object-cover, object-center w-full h-full'} 
+                    />
+                )}
+            </div>
+        </div>
       
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         
