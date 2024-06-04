@@ -1,32 +1,27 @@
 import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+const svgToDataUri = require("mini-svg-data-uri");
+
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
+
+
+const config = {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/[object Object].js"
+    "./src/**/*.{ts,tsx}",
+    "./data/**/*.{ts,tsx}",
+    "./node_modules/@nextui-org/theme/dist/components/[object Object].js",
   ],
+  prefix: "",
   theme: {
-    screens: {
-      xxs: "240px",
-      xs: "400px",
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1220px",
-      "2xl": "1440px",
-      "3xl": "1700px",
-      'smSP': {'min': '240px', 'max': '767px'},
-      // => @media (min-width: 240px and max-width: 767px) { ... }
-
-      'mdSP': {'min': '768px', 'max': '1023px'},
-      // => @media (min-width: 768px and max-width: 1023px) { ... }
-
-      'lgSP': {'min': '1024px', 'max': '12000px'},
-      // => @media (min-width: 1024px and max-width: 1200px) { ... }
-    },
     container: {
       center: true,
       padding: "2rem",
@@ -35,36 +30,29 @@ const config: Config = {
       },
     },
     extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        inter: ["Inter", "sans-serif"],
-      },
       colors: {
-        primary: "#1C6570",
         black: {
           DEFAULT: "#000",
-          100: "#0D1117",
-          200: "#161B22",
-          300: "#1F2428",
-          400: "#242C38",
-        },
-        grey: {
-          100: "#969BA5",
-          200: "#55616D",
+          100: "#000319",
+          200: "rgba(17, 25, 40, 0.75)",
+          300: "rgba(255, 255, 255, 0.125)",
         },
         white: {
           DEFAULT: "#FFF",
-          400: "#A3B3BC",
-          500: "#A4B8D5",
-          800: "#D0DFFF",
+          100: "#BEC1DD",
+          200: "#C1C2D3",
         },
+        blue: {
+          "100": "#E4ECFF",
+        },
+        purple: "#CBACF9",
+
         cean: "#2EC6FE",
-        purple: "#8936FF",
-        magenta: "#FF1DCE",
+        magenta: "#E60C80",
+        magenta_Light: "#FF1DCE",
         purple_Light: "#8C7CFF",
         blue_Night: "#224C86",
         blue_Dark: "#013867",
-        blue: "#3E64FF",
         blue_Light: "#03A9F3",
         green_Light: "#4fff4c",
         green_Dark: "#014800",
@@ -75,14 +63,200 @@ const config: Config = {
         besoll_Grey: "#C2C5CC",
         pink: "#ED5FBD",
         violet: "#F16565",
+
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        spotlight: {
+          "0%": {
+            opacity: "0",
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+        moveHorizontal: {
+          "0%": {
+            transform: "translateX(-50%) translateY(-10%)",
+          },
+          "50%": {
+            transform: "translateX(50%) translateY(10%)",
+          },
+          "100%": {
+            transform: "translateX(-50%) translateY(-10%)",
+          },
+        },
+        moveInCircle: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "50%": {
+            transform: "rotate(180deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
+        moveVertical: {
+          "0%": {
+            transform: "translateY(-50%)",
+          },
+          "50%": {
+            transform: "translateY(50%)",
+          },
+          "100%": {
+            transform: "translateY(-50%)",
+          },
+        },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        spotlight: "spotlight 2s ease .75s 1 forwards",
+        shimmer: "shimmer 2s linear infinite",
+        first: "moveVertical 30s ease infinite",
+        second: "moveInCircle 20s reverse infinite",
+        third: "moveInCircle 40s linear infinite",
+        fourth: "moveHorizontal 40s ease infinite",
+        fifth: "moveInCircle 20s ease infinite",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
   },
-  plugins: [nextui()],
-};
+  plugins: [
+    nextui(),
+    require("tailwindcss-animate"),
+    addVariablesForColors,
+    function ({ matchUtilities, theme }: any) {
+      matchUtilities(
+        {
+          "bg-grid": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+            )}")`,
+          }),
+          "bg-grid-small": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="8" height="8" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+            )}")`,
+          }),
+          "bg-dot": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
+            )}")`,
+          }),
+        },
+        { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
+      );
+    },
+  ],
+} satisfies Config;
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
+
 export default config;
+
+
+
+
+
+
+
+
+
+  // content: [
+  //   "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+  //   "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  //   "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  //   "./node_modules/@nextui-org/theme/dist/components/[object Object].js"
+  // ],
+  // theme: {
+  //   screens: {
+  //     xxs: "240px",
+  //     xs: "400px",
+  //     sm: "640px",
+  //     md: "768px",
+  //     lg: "1024px",
+  //     xl: "1220px",
+  //     "2xl": "1440px",
+  //     "3xl": "1700px",
+  //     'smSP': {'min': '240px', 'max': '767px'},
+  //     // => @media (min-width: 240px and max-width: 767px) { ... }
+
+  //     'mdSP': {'min': '768px', 'max': '1023px'},
+  //     // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+  //     'lgSP': {'min': '1024px', 'max': '12000px'},
+  //     // => @media (min-width: 1024px and max-width: 1200px) { ... }
+  //   },
+ 

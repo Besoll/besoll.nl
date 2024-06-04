@@ -1,14 +1,11 @@
 import type { Metadata, Viewport  } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/app/provider"
 // import dynamic from 'next/dynamic';
 // import { GoogleTagManager } from '@next/third-parties/google'
-
 // const ScriptCookies = dynamic(() => import('next/script'))
 
-
-
- 
 
 const inter = Inter({ subsets: ["latin"] });
 const titleBL = 'Besoll - we create web';
@@ -20,8 +17,8 @@ const creatorBL = "B. Kavzharadze - Besoll";
 
 export const metadata: Metadata = {
   manifest: "/manifest.json",
-  applicationName: "Landing Page",
-  authors: [{ name: "Zongericht", url: "https://zongericht.nl/" }],
+  applicationName: "Website",
+  authors: [{ name: "Besoll.nl", url: "https://besoll.nl/" }],
   generator: "Next.js",
   title: {
     default: titleBL,
@@ -42,7 +39,6 @@ export const metadata: Metadata = {
     images: [{ url: imageBL, }],
   },
   
-
   other: {
     "color-scheme": "dark only",
     "twitter:card": imageBL,
@@ -73,8 +69,15 @@ export default function RootLayout({
           strategy="beforeInteractive" 
       />    */}
       {/* <GoogleTagManager gtmId="GTM-5TDL8DP8" /> */}
-      <body className={inter.className}>      
-        {children}
+      <body className={inter.className}> 
+        <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem
+              disableTransitionOnChange
+            >
+          {children}
+        </ThemeProvider>     
       </body>
     </html>
   );

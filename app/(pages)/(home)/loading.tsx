@@ -1,7 +1,7 @@
 import {Skeleton} from "@nextui-org/skeleton";
 
 
-const loading = () => {
+export default function App() {
   return (
     <main className='flex w-full justify-center items-center md:justify-start md:items-start max-w-[1200px] px-4 md:px-8 gap-0 md:gap-2 mb-16 flex-col-reverse md:flex-row'>
     <section className='flex pt-[40px] md:pt-[98px] w-full flex-col text-base text-black'>
@@ -24,11 +24,5 @@ const loading = () => {
         </section>
 
   </main>
-
-
-
-
   )
 }
-
-export default loading
