@@ -1,7 +1,15 @@
 import {withSentryConfig} from "@sentry/nextjs";
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {};
+
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  typescript: {
+    ignoreBuildErrors: true,
+  }
+};
 // export default nextConfig;
+
 
 import TerserPlugin from 'terser-webpack-plugin';
 import withPWAInit from "@ducanh2912/next-pwa";
