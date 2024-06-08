@@ -173,31 +173,31 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
+      title: "Custom Website Development",
       desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "/services/1.svg",
     },
     {
       id: 2,
       title: "Mobile App Dev - JSM Tech",
       desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
+      thumbnail: "/services/1.svg",
     },
     {
       id: 3,
       title: "Freelance App Dev Project",
       desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
+      thumbnail: "/services/1.svg",
     },
     {
       id: 4,
       title: "Lead Frontend Developer",
       desc: "Developed and maintained user-facing features using modern frontend technologies.",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "/services/1.svg",
     },
   ];
   
@@ -213,5 +213,108 @@ export const navItems = [
     {
       id: 3,
       img: "/link.svg",
+    },
+  ];
+
+
+
+
+
+  export const ourServices = [
+    {
+      id: 1,
+      title: "Web Development Services",
+      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      className: "md:col-span-2", // change to md:col-span-2
+      thumbnail: "/services/1.svg",
+      link: "#",
+    },
+    {
+      id: 2,
+      title: "Mobile App Development Services",
+      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      className: "md:col-span-2", // change to md:col-span-2
+      thumbnail: "/services/2.svg",
+      link: "#",
+    },
+    {
+      id: 3,
+      title: "UX/UI Design Services",
+      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      className: "md:col-span-2", // change to md:col-span-2
+      thumbnail: "/services/3.svg",
+      link: "#",
+    },
+    {
+      id: 4,
+      title: "Software Development Services",
+      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      className: "md:col-span-2",
+      thumbnail: "/services/4.svg",
+      link: "#",
+    },
+    {
+      id: 5,
+      title: "Digital Transformation Services",
+      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      className: "md:col-span-2",
+      thumbnail: "/services/5.svg",
+      link: "#",
+    },
+    {
+      id: 6,
+      title: "E-commerce Solutions",
+      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      className: "md:col-span-2",
+      thumbnail: "/services/6.svg",
+      link: "#",
+    },
+    {
+      id: 7,
+      title: "Marketing and SEO Services",
+      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      className: "md:col-span-2",
+      thumbnail: "/services/7.svg",
+      link: "#",
+    },
+    {
+      id: 8,
+      title: "DevOps and IT Services",
+      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      className: "md:col-span-2",
+      thumbnail: "/services/8.svg",
+      link: "#",
+    },
+    {
+      id: 9,
+      title: "Project Management Services",
+      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      className: "md:col-span-2",
+      thumbnail: "/services/9.svg",
+      link: "#",
+    },
+    {
+      id: 10,
+      title: "Training and Consulting Services",
+      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      className: "md:col-span-2",
+      thumbnail: "/services/10.svg",
+      link: "#",
+    },
+    {
+      id: 11,
+      title: "Specialized Services",
+      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      className: "md:col-span-2",
+      thumbnail: "/services/11.svg",
+      link: "#",
+    },
+    {
+      id: 12,
+      title: "General Digital Marketing Services",
+      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      className: "md:col-span-2",
+      thumbnail: "/services/12.svg",
+      link: "#",
     },
   ];

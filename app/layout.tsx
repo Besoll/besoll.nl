@@ -8,21 +8,21 @@ import { ThemeProvider } from "@/app/provider"
 
 
 const inter = Inter({ subsets: ["latin"] });
-const titleBL = 'Besoll - we create web';
-const colorBL = '#FF1DCE'; // magenta
-const urlBL = 'https://besoll.nl';
-const imageBL = 'https://besoll.nl/_next/image?url=%2FheroImages%2Fdakkapel.webp&w=384&q=75';
-const descriptionBL = 'At Besoll, we specialize in creating high-performance websites and landing pages using the latest technologies. Our team of experts ensures your site is fast, optimized, and ranks higher on search engines.';
-const creatorBL = "B. Kavzharadze - Besoll";
+const titleBL = 'OwlWeb - we create web';
+const colorBL = '#FDA800'; // magenta
+const urlBL = 'https://owlweb.nl';
+const imageBL = 'https://owlweb.nl/_next/image?url=%2FheroImages%2Fdakkapel.webp&w=384&q=75';
+const descriptionBL = 'At OwlWeb, we specialize in creating high-performance websites and landing pages using the latest technologies. Our team of experts ensures your site is fast, optimized, and ranks higher on search engines.';
+const creatorBL = "B. Kavzharadze - OwlWeb";
 
 export const metadata: Metadata = {
   manifest: "/manifest.json",
   applicationName: "Website",
-  authors: [{ name: "Besoll.nl", url: "https://besoll.nl/" }],
+  authors: [{ name: "owlweb.nl", url: "https://owlweb.nl/" }],
   generator: "Next.js",
   title: {
     default: titleBL,
-    template: "%s | Besoll.nl",
+    template: "%s | Owlweb.nl",
   },
   description: descriptionBL,
   creator: creatorBL,

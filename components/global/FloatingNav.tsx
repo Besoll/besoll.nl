@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import Logo from "./Logo";
 
 export const FloatingNav = ({
   navItems,
@@ -60,6 +61,9 @@ export const FloatingNav = ({
           className
         )}
       >
+        <Link href="#">
+          <Logo className="h-full w-auto"/>
+        </Link>
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
