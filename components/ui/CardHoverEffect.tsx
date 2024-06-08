@@ -17,7 +17,7 @@ export const HoverEffect = ({
     id: number;
     desc?: string;
     className?: string;
-    thumbnail?: string;
+    thumbnail: string;
   }[];
   className?: string;
 }) => {
