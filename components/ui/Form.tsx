@@ -90,7 +90,7 @@ const ZofoForm: React.FC = () => {
 
 
   return (
-    <div className=" text-lg w-full">
+    <div className=" text-lg w-full scroll-mt-24 snap-start scroll-smooth md:scroll-auto" id='fromStart'>
       {<style jsx global> {`                 
       `}
         </style>}
@@ -200,7 +200,7 @@ const ZofoForm: React.FC = () => {
           <button
             type="submit"
             disabled={!isFormValid || isSubmitted}
-            className={`submit-button relative inline-flex h-12 overflow-hidden md:min-w-[250px] w-full rounded-xl leading-tight border-none ${isFormValid && !isSubmitted ? 'bg-owlOrange hover:bg-owlOrange/90' : 'bg-owlOrange/80 cursor-not-allowed'} text-white font-bold text-2xl transition-colors duration-300 relative`}
+            className={`submit-button relative inline-flex mt-2 h-12 overflow-hidden md:min-w-[250px] w-full rounded-xl leading-tight border-none ${isFormValid && !isSubmitted ? 'bg-owlOrange hover:bg-owlOrange/90' : 'bg-owlOrange/80 cursor-not-allowed'} text-white font-bold text-2xl transition-colors duration-300 relative`}
           >
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#FDA800_0%,#883D07_50%,#FDA800_100%)]" />
               <span className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg px-7 text-sm font-medium text-white hover:bg-owlOrange hover:text-owlBrown backdrop-blur-3xl gap-2`}>

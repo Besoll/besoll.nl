@@ -88,6 +88,10 @@
   }
 }
 
+.gradient_special {
+  background: linear-gradient(155deg, #33343b 50%, #883D07 100%);
+}
+
 .no-visible-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;

@@ -10,7 +10,6 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../global/Logo";
-
 import { FaLocationArrow } from 'react-icons/fa'
 
 import dynamic from 'next/dynamic'
@@ -123,6 +122,7 @@ export const Header = () => {
             title='Find out more'
             icon={<FaLocationArrow/>}
             position='right'
+            otherClassesButton='max-w-[64%] md:max-w-[15rem]'
         />
       </Link>
     </div>

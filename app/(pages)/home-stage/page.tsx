@@ -11,7 +11,7 @@ const RecentProjects = dynamic(() => import('@/components/home/RecentProjects'))
 const Clients = dynamic(() => import('@/components/home/Clients')) 
 const Exprerience = dynamic(() => import('@/components/home/Exprerience')) 
 const Approach = dynamic(() => import('@/components/home/Approach')) 
-const Footer = dynamic(() => import('@/components/home/Footer')) 
+const Footer = dynamic(() => import('@/components/global/Footer')) 
 const FormMain = dynamic(() => import('@/components/ui/Form')) 
 
 
@@ -31,7 +31,7 @@ export default function Home() {
 
 
 
-          <RecentProjects />
+          {/* <RecentProjects /> */}
           {/* <Grid />
           <Clients />
           <Exprerience />
