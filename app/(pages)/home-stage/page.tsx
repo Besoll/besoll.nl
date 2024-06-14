@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic'
 const OurStudio = dynamic(() => import('@/components/home/OurStudio')) 
 const OurServices = dynamic(() => import('@/components/home/OurServices')) 
 const FormSection = dynamic(() => import('@/components/home/FormSection')) 
+const HowWeBuild = dynamic(() => import('@/components/home/HowWeBuild')) 
 const Grid = dynamic(() => import('@/components/home/Grid')) 
 const RecentProjects = dynamic(() => import('@/components/home/RecentProjects')) 
 const Clients = dynamic(() => import('@/components/home/Clients')) 
@@ -28,6 +29,7 @@ export default function Home() {
           <OurStudio />
           <OurServices />
           <FormSection />
+          <HowWeBuild />
 
 
 

@@ -24,7 +24,7 @@ const Footer = () => {
                         max-w-7xl
                         ">
             <div className='!-mt-[10rem] gradient_special rounded-xl flex flex-col justify-center items-center px-4
-                            md:-mt-[6rem] max-w-[300px] min-w-[200px] max-h-[300px] md:max-h-[300px] lg:max-h-[360px] shadow-xl gap-4 py-4 md:py-0 lg:py-4
+                            md:-mt-[6rem] max-w-[300px] min-w-[200px] max-h-[300px] md:max-h-[340px] lg:max-h-[380px] shadow-xl gap-4 py-4 md:py-0 lg:py-4
                             z-50'>
                     <Link href="#formSection">
                       <Logo className=""/>
@@ -172,7 +172,7 @@ const Footer = () => {
         <div className="flex justify-center text-center flex-wrap pb-6 flex-col">
             <ul className='flex flex-col justify-center text-center flex-wrap sm:flex-row'>
                 <li className='mb-2 mr-5 sm:mr-5'>
-                    <Link href='tel:0031165700130' className='flex justify-center items-center hover:scale-105 hover:text-owlOrange duration-300'>
+                    <Link href='tel:0031165700130' className='flex justify-center items-center text-white hover:scale-105 hover:text-owlOrange duration-300'>
                         <MobileIcon />
                         <span className="ml-2" >+31 613 73 45 46</span>
                     </Link>
@@ -196,10 +196,7 @@ const Footer = () => {
             <hr className="my-4 mb-2 border-gray-200 sm:mx-auto lg:mb-5 " />
             <ul className='text-sm'>
                 <li>
-                    Copyright © 2024. All right reserved.
-                </li>
-                <li>
-                    Besoll
+                Besoll | Copyright © 2024. All right reserved.
                 </li>
             </ul>
         </div>

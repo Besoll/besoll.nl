@@ -8,6 +8,7 @@ const MobileIcon = () => (
         width={12}
         height={12}
         loading='lazy'
+        className='text-white'
     />
 );
 

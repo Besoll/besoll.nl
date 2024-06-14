@@ -1,5 +1,5 @@
   import Image from 'next/image'
-  import mapLocation from '@/public/icons/mapLocation.svg'
+  import mapLocation from '@/public/icons/mapLocationWhite.svg'
   
   const MapLocation = () => (
     <Image 

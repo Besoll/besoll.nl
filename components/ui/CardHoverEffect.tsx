@@ -1,7 +1,6 @@
 "use client"
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image"
 import { Button } from "@/components/ui/MovingBorders"

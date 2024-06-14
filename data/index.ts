@@ -216,10 +216,6 @@ export const navItems = [
     },
   ];
 
-
-
-
-
   export const ourServices = [
     {
       id: 1,
@@ -316,5 +312,108 @@ export const navItems = [
       className: "md:col-span-2",
       thumbnail: "/services/12.svg",
       link: "",
+    },
+  ];
+
+  export const buildSteps = [
+    {
+      id: 1,
+      title: "Initial Consultation",
+      startDesc1: "Let's Chat:",
+      desc1: "We start by having a friendly conversation to understand your vision, goals, and specific needs. This helps us get a clear picture of what you're looking for.",
+      startDesc2: "",
+      desc2: "",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Research and Planning",
+      startDesc1: "Getting to Know You:",
+      desc1: "We dive deep into research about your industry, competitors, and target audience.",
+      startDesc2: "Blueprint Creation:",
+      desc2: "We create a detailed project plan outlining the website's structure, features, and user journey.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Wireframing and Prototyping",
+      startDesc1: "Sketching the Layout:",
+      desc1: "We design wireframes to map out the basic structure of your website.",
+      startDesc2: "Interactive Prototypes:",
+      desc2: "We build clickable prototypes to give you a feel of how the final product will look and function.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 4,
+      title: "Design and UX/UI",
+      startDesc1: "Design Magic:",
+      desc1: "Our talented designers craft stunning visuals and user-friendly interfaces that reflect your brand.",
+      startDesc2: "User Experience:",
+      desc2: "We focus on creating intuitive and engaging experiences for your visitors.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 5,
+      title: "Development",
+      startDesc1: "Building the Backbone:",
+      desc1: "Using the latest technologies like Next.js, TailwindCSS, and TypeScript, we develop the website’s backend and frontend.",
+      startDesc2: "Serverless Deployment:",
+      desc2: "We deploy your site on Vercel for optimal performance and scalability.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 6,
+      title: "Content Integration",
+      startDesc1: "Adding Your Words:",
+      desc1: "We integrate your content, ensuring it’s SEO-friendly and engaging.",
+      startDesc2: "Multimedia Magic:",
+      desc2: "We incorporate images, videos, and other media to enhance the user experience.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 7,
+      title: "Optimization",
+      startDesc1: "Speed Demon:",
+      desc1: "We optimize the website to ensure lightning-fast load times and smooth performance.",
+      startDesc2: "SEO Excellence:",
+      desc2: "We fine-tune everything to achieve top scores on all Lighthouse metrics, including Performance, Accessibility, Best Practices, and SEO.",
+      startDesc3: "PWA Ready:",
+      desc3: "On request, we can also set up Progressive Web App (PWA) functionality for an additional fee.",
+    },
+    {
+      id: 8,
+      title: "Testing and Quality Assurance",
+      startDesc1: "Bug Hunt:",
+      desc1: "We conduct thorough testing to ensure there are no glitches.",
+      startDesc2: "User Testing:",
+      desc2: "We perform usability testing to make sure the site is intuitive and user-friendly.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 9,
+      title: "Launch",
+      startDesc1: "Go Live:",
+      desc1: "Once everything is perfect, we launch your website and ensure a smooth transition.",
+      startDesc2: "Post-Launch Support:",
+      desc2: "We monitor the site to catch any post-launch issues and provide ongoing support.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 10,
+      title: "Maintenance and Updates",
+      startDesc1: "Staying Fresh:",
+      desc1: "We offer maintenance plans to keep your website up-to-date with the latest technologies and trends.",
+      startDesc2: "Continuous Improvement:",
+      desc2: "You can opt for monthly updates to keep your content and features fresh and relevant.",
+      startDesc3: "",
+      desc3: "",
     },
   ];
