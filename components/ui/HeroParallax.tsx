@@ -118,7 +118,7 @@ export const Header = () => {
       At OwlWeb, we specialize in creating high-performance websites and landing pages using the latest technologies. Our team of experts ensures your site is fast, optimized, and ranks higher on search engines.
       </p>
 
-      <Link href="#about">
+      <Link href="#formSection">
         <MagicButton 
             title='Find out more'
             icon={<FaLocationArrow/>}

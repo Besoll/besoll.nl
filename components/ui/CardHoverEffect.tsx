@@ -26,21 +26,21 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  py-10",
         className
       )}
     >
       {items.map((item, idx) => (
         <div
           
-          className="relative group  block p-2 h-full w-full"
+          className="relative group  block p-2 h-fit w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >        
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-owlOrange/[0.4] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-owlOrange/[0.4] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -62,7 +62,7 @@ export const HoverEffect = ({
                 >
           <Card>
             
-                <div className="w-full flex flex-row justify-between items-center">
+                <div className="w-full flex flex-row justify-between items-center gap-1">
                     <CardTitle>{item.title}</CardTitle>
                     <Image 
                         src={item.thumbnail}
@@ -92,7 +92,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        " h-full w-full md:min-h-[30rem] p-2 md:p-4 overflow-hidden  border border-transparent  relative z-20",
+        " h-full w-full p-2 md:p-1 overflow-hidden  border border-transparent relative z-20",
         className
       )}
     >
@@ -110,7 +110,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h2 className={cn("text-zinc-100 font-start text-left font-bold tracking-wide text-xl md:text-2xl lg:text-3xl mt-1 ", className)}>
+    <h2 className={cn("text-zinc-100 font-start text-left font-bold tracking-wide text-lg md:text-xl lg:text-2xl mt-1 ", className)}>
       {children}
     </h2>
   );

@@ -5,12 +5,14 @@ import { navItems } from "@/data";
 import dynamic from 'next/dynamic'
 const OurStudio = dynamic(() => import('@/components/home/OurStudio')) 
 const OurServices = dynamic(() => import('@/components/home/OurServices')) 
+const FormSection = dynamic(() => import('@/components/home/FormSection')) 
 const Grid = dynamic(() => import('@/components/home/Grid')) 
 const RecentProjects = dynamic(() => import('@/components/home/RecentProjects')) 
 const Clients = dynamic(() => import('@/components/home/Clients')) 
 const Exprerience = dynamic(() => import('@/components/home/Exprerience')) 
 const Approach = dynamic(() => import('@/components/home/Approach')) 
 const Footer = dynamic(() => import('@/components/home/Footer')) 
+const FormMain = dynamic(() => import('@/components/ui/Form')) 
 
 
 
@@ -25,14 +27,15 @@ export default function Home() {
           <Hero />
           <OurStudio />
           <OurServices />
+          <FormSection />
 
 
 
-          <Grid />
           <RecentProjects />
+          {/* <Grid />
           <Clients />
           <Exprerience />
-          <Approach />
+          <Approach /> */}
           <Footer />
     </main>
   );
