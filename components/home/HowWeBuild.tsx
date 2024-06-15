@@ -31,7 +31,9 @@ const HowWeBuild = () => {
                     </Link>
                 </div>
                 <div className='w-full md:w-1/3 h-auto'>
-                    <Gads />
+                    <Link href="#stepsBuild" className="cursor-pointer">
+                        <Gads />
+                    </Link>
                 </div>
             </div>
             <StepsHowWeBuild buildSteps={buildSteps} />

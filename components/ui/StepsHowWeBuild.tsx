@@ -19,7 +19,7 @@ export const StepsHowWeBuild = ({
         // const evenRow = buildSteps.filter((_, index) => index % 2 === 0);
         // const oddRow = buildSteps.filter((_, index) => index % 2 !== 0);
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-2 mb-2">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-2 mb-2" id='stepsBuild'>
         {buildSteps.map((buildStep) => (
             <div key={buildStep.id} className="w-full flex flex-row justify-center items-start gap-4 rounded-xl p-8 m-4 mx-4
             hover:bg-white hover:scale-110 hover:skew-y-1  transition duration-300 :ease-in-out hover:shadow-xl cursor-pointer hover:rotate-1">

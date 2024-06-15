@@ -7,6 +7,7 @@ const OurStudio = dynamic(() => import('@/components/home/OurStudio'))
 const OurServices = dynamic(() => import('@/components/home/OurServices')) 
 const FormSection = dynamic(() => import('@/components/home/FormSection')) 
 const HowWeBuild = dynamic(() => import('@/components/home/HowWeBuild')) 
+const OurTeam = dynamic(() => import('@/components/home/OurTeam')) 
 const Grid = dynamic(() => import('@/components/home/Grid')) 
 const RecentProjects = dynamic(() => import('@/components/home/RecentProjects')) 
 const Clients = dynamic(() => import('@/components/home/Clients')) 
@@ -30,14 +31,16 @@ export default function Home() {
           <OurServices />
           <FormSection />
           <HowWeBuild />
+          <OurTeam />
 
 
-
-          {/* <RecentProjects /> */}
-          {/* <Grid />
-          <Clients />
+          {/* 
+          <RecentProjects />
+          <Grid />
           <Exprerience />
-          <Approach /> */}
+          <Approach /> 
+          <Clients />
+          */}
           <Footer />
     </main>
   );
