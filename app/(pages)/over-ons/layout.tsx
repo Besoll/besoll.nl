@@ -5,10 +5,10 @@ const Footer = dynamic(() => import('@/components/global/Footer') )
 import type { Metadata } from "next";
 
 
-const titleBL = 'Besoll - we create web';
-const urlBL = 'https://besoll.nl/over-ons';
-const imageBL = 'https://besoll.nl/_next/image?url=%2FheroImages%2Fdakkapel.webp&w=384&q=75';
-const descriptionBL = 'At Besoll, we specialize in creating high-performance websites and landing pages using the latest technologies. Our team of experts ensures your site is fast, optimized, and ranks higher on search engines.';
+const titleBL = 'OwlWeb Studio - we create web';
+const urlBL = 'https://owlweb.nl/over-ons';
+const imageBL = 'https://www.owlweb.nl/_next/image?url=%2Fmeta-owlweb-main.webp&w=1080&q=75';
+const descriptionBL = 'At OwlWeb Studio, we specialize in creating high-performance websites and landing pages using the latest technologies. Our team of experts ensures your site is fast, optimized, and ranks higher on search engines.';
 
 export const metadata: Metadata = {
   title: titleBL,
