@@ -1,15 +1,15 @@
-// import Footer from '@/components/Footer'
-// import Navbar from '@/components/global/Navbar'
-// import dynamic from 'next/dynamic'
-// const Footer = dynamic(() => import('@/components/global/Footer') ) 
+import { FloatingNav } from "@/components/global/FloatingNav";
+import { navItems } from "@/data";
+import dynamic from 'next/dynamic'
+const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-        {/* <Navbar /> */}
+        <FloatingNav navItems={navItems} />
         {children}
-        {/* <Footer /> */}
+        <Footer />
     </>
   )
 }

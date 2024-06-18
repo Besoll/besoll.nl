@@ -9,7 +9,7 @@ const Gads = dynamic(() => import('@/components/global/lotties/Gads'))
 
 const HowWeBuild = () => {
   return (
-    <div className='w-full flex justify-center items-center py-20 bg-white text-black sm:px-10 px-5 pb-40'>
+    <div className='w-full flex justify-center items-center py-20 bg-owlBrown/20 text-black sm:px-10 px-5 pb-40'>
         <div className='w-full max-w-7xl flex justify-center flex-col gap-4 items-center'>
             <div className="w-full flex justify-center items-center flex-col md:flex-row gap-4">
                 <div className='w-full md:max-w-xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10'>

@@ -7,7 +7,7 @@ const Development = dynamic(() => import('@/components/global/lotties/Developmen
 
 const OurStudio = () => {
   return (
-    <div className='w-full flex justify-center items-center py-20 bg-white text-black sm:px-10 px-5'>
+    <div className='w-full bg-white flex justify-center items-center py-20 bg-owlBrown/20 text-black sm:px-10 px-5'>
         <div className='max-w-7xl w-full flex justify-center flex-col md:flex-row gap-4 items-center'>
             <div className='w-full md:max-w-xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10'>
                 <h1 className='heading md:text-left'>

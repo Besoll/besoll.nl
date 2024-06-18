@@ -9,7 +9,7 @@ const MagicButton = dynamic(() => import('@/components/ui/MagicButton'))
 
 const Footer = () => {
   return (
-    <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg text-gray-500 text-md md:text-base mt-20 md:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-20" >
+    <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg text-gray-500 text-md md:text-base mt-20 md:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-20">
 
         <div className="max-w-7xl flex flex-col md:flex-row justify-center items-center md:justify-between md:items-start gap-8 md:gap-8 lg:gap-32">
 
@@ -22,7 +22,7 @@ const Footer = () => {
                     Request no obligation contalncy with us, where we can listen and offer the best solutions for your business
                 </p>
                 <hr className="w-full border-black-400 md:mx-auto"/>
-                    <Link href="/contact">
+                    <Link href="#formSection">
                       <MagicButton 
                         title='Write us now'
                         icon={<FaLocationArrow/>}
