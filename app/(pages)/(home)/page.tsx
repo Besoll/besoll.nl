@@ -1,4 +1,4 @@
-import { Hero } from "@/components/home/Hero2"
+import Hero from "@/components/home/Hero"
 
 import dynamic from 'next/dynamic'
 const OurStudio = dynamic(() => import('@/components/home/OurStudio')) 
