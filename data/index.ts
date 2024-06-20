@@ -443,6 +443,39 @@ export const navItems = [
     },
   ];
 
+  export const ourPromise = [
+    {
+      id: 1,
+      title: "Speed",
+      startDesc1: "",
+      desc1: "Your site will load faster than ever with smart technology and careful design.",
+      startDesc2: "",
+      desc2: "",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Easy to Use",
+      startDesc1: "",
+      desc1: "Everyone can navigate and enjoy your site, no matter their device.",
+      startDesc2: "",
+      desc2: "",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "SEO Friendly",
+      startDesc1: "",
+      desc1: "Boost your visibility in Google search results with our expert SEO techniques.",
+      startDesc2: "",
+      desc2: "",
+      startDesc3: "",
+      desc3: "",
+    }
+  ];
+
   export const ourTeam = [
     {
       id: 1,

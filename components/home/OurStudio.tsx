@@ -11,11 +11,12 @@ const OurStudio = () => {
         <div className='max-w-7xl w-full flex justify-center flex-col md:flex-row gap-4 items-center'>
             <div className='w-full md:max-w-xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10'>
                 <h1 className='heading md:text-left'>
-                    OwlWeb Studio {' '} <br></br>
-                    <span className='text-owlBrown'> We create web</span>
+                    Unleash Your Website’s Potential with {' '} <br></br>
+                    <span className='text-owlBrown'> Top Performance</span>
                 </h1>
+                <Development />
                 <p className="text-md lg:text-base text-normal md:leading-3">
-                At OwlWeb, our design strategy focuses on creating high-performance, user-centered websites that align with your business goals. By understanding your brand and target audience, we craft visually stunning and highly functional sites using the latest technologies like Next.js and TailwindCSS. Our approach ensures fast loading times, accessibility, and top-tier SEO, providing a competitive edge in the digital marketplace. We prioritize scalability and flexibility, allowing your site to grow with your business, and make data-driven decisions to continuously enhance user experience. Through close collaboration and communication, we deliver exceptional websites that drive success.
+                At OwlWeb Studio, we ensure your website stands out with blazing-fast speed and seamless navigation. Here’s why it matters:
                 </p>
                 <Link href="#formSection">
                     <MagicButton 
@@ -28,7 +29,8 @@ const OurStudio = () => {
                 </Link>
             </div>
             <div className='w-full md:w-1/3 h-auto'>
-                <Development />
+                {/* <Image /> */}
+    
             </div>
         </div>
     </div>

@@ -6,17 +6,15 @@ import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect"
 
 const Approach = () => {
   return (
-    <section className='w-full py-20' id='approach'>
+    <section className='w-full py-20 bg-black-100 pb-40' id='approach'>
         <h1 className='heading'>
-           My <span className='text-purple'>approach</span> 
+        Recommended <span className='text-owlOrange'> Packages</span> 
         </h1>
         <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
             <Card 
-                title="Planning & Strategy" 
-                icon={<AceternityIcon order='Phase 1' />}
-                description="We'll collaborate to map out your website's goals, target audience, 
-                and key functionalities. We'll discuss things like site structure, 
-                navigation, and content requirements."
+                title="Website Creation Deluxe" 
+                icon={<AceternityIcon order='Website' />}
+                description="Create a custom-designed website with stunning animations, fully licensed content, and optimization nearing 100 on Google Lighthouse. Optionally include high-converting landing pages to boost your Google ranking and lead generation."
                 >
                     <CanvasRevealEffect
                         animationSpeed={5.1}
@@ -24,11 +22,9 @@ const Approach = () => {
                     />
             </Card>
             <Card 
-                title="Nisha is Munni" 
-                icon={<AceternityIcon order='Phase 2' />}
-                description="Once we agree on the plan, I cue my lofi playlist and dive into
-                coding. From initial sketches to polished code, I keep you updated
-                every step of the way."
+                title="Social Media Mastery" 
+                icon={<AceternityIcon order='Social Media' />}
+                description="Manage your social media with business page creation, daily and weekly posts, and engaging activities to enhance your online presence."
                 >
                     <CanvasRevealEffect
                         animationSpeed={3}
@@ -43,11 +39,9 @@ const Approach = () => {
                 {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
             </Card>
             <Card 
-                title="Munni is Aditi" 
-                icon={<AceternityIcon order='Phase 3' />}
-                description="This is where the magic happens! Based on the approved design, 
-                I'll translate everything into functional code, building your website
-                from the ground up."
+                title="The Total Web Solution" 
+                icon={<AceternityIcon order='Content Creator' />}
+                description="Combine the Website Creation Deluxe and Social Media Mastery packages, plus personalized content creation such as office photos, aerial shoots, and specialized website content. Explore options for e-commerce, hotel reservation systems, and custom software applications."
                 >
                     <CanvasRevealEffect
                         animationSpeed={3}
