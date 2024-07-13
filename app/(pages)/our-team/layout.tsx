@@ -1,5 +1,5 @@
-import { FloatingNav } from "@/components/global/FloatingNav";
-import { navItems } from "@/data";
+import NavigationStatic from "@/components/global/NavigationStatic";
+import { navItemsStatic } from "@/data";
 import dynamic from 'next/dynamic'
 const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
@@ -12,7 +12,7 @@ const descriptionBL = 'Welcome to OwlWeb Studio! Meet the fun-loving crew who tu
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-        <FloatingNav navItems={navItems} />
+        <NavigationStatic navItems={navItemsStatic} />
         {children}
         <Footer />
     </>

@@ -2,13 +2,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import dynamic from 'next/dynamic'
-import { FaLocationArrow } from 'react-icons/fa'
-const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 const EmailIcon = dynamic(() => import('@/components/icons/EmailIcon'))
 const MobileIcon = dynamic(() => import('@/components/icons/MobileIcon'))
 const MapLocation = dynamic(() => import('@/components/icons/MapLocation'))
-const IframeComponent = dynamic(() => import('@/components/ui/IframeProps'))
-const Logo = dynamic(() => import('@/components/global/Logo'))
+// const IframeComponent = dynamic(() => import('@/components/ui/IframeProps'))
 
 
 export const FooterItemsPages = ({
@@ -18,14 +15,16 @@ export const FooterItemsPages = ({
             id: number,
             name: string,
             link: string,
+            ariaLabel: string,
         } [];
     }) => {
   return (
     <>
         {footerItemsPages.map((item) => (
-            <li key={item.id}>
+            <li key={item.id} className='my-2 px-2'>
                 <Link 
                     href={item.link}
+                    aria-label={item.ariaLabel}
                     className='nav-links cursor-pointer capitalize md:hover:scale-105 md:hover:text-owlOrange md:duration-300'
                 >
                     {item.name}                     
@@ -43,14 +42,16 @@ export const FooterItemsTerms = ({
             id: number,
             name: string,
             link: string,
+            ariaLabel: string,
         } [];
     }) => {
   return (
     <>
         {footerItemsTerms.map((item) => (
-            <li key={item.id}>
+            <li key={item.id} className='my-2 px-2'>
                 <Link 
                     href={item.link}
+                    aria-label={item.ariaLabel}
                     className='nav-links cursor-pointer capitalize md:hover:scale-105 md:hover:text-owlOrange md:duration-300'
                 >
                     {item.name}                     
@@ -73,7 +74,7 @@ export const FooterItemsIcons = ({
   return (
     <>
         {footerItemsIcons.map((item) => (
-            <div className='mb-2 '>
+            <div key={item.id} className='mb-2'>
                 {item.id === 1 ? (
                     <Image 
                         src={item.icon}
@@ -84,12 +85,20 @@ export const FooterItemsIcons = ({
                         md:hover:scale-105 md:transition md:duration-300 md:ease-in-out md:cursor-pointer"                                  
                     /> 
                 ) : (
-                    <IframeComponent
+                    <Image 
                         src={item.icon}
-                        width="160"
-                        height="120"
-                        title={item.name}
-                    />
+                        alt={item.name}
+                        width={32}
+                        height={32}
+                        className="w-[45px] h-auto md:hover:rotate-1 md:hover:skew-3 
+                        md:hover:scale-105 md:transition md:duration-300 md:ease-in-out md:cursor-pointer"                                  
+                    /> 
+                    // <IframeComponent
+                    //     src={item.icon}
+                    //     width="160"
+                    //     height="120"
+                    //     title={item.name}
+                    // />
                 )}
             </div>    
         ))}
@@ -105,6 +114,7 @@ export const FooterItemsCredentials = ({
             icon: string,
             name: string,
             link?: string,
+            ariaLabel: string,
         }[];
     }) => {
   return (
@@ -112,7 +122,7 @@ export const FooterItemsCredentials = ({
         <div className='w-full flex flex-col sm:flex-row justify-center text-center gap-4'>
             {footerItemsCredentials.slice(0, 2).map((item) => (
                 <div key={item.id} className='w-full flex justify-center items-center flex-row gap-2'>
-                    <Link href={item.link || '#'} className='w-full flex justify-center items-center hover:scale-105 hover:text-owlOrange duration-300'>
+                    <Link href={item.link || '#'} aria-label={item.ariaLabel} className='w-full flex justify-center items-center hover:scale-105 hover:text-owlOrange duration-300'>
                         {item.icon === 'mobile' && <MobileIcon />}
                         {item.icon === 'email' && <EmailIcon />}
                         <span className="ml-1 sm:ml-2">{item.name}</span>
@@ -125,7 +135,8 @@ export const FooterItemsCredentials = ({
                 {footerItemsCredentials.slice(2).map((item) => (
                     <div key={item.id} className='w-full flex justify-center items-center'>
                         <Link 
-                            href={item.link || '#'} 
+                            href={item.link || '#'}
+                            aria-label={item.ariaLabel} 
                             target='_blank'
                             className='flex justify-center items-center hover:scale-105 hover:text-owlOrange duration-300'
                         >

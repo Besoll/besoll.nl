@@ -10,7 +10,6 @@ const IframeComponent: React.FC<IframeProps> = ({ src, width, height, title }) =
     <iframe
       title={title} // Set the title attribute
       style={{ border: '1px solid transparent' }}
-      allowTransparency={true}
       src={src}
       width={width}
       height={height}

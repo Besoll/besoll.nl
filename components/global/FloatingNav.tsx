@@ -18,6 +18,7 @@ export const FloatingNav = ({
     name: string;
     link: string;
     icon?: JSX.Element;
+    ariaLabel: string;
   }[];
   className?: string;
 }) => {
@@ -61,15 +62,16 @@ export const FloatingNav = ({
           className
         )}
       >
-        <Link href="/">
+        <Link href="/" aria-label="navigate to home page">
           <Logo className="h-full w-auto"/>
         </Link>
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
+            aria-label={navItem.ariaLabel}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative items-center flex space-x-1 text-owlOrange hover:text-neutral-300"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>

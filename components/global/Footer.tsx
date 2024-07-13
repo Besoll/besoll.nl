@@ -9,20 +9,20 @@ const MagicButton = dynamic(() => import('@/components/ui/MagicButton'))
 
 const Footer = () => {
   return (
-    <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg text-gray-500 text-md md:text-base mt-20 md:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-20" >
+    <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg text-gray-300 text-md md:text-base mt-20 md:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-20" >
 
-        <div className="max-w-7xl flex flex-col md:flex-row justify-center items-center md:justify-between md:items-start gap-8 md:gap-8 lg:gap-32">
+        <div className="max-w-7xl flex flex-col lg:flex-row justify-center items-center lg:justify-between lg:items-start gap-8 md:gap-8 lg:gap-32">
 
-            <div className='flex flex-col justify-center items-center w-[240px] h-[260px] md:w-[280px] md:h-[300px] xl:w-[300px] xl:h-[300px] gap-2'>
-                <Link className="flex justify-center items-center" href="#formSection">
-                    <Logo className="w-full min-w-[100px] md:min-w-[250px] lg:min-w-[350px] xl:min-w-[450px] max-w-[450px]"/>
+            <div className='flex flex-col justify-center items-center w-[240px] h-[260px] sm:w-[380px] sm:h-[300px] md:w-[450px] md:h-[350px] xl:w-[400px] xl:h-[400px] md:mr-2 gap-4'>
+                <Link className="flex justify-center items-center" href="#formSection" aria-label="Write us now, navigate to form section">
+                    <Logo className="w-full "/>
                 </Link>
-                <hr className="w-full border-black-400 md:mx-auto -mt-2"/>
+                <hr className="w-full border-black-300 md:mx-auto -mt-1"/>
                 <p className='text-center text-white'> 
                     Request no obligation contalncy with us, where we can listen and offer the best solutions for your business
                 </p>
-                <hr className="w-full border-black-400 md:mx-auto"/>
-                    <Link href="/contact">
+                <hr className="w-full border-black-300 md:mx-auto"/>
+                    <Link href="/contact" aria-label="navigate to contact page">
                       <MagicButton 
                         title='Write us now'
                         icon={<FaLocationArrow/>}
@@ -33,24 +33,24 @@ const Footer = () => {
                     </Link>
             </div>
 
-            <div className='flex flex-col lg:flex-row'>
-                <div className='sm:w-fit flex flex-row justify-center text-center md:text-left md:justify-between gap-3 sm:gap-8 py-8'>
-                <ul className='w-1/3 sm:w-full flex flex-col text-left md:w-full max-w-[150px] md:max-w-[250px] gap-2'>
-                    <li className="w-full font-semibold uppercase">
-                        Pages
-                        <hr className="my-2 border-black-400 md:mx-auto"/>
-                    </li>
-                    <FooterItemsPages footerItemsPages={footerItemsPages} />
-                </ul>
-                <ul className='w-full flex flex-col text-right sm:min-w-[200px] md:w-full gap-2 '>
-                    <li className="font-semibold uppercase">
-                        {/* Voorwaarden & Privacy */} Terms & Privacy
-                        <hr className="my-2 border-black-400 md:mx-auto"/>
-                    </li>
-                    <FooterItemsTerms footerItemsTerms={footerItemsTerms} />                 
-                </ul> 
+            <div className='w-full flex flex-col lg:flex-row'>
+                <div className='sm:w-full flex flex-row  text-center lg:text-left justify-between gap-3 sm:gap-8 py-8 lg:px-2'>
+                    <ul className='w-1/3 sm:w-full flex flex-col text-left md:w-full max-w-[150px] md:max-w-[250px] gap-2'>
+                        <li className="w-full font-semibold uppercase my-2 px-2">
+                            Pages
+                            <hr className="my-2 border-black-400 md:mx-auto"/>
+                        </li>
+                        <FooterItemsPages footerItemsPages={footerItemsPages} />
+                    </ul>
+                    <ul className='w-full flex flex-col text-right sm:min-w-[200px] md:w-full gap-2 '>
+                        <li className="font-semibold uppercase my-2 px-2">
+                            {/* Voorwaarden & Privacy */} Terms & Privacy
+                            <hr className="my-2 border-black-400 md:mx-auto"/>
+                        </li>
+                        <FooterItemsTerms footerItemsTerms={footerItemsTerms} />                 
+                    </ul> 
                 </div>
-                <div className='w-full flex flex-row lg:flex-col justify-center md:justify-start items-center md:items-start gap-8 md:gap-2 md:mt-8 md:ml-8'>
+                <div className='w-full flex flex-row lg:flex-col justify-center lg:justify-start items-center lg:items-start gap-8 lg:gap-2 lg:mt-8 lg:ml-8'>
                     <FooterItemsIcons footerItemsIcons={footerItemsIcons} />
                 </div> 
             </div>

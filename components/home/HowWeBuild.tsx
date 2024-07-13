@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaLocationArrow } from 'react-icons/fa'
 
 import dynamic from 'next/dynamic'
-import { StepsHowWeBuild } from "../ui/StepsHowWeBuild";
+import { StepsWithNumeric } from "../ui/StepsWithNumeric";
 import { buildSteps } from "@/data";
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 const Gads = dynamic(() => import('@/components/global/lotties/Gads')) 
@@ -36,7 +36,7 @@ const HowWeBuild = () => {
                     </Link>
                 </div>
             </div>
-            <StepsHowWeBuild buildSteps={buildSteps} />
+            <StepsWithNumeric steps={buildSteps} />
         </div>
     </div>
   )

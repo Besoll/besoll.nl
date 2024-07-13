@@ -1,12 +1,13 @@
 "use client"
 import React from 'react'
+import Link from 'next/link';
 import Image from 'next/image'
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect"
 
 const Approach = () => {
   return (
-    <section className='w-full py-20 bg-black-100 pb-40' id='approach'>
+    <section className='w-full py-20 pb-40 px-4 md:px-8' id='approach'>
         <h1 className='heading'>
         Recommended <span className='text-owlOrange'> Packages</span> 
         </h1>
@@ -15,6 +16,8 @@ const Approach = () => {
                 title="Website Creation Deluxe" 
                 icon={<AceternityIcon order='Website' />}
                 description="Create a custom-designed website with stunning animations, fully licensed content, and optimization nearing 100 on Google Lighthouse. Optionally include high-converting landing pages to boost your Google ranking and lead generation."
+                link='/services/package-website'
+                ariaLabel='navigate to website package'
                 >
                     <CanvasRevealEffect
                         animationSpeed={5.1}
@@ -25,6 +28,8 @@ const Approach = () => {
                 title="Social Media Mastery" 
                 icon={<AceternityIcon order='Social Media' />}
                 description="Manage your social media with business page creation, daily and weekly posts, and engaging activities to enhance your online presence."
+                link='/services/package-social-media'
+                ariaLabel='navigate to Social Media package'
                 >
                     <CanvasRevealEffect
                         animationSpeed={3}
@@ -36,12 +41,14 @@ const Approach = () => {
                         dotSize={2}
                     />
                 {/* Radial gradient for the cute fade */}
-                {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
+                {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)]  bg-black/90" /> */}
             </Card>
             <Card 
                 title="The Total Web Solution" 
                 icon={<AceternityIcon order='Content Creator' />}
                 description="Combine the Website Creation Deluxe and Social Media Mastery packages, plus personalized content creation such as office photos, aerial shoots, and specialized website content. Explore options for e-commerce, hotel reservation systems, and custom software applications."
+                link='/services/package-content-creator'
+                ariaLabel='navigate to Content Creator package'
                 >
                     <CanvasRevealEffect
                         animationSpeed={3}
@@ -59,23 +66,27 @@ const Card = ({
     icon,
     children,
     description,
+    link,
+    ariaLabel,
   }: {
     title: string;
     icon: React.ReactNode;
     children?: React.ReactNode;
     description: string;
+    link?: string;
+    ariaLabel?: string;
   }) => {
     const [hovered, setHovered] = React.useState(false);
     return (
       <div
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 lg:h-[35rem] rounded-3xl relative"
+        className="border border-white/[0.2] group/canvas-card flex items-center justify-center max-w-sm w-full mx-auto p-4 lg:h-[35rem] rounded-3xl relative"
       >
-        <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-        <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-        <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-        <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+        <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white" />
+        <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white" />
+        <Icon className="absolute h-6 w-6 -top-3 -right-3 text-white" />
+        <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-white" />
    
         <AnimatePresence>
           {hovered && (
@@ -89,17 +100,17 @@ const Card = ({
           )}
         </AnimatePresence>
    
-        <div className="relative z-20">
+        <Link href={link || '#'} aria-label={ariaLabel} className="relative z-20">
           <div className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
             {icon}
           </div>
-          <h2 className="dark:text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center text-3xl">
+          <h2 className="text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center text-3xl">
             {title}
           </h2>
-          <h2 className="text-sm dark:text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center" style={{color: '#e4ecff'}}>
+          <h2 className="text-sm text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center" style={{color: '#e4ecff'}}>
             {description}
           </h2>
-        </div>
+        </Link>
       </div>
     );
   };

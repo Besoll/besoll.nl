@@ -1,33 +1,42 @@
 export const navItems = [
-    { id: 1, name: "Our Team", link: "/our-team" },
-    { id: 2, name: "Projects", link: "#projects" },
-    { id: 3, name: "Contact", link: "/contact" },
+    { id: 1, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
+    { id: 2, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
+    { id: 3, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
+  ];
+
+  export const navItemsStatic = [
+    { id: 1, name: "Top Speed", link: "/our-team", ariaLabel: "Navigate to top speed page", },
+    { id: 2, name: "Landing Page", link: "/services", ariaLabel: "Navigate to landing page", },
+    { id: 3, name: "WebMaster Pro", link: "/webmaster-pro", ariaLabel: "Navigate to webmaster-pro", },
+    { id: 4, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
+    { id: 5, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
+    { id: 6, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
   ];
 
   export const footerItemsPages = [
-    { id: 1, name: "Our Team", link: "/our-team" },
-    { id: 2, name: "Projects", link: "" },
-    { id: 3, name: "Services", link: "" },
-    { id: 4, name: "Testimonials", link: "" },
-    { id: 5, name: "Contact", link: "/contact" },
+    { id: 1, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
+    { id: 2, name: "Projects", link: "#", ariaLabel: "Navigate to projects page", },
+    { id: 3, name: "Services", link: "#", ariaLabel: "Navigate to services page", },
+    { id: 4, name: "Testimonials", link: "#", ariaLabel: "Navigate to testimonials page", },
+    { id: 5, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
   ];
   export const footerItemsTerms = [
-    { id: 1, name: "Terms and Conditions", link: "" },
-    { id: 2, name: "Disclaimer", link: "" },
-    { id: 3, name: "Imprint", link: "" },
-    { id: 4, name: "Cookie Policy (EU)", link: "" },
-    { id: 5, name: "Privacy Statement (EU)", link: "" },
+    { id: 1, name: "Terms and Conditions", link: "#", ariaLabel: "Navigate to Terms and Conditions page", },
+    { id: 2, name: "Disclaimer", link: "#", ariaLabel: "Navigate to Disclaimer page", },
+    { id: 3, name: "Imprint", link: "#", ariaLabel: "Navigate to Imprint page", },
+    { id: 4, name: "Cookie Policy (EU)", link: "#", ariaLabel: "Navigate to our team page", },
+    { id: 5, name: "Privacy Statement (EU)", link: "#", ariaLabel: "Navigate to our team page", },
   ];
 
   export const footerItemsIcons = [
     { id: 1, as: "Image", icon: "/icons/Guarantee10Years-Big.svg", name: "Guarantee 10 years"},
-    { id: 2, as: "IframeComponent", icon: "https://www.klantenvertellen.nl/retrieve-widget.html?color=white&allowTransparency=false&button=true&lang=nl&tenantId=99&locationId=1066957", name: "klientreviews"},
+    { id: 2, as: "IframeComponent", icon: "/icons/Guarantee10Years-Big.svg", name: "klientreviews"},
   ];
 
   export const footerItemsCredentials = [
-    { id: 1, icon: "mobile", name: "+31 613 73 45 46", link: "tel:003613734546" },
-    { id: 2, icon: "email", name: "info@owlweb.nl", link: "mailto:info@owlweb.nl" },
-    { id: 3, icon: "map", name: "Mendelssohnstraat 1, 3281VH Numansdorp", link: "https://www.google.com/maps/place/Mendelssohnstraat+1,+3281+VH+Numansdorp/@51.7369636,4.4336364,17z/data=!3m1!4b1!4m6!3m5!1s0x47c4399aa1cb360b:0x71b0380339d31d8d!8m2!3d51.7369636!4d4.4336364!16s%2Fg%2F11c5nqjmkg?entry=ttu" },
+    { id: 1, icon: "mobile", name: "+31 613 73 45 46", link: "tel:003613734546", ariaLabel: "Navigate to call us", },
+    { id: 2, icon: "email", name: "info@owlweb.nl", link: "mailto:info@owlweb.nl", ariaLabel: "Navigate to email us", },
+    { id: 3, icon: "map", name: "Mendelssohnstraat 1, 3281VH Numansdorp", link: "https://www.google.com/maps/place/Mendelssohnstraat+1,+3281+VH+Numansdorp/@51.7369636,4.4336364,17z/data=!3m1!4b1!4m6!3m5!1s0x47c4399aa1cb360b:0x71b0380339d31d8d!8m2!3d51.7369636!4d4.4336364!16s%2Fg%2F11c5nqjmkg?entry=ttu", ariaLabel: "Navigate to our addres on google map", },
   ];
   
   export const gridItems = [
@@ -443,7 +452,7 @@ export const navItems = [
     },
   ];
 
-  export const ourPromise = [
+  export const secMetricsNumeric = [
     {
       id: 1,
       title: "Speed",
@@ -466,12 +475,166 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "SEO Friendly",
+      title: "Mobile-Friendly:",
       startDesc1: "",
-      desc1: "Boost your visibility in Google search results with our expert SEO techniques.",
+      desc1: "Your website will work well on all devices therefore will attract more visitors",
       startDesc2: "",
       desc2: "",
       startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 4,
+      title: "SEO Optimized:",
+      startDesc1: "",
+      desc1: "Proper use of keywords and meta tags helps search engines understand your content - our expert SEO techniques",
+      startDesc2: "",
+      desc2: "",
+      startDesc3: "",
+      desc3: "",
+    }
+  ];
+
+  export const secMetricsSteps = [
+    {
+      id: 1,
+      title: "Higher Google Rankings:",
+      desc1: "Get found easily on Google with our websites that score near-perfect on speed and user experience.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Save on Ads:",
+      desc1: "Spend less on advertising with a fast website that keeps visitors engaged.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Happy Visitors:",
+      desc1: "Users love our easy-to-use sites that work perfectly on phones, tablets, and computers.",
+      desc2: "",
+      desc3: "",
+    }
+  ];
+
+  export const secMetricsStepsMain = [
+    {
+      id: 1,
+      title: "Visibility:",
+      desc1: "Higher rankings on Google mean more people see your website.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Trust",
+      desc1: "Top search results are seen as more trustworthy and credible by users.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Traffic",
+      desc1: "Better rankings lead to more visitors, increasing your potential for sales and leads.",
+      desc2: "",
+      desc3: "",
+    }
+  ];
+
+  export const secLPstepsMain = [
+    {
+      id: 1,
+      title: "Targeted conversion",
+      desc1: "you know what the visitor is interested in",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "The conversion rate",
+      desc1: "of a landing page is higher than that of a regular website",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "By A/B testing",
+      desc1: "we can get better results as these tests help us determine which version of the page is more effective in driving conversions.",
+      desc2: "",
+      desc3: "",
+    }
+  ];
+
+  export const secLPsteps = [
+    {
+      id: 1,
+      title: "Targeted Focus:",
+      desc1: "Each landing page is tailored to a specific service or product, making it easier for visitors to find exactly what they&apos;re looking for.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "High Performance:",
+      desc1: "Our landing pages load super fast and score near-perfect on Google Pagespeed Insights, ensuring a smooth and satisfying user experience.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Increased Trust:",
+      desc1: "With a focused landing page, users see you as an expert in that specific area, boosting their trust and confidence in your brand.",
+      desc2: "",
+      desc3: "",
+    }
+  ];
+
+  export const secLPsteps2 = [
+    {
+      id: 1,
+      title: "Focused Content:",
+      desc1: "The hero section showcases your best electric mountain bike. Every section below highlights its features, benefits, and customer reviews. There are no distractions, just the information they need.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Enhanced User Experience:",
+      desc1: "Visitors don&apos;t have to sift through irrelevant products. They find what they want quickly, making them more likely to stay and convert.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Higher Conversion Rates:",
+      desc1: "A specialized landing page speaks directly to the visitor’s needs, making them more likely to trust you and make a purchase.",
+      desc2: "",
+      desc3: "",
+    }
+  ];
+
+  export const secLPsteps3 = [
+    {
+      id: 1,
+      title: "Lightning Fast:",
+      desc1: "Near-perfect performance scores ensure visitors stay engaged.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "SEO Optimized:",
+      desc1: "Better search rankings mean more visibility and traffic.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Expert Design:",
+      desc1: "Tailored to showcase your expertise and convert visitors into leads.",
+      desc2: "",
       desc3: "",
     }
   ];
