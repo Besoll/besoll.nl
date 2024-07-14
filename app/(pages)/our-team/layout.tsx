@@ -12,7 +12,7 @@ const descriptionBL = 'Welcome to OwlWeb Studio! Meet the fun-loving crew who tu
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-        <NavigationStatic navItems={navItemsStatic} />
+        <NavigationStatic navItemsStatic={navItemsStatic} />
         {children}
         <Footer />
     </>

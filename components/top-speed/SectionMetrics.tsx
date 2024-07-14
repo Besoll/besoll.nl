@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic'
 import { StepsWithNumeric4row } from "../ui/StepsWithNumeric4row";
 import { secMetricsNumeric, secMetricsSteps } from "@/data";
 import { StepsWithoutNumeric } from "../ui/StepsWithoutNumeric";
+import YouTubeEmbed from "../global/YouTubeEmbed";
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 const Metrics = dynamic(() => import('@/components/global/lotties/Metrics')) 
 
@@ -131,6 +132,13 @@ const SectionMetrics = () => {
                 </div>
             </div>
 
+
+
+
+            <div className='relative max-w-7xl w-full flex justify-center  gap-4 items-center py-32'>
+                <YouTubeEmbed videoId="KU8i9Xp33sI" />
+               
+            </div>
         </div>
     </div>
   )

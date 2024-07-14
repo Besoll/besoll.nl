@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-        <NavigationStatic navItems={navItemsStatic} />
+        <NavigationStatic navItemsStatic={navItemsStatic} />
         {children}
         <Footer />
     </>
