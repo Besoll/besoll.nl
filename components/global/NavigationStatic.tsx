@@ -73,7 +73,7 @@ const NavigationStatic = ({
             </div>
 
             {nav && (
-                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen 
+                <ul className="flex lg:hidden flex-col justify-center items-center absolute top-0 left-0 w-full h-screen 
                                 bg-black/90 text-neutral-300 ">
                     {navItems.map((navItem: any) => (  
                         <li
