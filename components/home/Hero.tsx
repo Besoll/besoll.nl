@@ -44,7 +44,7 @@ const Hero = () => {
                             title='Find out more'
                             icon={<FaLocationArrow/>}
                             position='right'
-                            otherClassesButton='hidden md:flex'
+                            otherClassesButton='hidden md:flex mt-10'
                         />
                         <MagicButton 
                             title='More'

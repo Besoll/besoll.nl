@@ -69,7 +69,7 @@ const SectionLP = () => {
                     title='Learn more about Landing Pages'
                     icon={<FaLocationArrow/>}
                     position='right'
-                    otherClassesButton="border-none bg-owlBrown"
+                    otherClassesButton="border-none bg-owlBrown mt-10"
                     otherClasses="bg-owlBrown/50"
                 />
             </Link>

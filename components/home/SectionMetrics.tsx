@@ -69,9 +69,8 @@ const SectionMetrics = () => {
                 </div>
             </div>
 
-            <p className="text-lg font-bold text-left md:-mb-8 w-full max-w-7xl px-4">Why high rankings matter?</p>
-            <div className="max-w-7xl w-full h-full flex justify-center flex-col md:flex-row gap-4 items-stretch">
-                
+            <p className="text-lg font-bold text-left md:-mb-8 w-full max-w-7xl px-4 ">Why high rankings matter?</p>
+            <div className="max-w-7xl w-full h-full flex justify-center flex-col md:flex-row gap-4 items-stretch mt-2">
                 <StepsWithoutNumeric steps={secMetricsStepsMain} otherClasses="bg-white" />    
             </div>
 
@@ -80,6 +79,7 @@ const SectionMetrics = () => {
                     title='Learn more about top performance'
                     icon={<FaWpforms/>}
                     position='right'
+                    otherClassesButton="mt-10"
                 />
             </Link>
 

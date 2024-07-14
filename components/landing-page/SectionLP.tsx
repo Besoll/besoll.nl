@@ -89,7 +89,7 @@ const SectionLP = () => {
                     title='Write us now'
                     icon={<FaLocationArrow/>}
                     position='right'
-                    otherClassesButton="border-none bg-owlBrown"
+                    otherClassesButton="border-none bg-owlBrown mt-10"
                     otherClasses="bg-owlBrown/50"
                 />
             </Link>
@@ -112,7 +112,7 @@ const SectionLP = () => {
                     
 
 
-                    <h1 className='text-3xl font-bold text-left text-blue_Night mt-1 md:mt-2 lg:mt-3'>
+                    <h1 className='text-3xl font-bold text-left  mt-1 md:mt-2 lg:mt-3'>
                         Ready to Capture More Leads?
                     </h1>                
                     <p className="text-md lg:text-base text-normal ">
@@ -123,6 +123,7 @@ const SectionLP = () => {
                             title='Contact us'
                             icon={<FaWpforms/>}
                             position='right'
+                            otherClassesButton="mt-10"
                         />
                     </Link>
                     
