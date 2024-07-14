@@ -1,15 +1,15 @@
 export const navItems = [
     { id: 1, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
-    { id: 2, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
+    { id: 2, name: "Services", link: "#", ariaLabel: "Navigate to services page", },
     { id: 3, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
   ];
 
   export const navItemsStatic = [
-    { id: 1, name: "Top Speed", link: "/our-team", ariaLabel: "Navigate to top speed page", },
-    { id: 2, name: "Landing Page", link: "/services", ariaLabel: "Navigate to landing page", },
-    { id: 3, name: "WebMaster Pro", link: "/webmaster-pro", ariaLabel: "Navigate to webmaster-pro", },
+    { id: 1, name: "Top Speed", link: "/top-speed", ariaLabel: "Navigate to top speed page", },
+    { id: 2, name: "Landing Page", link: "/landing-page", ariaLabel: "Navigate to landing page", },
+    { id: 3, name: "WebMaster Pro", link: "#", ariaLabel: "Navigate to webmaster-pro", },
     { id: 4, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
-    { id: 5, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
+    { id: 5, name: "Services", link: "#", ariaLabel: "Navigate to services page", },
     { id: 6, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
   ];
 

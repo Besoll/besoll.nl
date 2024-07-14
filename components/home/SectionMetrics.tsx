@@ -60,8 +60,8 @@ const SectionMetrics = () => {
                     <Image 
                         src='/top-speed.webp'
                         alt='pagespeed'
-                        width={250}
-                        height={120}
+                        width={1500}
+                        height={1916}
                         className="w-full h-auto rounded-lg
                                 shadow-xl md:shadow-md md:hover:shadow-2xl
                                 md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"

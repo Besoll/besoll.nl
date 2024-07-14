@@ -16,7 +16,7 @@ const Approach = () => {
                 title="Website Creation Deluxe" 
                 icon={<AceternityIcon order='Website' />}
                 description="Create a custom-designed website with stunning animations, fully licensed content, and optimization nearing 100 on Google Lighthouse. Optionally include high-converting landing pages to boost your Google ranking and lead generation."
-                link='/services/package-website'
+                // link='/services/package-website'
                 ariaLabel='navigate to website package'
                 >
                     <CanvasRevealEffect
@@ -28,7 +28,7 @@ const Approach = () => {
                 title="Social Media Mastery" 
                 icon={<AceternityIcon order='Social Media' />}
                 description="Manage your social media with business page creation, daily and weekly posts, and engaging activities to enhance your online presence."
-                link='/services/package-social-media'
+                // link='/services/package-social-media'
                 ariaLabel='navigate to Social Media package'
                 >
                     <CanvasRevealEffect
@@ -47,7 +47,7 @@ const Approach = () => {
                 title="The Total Web Solution" 
                 icon={<AceternityIcon order='Content Creator' />}
                 description="Combine the Website Creation Deluxe and Social Media Mastery packages, plus personalized content creation such as office photos, aerial shoots, and specialized website content. Explore options for e-commerce, hotel reservation systems, and custom software applications."
-                link='/services/package-content-creator'
+                // link='/services/package-content-creator'
                 ariaLabel='navigate to Content Creator package'
                 >
                     <CanvasRevealEffect
