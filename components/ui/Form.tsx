@@ -91,24 +91,8 @@ const ZofoForm: React.FC = () => {
   };
 
 
-  const handleSubmit = (event: FormEvent) => {
-    event.preventDefault();
-
-    // Validate all fields before submitting
-    const errors: FormErrors = {};
-    for (const [name, value] of Object.entries(formValues)) {
-      const error = validateField(name, value.toString());
-      if (error) {
-        errors[name] = error;
-      }
-    }
-    setFormErrors(errors);
-
-    // Check if there are any errors
-    const hasErrors = Object.values(errors).some(error => error !== '');
-    if (hasErrors) {
-      return; // Prevent submission if there are errors
-    }
+  const handleSubmit = () => {
+    
 
     setIsSubmitted(true);
     // Submit form data
@@ -137,6 +121,7 @@ const ZofoForm: React.FC = () => {
         {/* Hidden Inputs */}
         <input type="hidden" name="zf_referrer_name" value=""/>
         <input type="hidden" name="zf_redirect_url" value="https://owlweb/bedankt-pagina/"/>
+        <input type="hidden" name="zc_gad" value=""/>
         <input type="hidden" name="SingleLine4" value="OwlWeb" /> {/* FormName */}
         <input type="hidden" name="SingleLine5" value="https://owlweb.nl/contact" /> {/* URL */}
         <input type="hidden" name="SingleLine6" value="OwlWeb main" /> {/* AppName */}
@@ -228,7 +213,7 @@ const ZofoForm: React.FC = () => {
             </div>
 
 
-            <label>Choose the service</label>
+            {/* <label>Choose the service</label>
             <div>
               <input type="checkbox" id="Checkbox_1" name="Checkbox" value="Website" />
               <label htmlFor="Checkbox_1">Website</label>
@@ -258,7 +243,7 @@ const ZofoForm: React.FC = () => {
                     />
                     {formErrors.MultiLine && <p className="text-red text-xs">{formErrors.MultiLine}</p>}
                 </div>
-            </div>
+            </div> */}
           </div>
           
           {/* Submit Button */}

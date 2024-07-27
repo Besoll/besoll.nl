@@ -639,6 +639,103 @@ export const navItems = [
     }
   ];
 
+  export const pNumberingWaaS = [
+    {
+      id: 1,
+      title: "Discovery Phase: ",
+      desc1: "We start with an in-depth interview to understand your goals, review your previous websites, and explore your products and services.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Content Creation: ",
+      desc1: "Our photographer collaborates with you to capture compelling visuals of your team and offerings.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Copywriting: ",
+      desc1: "Our expert copywriters develop engaging and memorable headlines and subheadlines to captivate your audience.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 4,
+      title: "Development & Optimization: ",
+      desc1: "Our skilled Back-End and Front-End Developers, alongside SEO specialists, build your site, including up to 30 targeted landing pages (depending on your product and service range). ",
+      desc2: "The basic package includes 5 landing pages.",
+      desc3: "",
+    }
+  ];
+
+  export const peopleInvolvedWaaS = [
+    {
+      id: 1,
+      title: "Account manager ",
+    },
+    {
+      id: 2,
+      title: "Content Creator",
+    },
+    {
+      id: 3,
+      title: "Copywriter",
+    },
+    {
+      id: 4,
+      title: "Photographer",
+    },
+    {
+      id: 5,
+      title: "UI/UX Designer",
+    },
+    {
+      id: 6,
+      title: "Back-End Developer",
+    },
+    {
+      id: 7,
+      title: "Front-End Developer",
+    },
+    {
+      id: 8,
+      title: "SEO Optimiser",
+    }
+  ];
+
+  export const peopleInvolvedDRM = [
+    {
+      id: 1,
+      title: "Account manager ",
+    },
+    {
+      id: 2,
+      title: "Content Creator",
+    },
+    {
+      id: 3,
+      title: "Copywriter",
+    },
+    {
+      id: 4,
+      title: "Photographer",
+    },
+    {
+      id: 5,
+      title: "Graphic Designer",
+    },
+    {
+      id: 6,
+      title: "SEO Optimiser",
+    },
+    {
+      id: 7,
+      title: "SEA Specialist",
+    }
+  ];
+
   export const ourTeam = [
     {
       id: 1,

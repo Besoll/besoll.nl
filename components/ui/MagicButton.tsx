@@ -4,7 +4,7 @@ const MagicButton = ({
     title, icon, position, handleClick, otherClasses, otherClassesButton
 }: {
     title: string;
-    icon: React.ReactNode;
+    icon?: React.ReactNode;
     position: string;
     handleClick?: () => void;
     otherClasses?: string;

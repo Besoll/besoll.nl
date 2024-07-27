@@ -13,11 +13,11 @@ const Approach = () => {
         </h1>
         <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
             <Card 
-                title="Website Creation Deluxe" 
+                title="WaaS 1800€/month" 
                 icon={<AceternityIcon order='Website' />}
-                description="Create a custom-designed website with stunning animations, fully licensed content, and optimization nearing 100 on Google Lighthouse. Optionally include high-converting landing pages to boost your Google ranking and lead generation."
-                // link='/services/package-website'
-                ariaLabel='navigate to website package'
+                description="package offers custom website design with up to 10 landing pages. It includes professional photo shoots at your office. Starting with a mandatory 6-month period, we ensure your site is maintained and updated regularly."                
+                // link='/services/waas'
+                ariaLabel='Click here to learn more about our WaaS package.'
                 >
                     <CanvasRevealEffect
                         animationSpeed={5.1}
@@ -25,11 +25,11 @@ const Approach = () => {
                     />
             </Card>
             <Card 
-                title="Social Media Mastery" 
-                icon={<AceternityIcon order='Social Media' />}
-                description="Manage your social media with business page creation, daily and weekly posts, and engaging activities to enhance your online presence."
-                // link='/services/package-social-media'
-                ariaLabel='navigate to Social Media package'
+                title="DRM 2500€/month" 
+                icon={<AceternityIcon order='Digital Marketing' />}
+                description="Direct Response Marketing includes deep analysis and strategy creation to plan and develop up to 100 Google Ads and campaigns. We also provide Google Analytics setup, Google Tag Management, and proper UTM parameters implementation to track and measure realistic ROI with conversion rates and re-marketing for non-deal conversions. Starting with a mandatory 6-month period, we offer monthly reporting from the second month onward."
+                // link='/services/drm'
+                ariaLabel='Click here to learn more about our DRM package.'
                 >
                     <CanvasRevealEffect
                         animationSpeed={3}
@@ -44,11 +44,11 @@ const Approach = () => {
                 {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)]  bg-black/90" /> */}
             </Card>
             <Card 
-                title="The Total Web Solution" 
-                icon={<AceternityIcon order='Content Creator' />}
-                description="Combine the Website Creation Deluxe and Social Media Mastery packages, plus personalized content creation such as office photos, aerial shoots, and specialized website content. Explore options for e-commerce, hotel reservation systems, and custom software applications."
+                title="WaaS+DRM 4000€/month" 
+                icon={<AceternityIcon order='All in One' />}
+                description="This package is designed to enhance lead quality and reduce its average value to the lowest in the market. We control and track high-quality leads to achieve the lowest Cost Per Click (CPC). By combining these tools, we aim to deliver the highest market results. In our cases, one out of every three leads results in a contract with an average value of 8000 euros, while the lead cost is 300 euros. The package starts with a mandatory 6-month period with monthly payments."
                 // link='/services/package-content-creator'
-                ariaLabel='navigate to Content Creator package'
+                ariaLabel='Click here to learn more about our All-in-One package.'
                 >
                     <CanvasRevealEffect
                         animationSpeed={3}
@@ -99,18 +99,24 @@ const Card = ({
             </motion.div>
           )}
         </AnimatePresence>
-   
-        <Link href={link || '#'} aria-label={ariaLabel} className="relative z-20">
-          <div className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
-            {icon}
+          <div className="relative z-20">
+            <div className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
+              {icon}
+            </div>
+            <h2 className="text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center text-3xl">
+              {title}
+            </h2>
+            <h2 className="text-sm md:text-xl text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center" style={{color: '#e4ecff'}}>
+              {description}
+            </h2>
+            {hovered && (
+              <Link href={link || '#'} aria-label={ariaLabel} className="cursor-pointer">
+                <h2 className="text-sm text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center" style={{color: '#e4ecff'}}>
+                  {ariaLabel}
+                </h2>
+              </Link>
+            )}
           </div>
-          <h2 className="text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center text-3xl">
-            {title}
-          </h2>
-          <h2 className="text-sm text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center" style={{color: '#e4ecff'}}>
-            {description}
-          </h2>
-        </Link>
       </div>
     );
   };
