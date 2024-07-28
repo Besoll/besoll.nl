@@ -68,7 +68,7 @@ export default function RootLayout({
           strategy="beforeInteractive" 
       />    */}
       {/* <GoogleTagManager gtmId="GTM-5TDL8DP8" /> */}
-      <body className={`${inter.className} bg-black-100 text-white`}> 
+      <body className={`${inter.className} bg-owlOrange/10 text-black`}> 
           {children}     
       </body>
     </html>

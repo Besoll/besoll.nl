@@ -1048,4 +1048,100 @@ export const navItems = [
       department: "Support Team",
     },
   ];
+
+
+  export const logoCarousel = [
+  {
+    id: 1,
+    name: 'AWS',
+  },
+  {
+    id: 2,
+    name: 'BlackmagicDesign',
+  },
+  {
+    id: 3,
+    name: 'Cloudflare',
+  },
+  {
+    id: 4,
+    name: 'CookieYes',
+  },
+  {
+    id: 5,
+    name: 'Elementor',
+  },
+  {
+    id: 6,
+    name: 'Figma',
+  },
+  {
+    id: 7,
+    name: 'GoogleAds',
+  },
+  {
+    id: 8,
+    name: 'Instapage',
+  },
+  {
+    id: 9,
+    name: 'Logo_Google_Analytics',
+  },
+  {
+    id: 10,
+    name: 'Mailchimp',
+  },
+  {
+    id: 11,
+    name: 'Meta',
+  },
+  {
+    id: 12,
+    name: 'Microsoft',
+  },
+  {
+    id: 13,
+    name: 'monday.com',
+  },
+  {
+    id: 14,
+    name: 'Next.js',
+  },
+  {
+    id: 15,
+    name: 'Semrush',
+  },
+  {
+    id: 16,
+    name: 'Slack',
+  },
+  {
+    id: 17,
+    name: 'Tiktok',
+  },
+  {
+    id: 18,
+    name: 'TransIP',
+  },
+  {
+    id: 19,
+    name: 'Youtube',
+  },
+  {
+    id: 20,
+    name: 'Zapier',
+  },
+  {
+    id: 21,
+    name: 'ZOHO',
+  },
+  {
+    id: 22,
+    name: 'github',
+  },
+  {
+    id: 23,
+    name: 'tailwindcss',
+  },
+  ];
   

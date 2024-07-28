@@ -30,7 +30,7 @@ const ProductUSP = () => {
               <PeopleTags 
                 Opener='People Involved: '
                 Tags={peopleInvolvedDRM}
-                OtherClasses='w-fit p-1 outline outline-offset-2 place-self-auto outline-owlOrange/25 bg-owlOrange/25 uppercase hover:text-white/60 hover:outline-white/60'
+                OtherClasses='w-fit p-1 text-owlBrown/70 outline outline-offset-2 place-self-auto outline-owlOrange/40 bg-owlOrange/40 uppercase hover:text-owlBrown hover:outline-owlOrange flex justify-center items-center'
               />
 
               <Link href="#" aria-label='navigate to DRM page'>
@@ -48,7 +48,6 @@ const ProductUSP = () => {
                   width={800}
                   height={800}
                   className="w-full h-auto rounded-lg
-                          shadow-xl md:shadow-md md:hover:shadow-2xl
                           md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
               />    
           </div>                
@@ -76,7 +75,7 @@ const ProductUSP = () => {
               <PeopleTags 
                 Opener='People Involved: '
                 Tags={peopleInvolvedWaaS}
-                OtherClasses='w-fit p-1 outline outline-offset-2 place-self-auto outline-owlOrange/25 bg-owlOrange/25 uppercase hover:text-white/60 hover:outline-white/60 flex justify-center items-center'
+                OtherClasses='w-fit p-1 text-owlBrown/70 outline outline-offset-2 place-self-auto outline-owlOrange/40 bg-owlOrange/40 uppercase hover:text-owlBrown hover:outline-owlOrange flex justify-center items-center'
               />
               <Link href="#" aria-label='navigate to WaaS page'>
                   <MagicButton 
@@ -93,7 +92,6 @@ const ProductUSP = () => {
                   width={1500}
                   height={998}
                   className="w-full h-auto rounded-lg flex md:hidden
-                          shadow-xl md:shadow-md md:hover:shadow-2xl
                           md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
               />  
               <Image
@@ -102,7 +100,6 @@ const ProductUSP = () => {
                   width={1000}
                   height={1724}
                   className="w-full h-auto rounded-lg hidden md:flex
-                          shadow-xl md:shadow-md md:hover:shadow-2xl
                           md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
               />    
           </div>                
