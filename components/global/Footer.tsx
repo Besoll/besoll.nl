@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { FooterItemsCredentials, FooterItemsIcons, FooterItemsPages, FooterItemsTerms } from '../global/footerItems'
-import { footerItemsCredentials, footerItemsIcons, footerItemsPages, footerItemsTerms } from '@/data'
+import { footerItemsCredentials, footerItemsIcons, footerItemsPages, footerItemsPages2, footerItemsTerms } from '@/data'
 import { FaLocationArrow } from 'react-icons/fa'
 import dynamic from 'next/dynamic'
 const Logo = dynamic(() => import('@/components/global/Logo'))
@@ -9,7 +9,7 @@ const MagicButton = dynamic(() => import('@/components/ui/MagicButton'))
 
 const Footer = () => {
   return (
-    <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg bg-black text-gray-300 text-md md:text-base mt-20 md:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-20" >
+    <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg bg-black text-gray-300 text-md md:text-base  md:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-20" >
 
         <div className="max-w-7xl flex flex-col lg:flex-row justify-center items-center lg:justify-between lg:items-start gap-8 md:gap-8 lg:gap-32">
 
@@ -51,7 +51,14 @@ const Footer = () => {
                     </ul> 
                 </div>
                 <div className='w-full flex flex-row lg:flex-col justify-center lg:justify-start items-center lg:items-start gap-8 lg:gap-2 lg:mt-8 lg:ml-8'>
-                    <FooterItemsIcons footerItemsIcons={footerItemsIcons} />
+                    {/* <FooterItemsIcons footerItemsIcons={footerItemsIcons} /> */}
+                    <ul className='w-full flex flex-col text-left md:w-full md:max-w-[250px] gap-2'>
+                        <li className="w-full font-semibold uppercase my-2 px-2">
+                            What is?
+                            <hr className="my-2 border-black-400 md:mx-auto"/>
+                        </li>
+                        <FooterItemsPages footerItemsPages={footerItemsPages2} />
+                    </ul>
                 </div> 
             </div>
             

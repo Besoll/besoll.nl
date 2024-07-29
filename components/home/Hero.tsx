@@ -20,17 +20,28 @@ const FaWhatsapp = dynamic(() => import('react-icons/fa').then(mod => mod.FaWhat
 
 const Hero = () => {
   return (
-    <div className='relative w-full pb-20 pt-16 sm:pt-36 min-h-screen flex justify-center items-start xs:items-center
+    <div className='relative w-full pb-20 pt-16 sm:pt-20 min-h-screen flex justify-center items-start xs:items-center
     '>
         <SpotlightDivs />
         <BgGrid />          
 
         <div className='flex justify-center relative my-5 z-10 flex-col items-center gap-8 md:gap-0'>
             <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center'> 
-                <div className='relative w-[240px] h-[92.9025543px] md:w-[350px] md:h-[135.482892px] lg:w-[450px] lg:h-[174.192289px] xl:w-[500px] xl:h-[193,546988px] aspect-[0.38709398] mb-6'>
+                {/* <div className='relative w-[240px] h-[92.9025543px] md:w-[350px] md:h-[135.482892px] lg:w-[450px] lg:h-[174.192289px] xl:w-[500px] xl:h-[193,546988px] aspect-[0.38709398] mb-6'>
                     <Logo className='absolute object-cover bg-center right-0 top-0 w-full h-auto'/>
-                </div>      
-                <h2 className='uppercase tracking-widest text-xs text-center text-owlOrange max-w-80'>
+                </div>       */}
+                <div className='relative w-full rounded-xl h-[230px] sm:h-[330px] md:h-[350px] lg:max-w-[600px] lg:h-[400px] xl:max-w-[650px] xl:h-[450px] 2xl:max-w-[1000px] 2xl:h-[600px] mb-6'>
+                        <Image
+                            layout='fill'
+                            objectFit='cover'
+                            objectPosition='center'
+                            style={{position: 'absolute'}}
+                            src='/hero-1.webp'
+                            alt='owlweb studio surprising their clients'
+                            className='rounded-xl'
+                        />
+                </div>
+                <h2 className='uppercase tracking-widest text-xs text-center text-white max-w-80 -mt-10 z-30'>
                     The first time ever
                 </h2>
 

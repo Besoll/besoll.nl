@@ -20,6 +20,13 @@ export const navItems = [
     { id: 4, name: "Testimonials", link: "#", ariaLabel: "Navigate to testimonials page", },
     { id: 5, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
   ];
+  export const footerItemsPages2 = [
+    { id: 1, name: "Package DRM", link: "#", ariaLabel: "Navigate to page Direct response marketing", },
+    { id: 2, name: "Package WaaS", link: "#", ariaLabel: "Navigate to page Website as a Service", },
+    { id: 3, name: "Package All in One", link: "#", ariaLabel: "Navigate to All in One package", },
+    { id: 4, name: "Landing Page", link: "#", ariaLabel: "Navigate to testimonials page", },
+    { id: 5, name: "Top Speed", link: "/contact", ariaLabel: "Navigate to contact page", },
+  ];
   export const footerItemsTerms = [
     { id: 1, name: "Terms and Conditions", link: "#", ariaLabel: "Navigate to Terms and Conditions page", },
     { id: 2, name: "Disclaimer", link: "#", ariaLabel: "Navigate to Disclaimer page", },

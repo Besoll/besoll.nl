@@ -6,7 +6,7 @@ import { logoCarousel } from "@/data";
  
 export function LogoCarousel() {
   return (
-    <div className="h-[10rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+    <div className="h-[10rem] flex flex-col antialiased items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={logoCarousel}
         direction="right"

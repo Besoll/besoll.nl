@@ -87,7 +87,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="grayscale hover:grayscale-0 !cursor-pointer transition duration-500 relative overflow-hidden h-[100px] min-w-[100px]  rounded-xl flex justify-center items-center"
+            className="grayscale opacity-50 hover:opacity-100 hover:grayscale-0 !cursor-pointer transition duration-500 relative overflow-hidden h-[100px] min-w-[100px]  rounded-xl flex justify-center items-center"
             key={item.id}
           >
             <Image 
