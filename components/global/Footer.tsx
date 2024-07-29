@@ -9,7 +9,7 @@ const MagicButton = dynamic(() => import('@/components/ui/MagicButton'))
 
 const Footer = () => {
   return (
-    <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg bg-black text-gray-300 text-md md:text-base  md:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-20" >
+    <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg bg-black text-gray-300 text-md md:text-base  px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-20" >
 
         <div className="max-w-7xl flex flex-col lg:flex-row justify-center items-center lg:justify-between lg:items-start gap-8 md:gap-8 lg:gap-32">
 
