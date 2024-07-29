@@ -10,6 +10,7 @@ const OurServices = dynamic(() => import('@/components/home/OurServices'))
 const FormSection = dynamic(() => import('@/components/home/FormSection')) 
 const HowWeBuild = dynamic(() => import('@/components/home/HowWeBuild')) 
 const Approach = dynamic(() => import('@/components/home/Approach')) 
+const CompanyUSP = dynamic(() => import('@/components/home/CompanyUSP')) 
 const ProductUSP = dynamic(() => import('@/components/home/ProductUSP')) 
 
 
@@ -18,6 +19,7 @@ export default function Home() {
     <main className="relative flex justify-center items-center flex-col mx-auto overflow-clip ">       
           <Hero />
           <LogoCarousel />
+          <CompanyUSP />
           <ProductUSP />
           <Approach />
           <SectionMetrics />
