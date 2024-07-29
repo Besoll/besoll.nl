@@ -26,7 +26,7 @@ const NavigationStatic = ({
     const [nav, setNav] = useState(false);
 
   return (
-    <nav className='w-full flex justify-center items-center h-20 text-primary bg-black-100 shadow-lg fixed nav z-10 '>
+    <nav className='w-full flex justify-center items-center h-20 text-primary bg-black-100 shadow-lg fixed nav z-50 '>
         <div className="w-full max-w-7xl flex justify-between items-center px-4">
             <Link href="/" aria-label="navigate to home page" className="h-16 flex">
             <Logo className="h-full w-auto hover:scale-105 transition duration-300 ease-in-out"/>

@@ -11,10 +11,9 @@ export const InfiniteMovingCards = ({
   pauseOnHover = true,
   className,
 }: {
-  items: {
-    quote: string;
-    name: string;
-    title: string;
+  items: {    
+    id: number;
+    item: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -81,51 +80,22 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap",
+          " flex min-w-full shrink-0 gap-6 md:gap-16 py-4 w-max flex-wrap md:flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <li
-            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-5 md:p-16 md:w-[60vw]"
-            style={{
-              background: 'rgb(4,7,29)',
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-            }}
-            key={idx}
+            className="grayscale hover:grayscale-0 !cursor-pointer transition duration-500 relative overflow-hidden h-[100px] min-w-[100px]  rounded-xl flex justify-center items-center"
+            key={item.id}
           >
-            <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                    <div className="me-3">
-                        <Image 
-                            src="/profile.svg"
-                            alt={item.name}
-                            width={40}
-                            height={40}
-                            className=""
-                        />
-                    </div>
-                    <div className="flex flex-col gap-1">
-                        <span className=" text-xl leading-[1.6] text-white font-bold">
-                            {item.name}
-                        </span>
-                        <span className=" text-sm leading-[1.6] text-white-200 font-normal">
-                            {item.title}
-                        </span>
-                    </div>  
-                </span>
-              </div>
-            </blockquote>
+            <Image 
+                src={`/logos/${item.item}.svg`} 
+                alt={`logo ${item.item}`} 
+                fill
+                style={{ objectFit: "fill"}}
+            />
           </li>
         ))}
       </ul>

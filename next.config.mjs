@@ -31,10 +31,6 @@ export default withPWA({
 webpack: (config, { dev, isServer }) => {
 if (!dev && !isServer) {
 config.optimization.minimizer.push(new TerserPlugin());
-config.module.rules.push({
-  test: /\.svg$/,
-  use: [{ loader: "svgr/webpack", options: {icon: true }}]
-});
 }
 return config;
 },

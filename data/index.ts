@@ -1053,95 +1053,95 @@ export const navItems = [
   export const logoCarousel = [
   {
     id: 1,
-    name: 'AWS',
+    item: 'AWS',
   },
   {
     id: 2,
-    name: 'BlackmagicDesign',
+    item: 'BlackmagicDesign',
   },
   {
     id: 3,
-    name: 'Cloudflare',
+    item: 'Cloudflare',
   },
   {
     id: 4,
-    name: 'CookieYes',
+    item: 'CookieYes',
   },
   {
     id: 5,
-    name: 'Elementor',
+    item: 'Elementor',
   },
   {
     id: 6,
-    name: 'Figma',
+    item: 'Figma',
   },
   {
     id: 7,
-    name: 'GoogleAds',
+    item: 'GoogleAds',
   },
   {
     id: 8,
-    name: 'Instapage',
+    item: 'Instapage',
   },
   {
     id: 9,
-    name: 'Logo_Google_Analytics',
+    item: 'Logo_Google_Analytics',
   },
   {
     id: 10,
-    name: 'Mailchimp',
+    item: 'Mailchimp',
   },
   {
     id: 11,
-    name: 'Meta',
+    item: 'Meta',
   },
   {
     id: 12,
-    name: 'Microsoft',
+    item: 'Microsoft',
   },
   {
     id: 13,
-    name: 'monday.com',
+    item: 'monday.com',
   },
   {
     id: 14,
-    name: 'Next.js',
+    item: 'Next.js',
   },
   {
     id: 15,
-    name: 'Semrush',
+    item: 'Semrush',
   },
   {
     id: 16,
-    name: 'Slack',
+    item: 'Slack',
   },
-  {
-    id: 17,
-    name: 'Tiktok',
-  },
+  // {
+  //   id: 17,
+  //   name: 'Tiktok',
+  // },
   {
     id: 18,
-    name: 'TransIP',
+    item: 'TransIP',
   },
   {
     id: 19,
-    name: 'Youtube',
+    item: 'Youtube',
   },
   {
     id: 20,
-    name: 'Zapier',
+    item: 'Zapier',
   },
   {
     id: 21,
-    name: 'ZOHO',
+    item: 'ZOHO',
   },
-  {
-    id: 22,
-    name: 'github',
-  },
+  // {
+  //   id: 22,
+  //   name: 'github',
+  // },
   {
     id: 23,
-    name: 'tailwindcss',
+    item: 'tailwindcss',
   },
   ];
   
