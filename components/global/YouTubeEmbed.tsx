@@ -8,7 +8,7 @@ interface YouTubeEmbedProps {
   height?: string;
 }
 
-const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({ videoId, width = "560", height = "315" }) => {
+const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({ videoId, width = "400", height = "235" }) => {
   const src = `https://www.youtube.com/embed/${videoId}?si=KeWrD_ABdb9_QO8J`;
 
   return (
