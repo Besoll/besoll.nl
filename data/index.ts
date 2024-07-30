@@ -5,27 +5,28 @@ export const navItems = [
   ];
 
   export const navItemsStatic = [
-    { id: 1, name: "Top Speed", link: "/top-speed", ariaLabel: "Navigate to top speed page", },
-    { id: 2, name: "Landing Page", link: "/landing-page", ariaLabel: "Navigate to landing page", },
-    { id: 3, name: "WebMaster Pro", link: "#", ariaLabel: "Navigate to webmaster-pro", },
-    { id: 4, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
-    { id: 5, name: "Services", link: "#", ariaLabel: "Navigate to services page", },
-    { id: 6, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
+    { id: 1, name: "DRM", link: "/direct-response-marketing", ariaLabel: "Navigate to DRM", },
+    { id: 2, name: "WaaS", link: "website-as-a-service", ariaLabel: "Navigate to WaaS", },
+    { id: 3, name: "Top Speed", link: "/top-speed", ariaLabel: "Navigate to top speed page", },
+    { id: 4, name: "Landing Page", link: "/landing-page", ariaLabel: "Navigate to landing page", },
+    { id: 5, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
+    { id: 6, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
+    { id: 7, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
   ];
 
   export const footerItemsPages = [
     { id: 1, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
     { id: 2, name: "Projects", link: "#", ariaLabel: "Navigate to projects page", },
-    { id: 3, name: "Services", link: "#", ariaLabel: "Navigate to services page", },
+    { id: 3, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
     { id: 4, name: "Testimonials", link: "#", ariaLabel: "Navigate to testimonials page", },
     { id: 5, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
   ];
   export const footerItemsPages2 = [
-    { id: 1, name: "Package DRM", link: "#", ariaLabel: "Navigate to page Direct response marketing", },
-    { id: 2, name: "Package WaaS", link: "#", ariaLabel: "Navigate to page Website as a Service", },
-    { id: 3, name: "Package All in One", link: "#", ariaLabel: "Navigate to All in One package", },
-    { id: 4, name: "Landing Page", link: "#", ariaLabel: "Navigate to testimonials page", },
-    { id: 5, name: "Top Speed", link: "/contact", ariaLabel: "Navigate to contact page", },
+    { id: 1, name: "Package DRM", link: "/direct-response-marketing", ariaLabel: "Navigate to page Direct response marketing", },
+    { id: 2, name: "Package WaaS", link: "/website-as-a-service", ariaLabel: "Navigate to page Website as a Service", },
+    { id: 3, name: "Package All in One", link: "/all-in-one", ariaLabel: "Navigate to All in One package", },
+    { id: 4, name: "Landing Page", link: "/landing-page", ariaLabel: "Navigate to testimonials page", },
+    { id: 5, name: "Top Speed", link: "/top-speed", ariaLabel: "Navigate to contact page", },
   ];
   export const footerItemsTerms = [
     { id: 1, name: "Terms and Conditions", link: "#", ariaLabel: "Navigate to Terms and Conditions page", },

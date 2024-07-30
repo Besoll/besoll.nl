@@ -8,6 +8,7 @@ import { secLPsteps, secLPsteps2, secLPsteps3 } from "@/data";
 import dynamic from 'next/dynamic'
 import Tag from "../global/Tag";
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
+const CtaSection = dynamic(() => import('@/components/global/CtaSection')) 
 const SwiperLP = dynamic(() => import('@/components/ui/SwiperLP')) 
 const QuestionMark = dynamic(() => import('@/components/global/lotties/QuestionMark')) 
 const AngryUser = dynamic(() => import('@/components/global/lotties/AngryUser')) 
@@ -94,7 +95,7 @@ const SectionLP = () => {
                 />
             </Link>
 
-
+            <CtaSection title="Ready to Capture More Leads?" otherClasses="bg-blue_Light/30" />
 
             <div className='relative max-w-7xl w-full flex justify-center md:justify-between flex-col md:flex-row gap-4 items-start mt-8'>
                 <div className='w-full md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4'>    
@@ -108,24 +109,6 @@ const SectionLP = () => {
                     <div className="w-full flex flex-col md:flex-row justify-center items-stretch gap-4 pb-20">
                         <StepsWithoutNumeric steps={secLPsteps3} otherClasses="bg-owlBrown/10" /> 
                     </div>
-
-                    
-
-
-                    <h1 className='text-3xl font-bold text-left  mt-1 md:mt-2 lg:mt-3'>
-                        Ready to Capture More Leads?
-                    </h1>                
-                    <p className="text-md lg:text-base text-normal ">
-                        Contact us today for a free consultation. Let&apos;s create high-performing landing pages that attract, engage, and convert your ideal customers.
-                    </p>
-                    <Link href="/contact" aria-label='navigate to contact page' className="hidden md:flex">
-                        <MagicButton 
-                            title='Contact us'
-                            icon={<FaWpforms/>}
-                            position='right'
-                            otherClassesButton="mt-10"
-                        />
-                    </Link>
                     
                 </div>
                 <div className='w-full md:w-1/3 h-auto md:py-20'>

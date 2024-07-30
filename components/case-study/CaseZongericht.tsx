@@ -170,7 +170,7 @@ const CaseZongericht = () => {
                 </div>
             </div>
 
-            <CtaSection />
+            <CtaSection title="Ready to upgrade?" otherClasses="bg-blue_Light/30" />
 
             
 

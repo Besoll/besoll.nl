@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaWpforms } from 'react-icons/fa'
-
-
-import dynamic from 'next/dynamic'
 import { StepsWithNumeric4row } from "../ui/StepsWithNumeric4row";
 import { secMetricsNumeric, secMetricsSteps } from "@/data";
 import { StepsWithoutNumeric } from "../ui/StepsWithoutNumeric";
 import YouTubeEmbed from "../global/YouTubeEmbed";
-const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
+
+
+import dynamic from 'next/dynamic'
+const CtaSection = dynamic(() => import('@/components/global/CtaSection')) 
 const Metrics = dynamic(() => import('@/components/global/lotties/Metrics')) 
 
 const SectionMetrics = () => {
@@ -64,7 +63,7 @@ const SectionMetrics = () => {
 
            
 
-            <div className='relative max-w-7xl w-full flex justify-center md:justify-between flex-col md:flex-row-reverse gap-4 items-start'>
+            <div className='relative max-w-7xl w-full flex justify-center md:justify-between flex-col md:flex-row-reverse gap-4 items-start py-6 md:py-32'>
                 <div className='w-full md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4'>
                     <h1 className='text-3xl font-bold text-left text-owlBrown'>
                         See the Difference
@@ -92,34 +91,9 @@ const SectionMetrics = () => {
                             <span className="font-bold">View the Results: </span> 
                             See how your site scores on speed, mobile-friendliness, for SEO and more. Compare with what we guarantee for your new website!
                         </p>
-                    </div>                      
-
-
-                    <h1 className='text-3xl font-bold text-left mt-1 md:mt-2 lg:mt-3'>
-                        Ready to upgrade?
-                    </h1> 
-
-                    <Image 
-                        src='/portfolio/2.webp'
-                        alt='pagespeed'
-                        width={1182}
-                        height={828}
-                        className="w-full h-auto rounded-lg shadow-xl flex md:hidden"
-                    />  
-
-                    <p className="text-md lg:text-base text-normal ">
-                        Contact us today for a free consultation and discover how we can boost your online presence. Let&apos;s create a website that impresses and delivers results!
-                    </p>
-                    <Link href="#contact" aria-label='navigate to contact page' className="mt-4 md:mt-0 w-full md:w-fit">
-                        <MagicButton 
-                            title='Contact us'
-                            icon={<FaWpforms/>}
-                            position='right'
-                        />
-                    </Link>
-                    
+                    </div> 
                 </div>
-                <div className='w-full md:w-1/3 h-auto md:py-20 hidden md:flex'>
+                <div className='w-full md:w-1/3 h-auto  '>
                     <Image 
                         src='/portfolio/2.webp'
                         alt='pagespeed'
@@ -132,7 +106,7 @@ const SectionMetrics = () => {
                 </div>
             </div>
 
-
+            <CtaSection title="Ready to upgrade?" otherClasses="bg-blue_Light/30" />
 
 
             <div className='relative max-w-7xl w-full flex justify-center gap-4 items-center py-32 flex-col md:flex-row px-2'>
