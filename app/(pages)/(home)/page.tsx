@@ -1,6 +1,5 @@
 import { LogoCarousel } from "@/components/global/LogoCarousel"
 import Hero from "@/components/home/Hero"
-import { logoCarousel } from "@/data"
 
 import dynamic from 'next/dynamic'
 
@@ -12,6 +11,7 @@ const HowWeBuild = dynamic(() => import('@/components/home/HowWeBuild'))
 const Approach = dynamic(() => import('@/components/home/Approach')) 
 const CompanyUSP = dynamic(() => import('@/components/home/CompanyUSP')) 
 const ProductUSP = dynamic(() => import('@/components/home/ProductUSP')) 
+const CaseStudy = dynamic(() => import('@/components/home/CaseStudy')) 
 
 
 export default function Home() {
@@ -22,6 +22,7 @@ export default function Home() {
           <CompanyUSP />
           <ProductUSP />
           <Approach />
+          <CaseStudy />
           <SectionMetrics />
           <SectionLP />
           {/* 

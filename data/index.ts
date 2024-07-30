@@ -469,6 +469,65 @@ export const navItems = [
     }
   ];
 
+  export const secCaseStudyZongerichtStrategy = [
+    {
+      id: 1,
+      title: "Market Research and Target Segmentation:",
+      startDesc1: ">",
+      desc1: "Zongericht already had vital market research identifying their target audience.",
+      startDesc2: ">",
+      desc2: "We analyzed this research to pinpoint several key target groups.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Digital Marketing Campaigns:",
+      startDesc1: ">",
+      desc1: "We diversified their digital marketing strategy and lowered advertising spend on the main website.",
+      startDesc2: ">",
+      desc2: "Created 28 landing pages, each tailored to different services, solar panel brands, regions, and roof types.",
+      startDesc3: ">",
+      desc3: "Launched highly customized Google Ads campaigns for each landing page.",
+      startDesc4: ">",
+      desc4: "Set up Google Analytics 4 and used Google Tag Manager to track all conversions.",
+    },
+    {
+      id: 3,
+      title: "Advanced Tracking Techniques:",
+      startDesc1: ">",
+      desc1: "Implemented customized UTM parameters to track users' journeys from ad click to conversion.",
+      startDesc2: ">",
+      desc2: "Used specialized JS snippets for deeper user tracking and analysis.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 4,
+      title: "Optimizing User Experience:",
+      startDesc1: ">",
+      desc1: "Improved landing page speed and performance, crucial for clients like Dutch farmers with poor internet connections.",
+      startDesc2: ">",
+      desc2: "Ensured landing pages were super fast, user-friendly, and highly effective at converting visitors.",
+      startDesc3: "",
+      desc3: "",
+    },
+    {
+      id: 5,
+      title: "Boosting Trust with Testimonials:",
+      startDesc1: ">",
+      desc1: "Launched a Testimonials project featuring real Zongericht clients sharing their success stories.",
+      startDesc2: ">",
+      desc2: "Organized a team to handle client interactions, including calling, meeting, contracting, and photographing clients with their solar panels.",
+      startDesc3: ">",
+      desc3: "Created compelling testimonials with aerial shots and real stories, enhancing trust and credibility.",
+      startDesc4: ">",
+      desc4: "Each homeowner received an honorarium, expensive wine, and flowers for their participation.",
+      startDesc5: ">",
+      desc5: "This tactic also supported our re-marketing strategy and affiliate marketing, offering compensations and discounts for recommendations.",
+    }
+  ];
+
   export const secMetricsSteps = [
     {
       id: 1,
@@ -488,6 +547,30 @@ export const navItems = [
       id: 3,
       title: "Happy Visitors:",
       desc1: "Users love our easy-to-use sites that work perfectly on phones, tablets, and computers.",
+      desc2: "",
+      desc3: "",
+    }
+  ];
+
+  export const caseZongerichtChallenge = [
+    {
+      id: 1,
+      title: "Low-quality leads",
+      desc1: "Low-quality leads leading to wasted time and resources in the Sales department.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Not Maximized ROI:",
+      desc1: "High expenses on unrealistic inspections. Reducing Wasted Time and Resources in Sales",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Poor Lead Conversion Rates",
+      desc1: "High lead price with poor lead conversion to deal rates - From 30-35 Leads to 1 Deal.",
       desc2: "",
       desc3: "",
     }

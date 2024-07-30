@@ -9,7 +9,7 @@ import dynamic from 'next/dynamic'
 const Tag = dynamic(() => import('@/components/global/Tag'))
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 
-const ProductUSP = () => {
+const CompanyUSP = () => {
   return (
     <section className='w-full py-20 pb-40 px-4 md:px-8 flex justify-center items-center flex-col gap-16 md:gap-32' id='productUSP'>
       <div className='w-full flex flex-col gap-4 justify-center items-center'>
@@ -63,4 +63,4 @@ const ProductUSP = () => {
   )
 }
 
-export default ProductUSP
+export default CompanyUSP
