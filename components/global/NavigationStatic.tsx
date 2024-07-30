@@ -35,7 +35,7 @@ const NavigationStatic = ({
                 {navItemsStatic.map((navItem: any) => (  
                     <li
                         key={navItem.id}
-                        className="nav-links px-2 cursor-pointer capitalize text-sm xl:text-base font-xl:font-semibold hover:scale-105 text-owlOrange hover:text-neutral-300 duration-300 link-underline
+                        className="nav-links px-2 cursor-pointer capitalize text-sm xl:text-base font-xl:font-semibold hover:scale-105 text-neutral-300 hover:text-owlOrange duration-300 link-underline
                         xl:px-6 lg:px-3 md:px-1 "
                     >
                         <Link 
