@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 const titleBL = 'OwlWeb - we create web';
 const colorBL = '#FDA800'; // orange
 const urlBL = 'https://owlweb.nl';
-const imageBL = 'https://www.owlweb.nl/_next/image?url=%2Fmeta-owlweb-main.webp&w=1080&q=75';
+const imageBL = 'https://www.owlweb.nl/_next/image?url=%2Fhero-1.webp&w=3840&q=75';
 const descriptionBL = 'At OwlWeb, we specialize in creating high-performance websites and landing pages using the latest technologies. Our team of experts ensures your site is fast, optimized, and ranks higher on search engines.';
 const creatorBL = "B. Kavzharadze - OwlWeb";
 

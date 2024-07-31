@@ -41,11 +41,11 @@ const OurTeam = () => {
 
             <div className='w-full md:max-w-7xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10 pt-40'>
                 <h1 className='heading md:text-left'>
-                    Why Work Wit {' '} 
+                    Why Work With {' '} 
                     <span className='text-owlBrown'> Us?</span>
                 </h1>
                 <p className="text-md lg:text-base text-normal md:leading-3">
-                    WAt OwlWeb Studio, we believe in the magic of collaboration and creativity. Our team is dedicated to turning your vision into a reality with the latest tech and innovative design. We love what we do, and we can't wait to exceed your expectations.
+                    At OwlWeb Studio, we thrive on the power of collaboration and creativity. Our dedicated team is passionate about transforming your vision into reality using cutting-edge technology and innovative design. We are committed to delivering exceptional results and exceeding your expectations.
                 </p>
                 <p className="text-md lg:text-base text-normal md:leading-3 mt-4">
                     <span className=" text-owlBrown">Ready to get started?</span> Give us a hoot and let's create something amazing together!

@@ -1,13 +1,13 @@
-import NavigationStatic  from "@/components/global/NavigationStatic";
+import NavigationStatic from "@/components/global/NavigationStatic";
 import { navItemsStatic } from "@/data";
 import type { Metadata, Viewport  } from "next";
 import dynamic from 'next/dynamic'
 const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
-const titleBL = 'Top Speed';
-const urlBL = 'https://owlweb.nl/top-speed';
-const imageBL = 'https://www.owlweb.nl/_next/image?url=%2Ftop-speed-white.webp&w=3840&q=75';
-const descriptionBL = 'At OwlWeb Studio, we ensure your website stands out with blazing-fast speed and seamless navigation.';
+const titleBL = 'Direct Response Marketing';
+const urlBL = 'https://owlweb.nl/direct-response-marketing';
+const imageBL = 'https://www.owlweb.nl/_next/image?url=%2Fdrm-1.webp&w=1920&q=75';
+const descriptionBL = 'Direct response marketing is a strategy focused on getting an immediate reaction from consumers, like visiting a website, making a purchase, or sharing a social media post. Unlike long-term brand building or awareness campaigns, direct response marketing aims for quick, specific actions. This approach makes it easier to track the return on investment (ROI) since the results are immediate and measurable.';
 const creatorBL = "B. Kavzharadze - OwlWeb";
 
 export const metadata: Metadata = {
