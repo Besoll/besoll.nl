@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { FaLocationArrow, FaWpforms } from 'react-icons/fa'
 import { StepsWithNumeric } from "../ui/StepsWithNumeric";
 import { StepsWithoutNumeric } from "../ui/StepsWithoutNumeric";
-import { drm5Steps, secLPsteps, secLPsteps2, secLPsteps3 } from "@/data";
+import { drm5Steps, drmExamples, secLPsteps, secLPsteps2, secLPsteps3 } from "@/data";
 
 
 import dynamic from 'next/dynamic'
@@ -12,8 +12,8 @@ const Tag = dynamic(() => import('@/components/global/Tag'))
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 const CtaSection = dynamic(() => import('@/components/global/CtaSection')) 
 const DRMtable = dynamic(() => import('@/components//global/lotties/Search')) 
-const QuestionMark = dynamic(() => import('@/components/global/lotties/QuestionMark')) 
-const AngryUser = dynamic(() => import('@/components/global/lotties/AngryUser')) 
+const Gads = dynamic(() => import('@/components/global/lotties/UserSearch')) 
+const AngryUser = dynamic(() => import('@/components/global/lotties/PhoneGads')) 
 const PowerfulMagnet = dynamic(() => import('@/components/global/lotties/PowerfulMagnet')) 
  
 
@@ -68,49 +68,41 @@ const SectionLP = () => {
                     <p className="text-center text-md lg:text-xl text-lg max-w-[500px]  md:mt-0">
                         At OwlWeb Studio, we specialize in crafting direct response marketing (DRM) campaigns that drive immediate and measurable results. Here&apos;s how we do it:
                     </p>  
-                <StepsWithNumeric steps={drm5Steps}  otherClasses="bg-white hover:bg-owlOrange hover:text-white" />      
+                <StepsWithNumeric steps={drm5Steps}  otherClasses="bg-white hover:bg-owlOrange hover:text-white mt-4" />      
             </div>           
 
 
 
-            <div className="max-w-7xl w-full h-full flex justify-center flex-col gap-4 bg-owlBrown/10 rounded-lg pt-40 px-8 relative ">
+            <div className="max-w-7xl w-full h-full flex justify-center flex-col gap-4 pt-40 px-2 relative ">
 
-                <div className="absolute w-64 h-auto -top-12 right-0">
-                    <QuestionMark />
+                <div className="absolute w-64 h-auto -top-12 right-0 py-12">
+                    <Gads />
                 </div>
-                <p className="text-3xl font-bold text-right">
-                    How Landing Pages Bring in New Leads
+                <p className="text-3xl font-bold text-right mt-16 px-4">
+                    Direct Response Marketing Examples by OwlWeb Studio
                 </p>
 
                 <div className="w-full flex flex-row gap-4 relative justify-end items-end">
-                    <p className=" text-md lg:text-xl text-lg text-right pl-12">
-                        Imagine a customer searching for "Red Mountain Electric Bicycle." They find your website but are overwhelmed by all the other products you offer. Frustrated, they leave and look elsewhere.
+                    <p className=" text-md lg:text-xl text-lg text-right px-4">
+                        Direct response marketing (DRM) campaigns are designed to elicit an immediate action from your audience, regardless of the channel used. Whether it&apos;s social media, email, print, TV, or even influencer marketing, the key is to include a compelling call to action that directs consumers towards your campaign goals. 
                     </p>
-                    <div className="w-28 absolute -top-6 -left-8">
-                        <AngryUser />
-                    </div>
                 </div>
 
 
-                <p className="text-md lg:text-xl text-lg text-right">
-                    But with a dedicated landing page:
+                <p className="text-md lg:text-xl text-lg text-right px-4">
+                    Here are some powerful examples of how we implement DRM at OwlWeb Studio:
                 </p>
 
-                <div className="w-full flex flex-col md:flex-row justify-center items-stretch gap-4 pb-20">
-                    <StepsWithoutNumeric steps={secLPsteps2} otherClasses="bg-owlBrown/10" /> 
+                <div className="w-full flex flex-col justify-center items-stretch gap-4 pb-4">
+                    <StepsWithoutNumeric steps={drmExamples} otherClasses="bg-owlBrown/10 " /> 
+                </div>
+
+                <div className="w-full flex flex-row gap-4 relative justify-end items-end px-4">
+                    <p className="text-md lg:text-xl text-lg text-right">
+                        At OwlWeb Studio, we tailor each direct response marketing campaign to your unique goals, leveraging various channels and techniques to drive immediate and measurable results. Whether through targeted search engine campaigns, personalized social media ads, engaging referral programs, interactive contests, strategic chatbot interactions, or streamlined landing pages, we ensure your campaigns are effective and impactful.
+                    </p>
                 </div>
             </div>
-
-
-            <Link href="/contact" className="mt-8 w-full md:w-fit md:-mt-8">
-                <MagicButton 
-                    title='Write us now'
-                    icon={<FaLocationArrow/>}
-                    position='right'
-                    otherClassesButton="border-none bg-owlBrown mt-10"
-                    otherClasses="bg-owlBrown/50"
-                />
-            </Link>
 
             <CtaSection title="Ready to Capture More Leads?" otherClasses="bg-blue_Light/30" />
 
@@ -132,14 +124,6 @@ const SectionLP = () => {
                     {/* <Logo /> */}
                     <PowerfulMagnet />
                 </div>
-
-                <Link href="/contact" aria-label='navigate to contact page' className="flex md:hidden justify-center items-center w-full">
-                    <MagicButton 
-                        title='Contact us'
-                        icon={<FaWpforms/>}
-                        position='right'
-                    />
-                </Link>
             </div>
 
         </div>

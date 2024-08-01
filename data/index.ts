@@ -711,6 +711,51 @@ export const navItems = [
     }
   ];
 
+  export const drmExamples = [
+    {
+      id: 1,
+      title: "Search Engine Campaigns",
+      desc1: "Search engine campaigns, particularly on Google Ads, are foundational to our DRM strategy. By leveraging Google's extensive advertising network and tools, we can effectively reach and engage potential customers at the moment they are searching for relevant products or services. We set up comprehensive campaigns that utilize all Google tools, including Google Analytics, Google Tag Manager, and UTM parameters, to meticulously track user behavior and measure campaign performance. This data-driven approach allows us to refine and optimize our strategies, ensuring maximum ROI and conversion rates.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Social Media Advertising",
+      desc1: "Social media is a powerful tool for direct response marketing. With over a third of internet users discovering new products through social platforms, it’s a prime channel for engaging your target audience. The true strength of social media advertising lies in its advanced audience segmentation capabilities. Platforms like Facebook and TikTok, with their vast user bases and sophisticated targeting options, allow us to create highly personalized and effective DRM campaigns. By leveraging these tools, we can craft ads that speak directly to the needs and interests of your audience, driving immediate engagement and conversions.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Referral Programs",
+      desc1: "Word-of-mouth marketing (WOMM) remains one of the most trusted forms of promotion. To harness this power, we design referral programs that turn your satisfied customers into brand advocates. By offering incentives such as discounts or gifts, we encourage customers to refer friends and family. This type of DRM campaign can be seamlessly integrated into your existing customer touchpoints, like a post-purchase email or a thank-you page, ensuring a smooth and engaging referral experience.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 4,
+      title: "Contests & Giveaways",
+      desc1: "Engagement-focused DRM campaigns, such as contests and giveaways, are excellent for boosting brand interaction. These campaigns can be executed via email, social media, or even out-of-home (OOH) advertising. The appeal of winning a prize or receiving a free product creates a strong incentive for participation. By providing clear instructions on how to enter, we maximize engagement and generate user-generated content that can be repurposed in future campaigns. Contests and giveaways also help spread awareness of new products or services, further expanding your brand’s reach.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 5,
+      title: "Chatbots & Push Notifications",
+      desc1: "For users already interacting with your brand, chatbots and push notifications offer a direct and immediate way to guide them towards desired actions. Chatbots can engage users on your website or app, providing instant assistance and directing them to conversions. Push notifications, on the other hand, are ideal for re-engaging dormant users. Whether reminding them to return to your app or offering exclusive incentives, push notifications keep your brand top-of-mind and encourage continuous engagement.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 6,
+      title: "Streamlined Landing Pages",
+      desc1: "A crucial step in our DRM strategy is optimizing landing pages to eliminate distractions, or holes, that divert users from the desired action. We ensure that each landing page is laser-focused on a single goal, such as form submission or purchase, by removing unnecessary navigation links, phone numbers, and other potential distractions. This approach keeps users engaged and focused, significantly improving conversion rates.",
+      desc2: "",
+      desc3: "",
+    }
+  ];
+
   export const secLPsteps3 = [
     {
       id: 1,
