@@ -22,7 +22,7 @@ const CompanyUSP = () => {
               <h1 className='heading md:text-left tracking-wide'>
                   Multinational {' '} 
                   <span className='text-owlBrown'> Modern</span> {' '}
-                  Agnecy with 17 years of the experiance
+                  Agency with 17 years of the experiance
               </h1>                                   
               <p className="text-md lg:text-xl text-lg text-center md:text-left">
                 At OwlWeb Studio, we specialize in SEA and SEM within Direct Response Marketing, providing cutting-edge Website as a Service (WaaS) solutions. As the only agency offering seamless, subscription-based web management, we simplify your digital presence.
