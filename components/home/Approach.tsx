@@ -13,7 +13,7 @@ const Approach = () => {
         </h1>
         <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
             <Card 
-                title="WaaS 1800€/month" 
+                title="WaaS 1799€/month" 
                 icon={<AceternityIcon order='Website' />}
                 description="package offers custom website design with up to 10 landing pages. It includes professional photo shoots at your office. Starting with a mandatory 6-month period, we ensure your site is maintained and updated regularly."                
                 // link='/services/waas'
@@ -25,10 +25,10 @@ const Approach = () => {
                     />
             </Card>
             <Card 
-                title="DRM 2500€/month" 
+                title="DRM 2499€/month" 
                 icon={<AceternityIcon order='Digital Marketing' />}
                 description="Direct Response Marketing includes deep analysis and strategy creation to plan and develop up to 100 Google Ads and campaigns. We also provide Google Analytics setup, Google Tag Management, and proper UTM parameters implementation to track and measure realistic ROI with conversion rates and re-marketing for non-deal conversions. Starting with a mandatory 6-month period, we offer monthly reporting from the second month onward."
-                // link='/services/drm'
+                link='/direct-response-marketing'
                 ariaLabel='Click here to learn more about our DRM package.'
                 >
                     <CanvasRevealEffect

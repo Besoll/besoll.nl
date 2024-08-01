@@ -33,7 +33,7 @@ const ProductUSP = () => {
                 OtherClasses='w-fit p-1 text-owlBrown/70 outline outline-offset-2 place-self-auto outline-owlOrange/40 bg-owlOrange/40 uppercase hover:text-owlBrown hover:outline-owlOrange flex justify-center items-center'
               />
 
-              <Link href="#" aria-label='navigate to DRM page'>
+              <Link href="/direct-response-marketing" aria-label='navigate to DRM page'>
                   <MagicButton 
                       title='See more about DRM'                            
                       position='right'
