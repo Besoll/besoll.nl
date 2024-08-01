@@ -834,13 +834,13 @@ export const navItems = [
 
   export const ourTeam = [
     {
-      id: 1,
-      name: "Nino",
-      surname: "Beridze",      
-      position: "Chief Hoot (Founder & CEO)",
-      desc: "Nino is the visionary leader, ensuring the company's growth and strategic direction.",
+      id: 32,
+      name: "Luka",
+      surname: "Ramishvili",      
+      position: "Chief Financial Owl (Founder & CFO)",
+      desc: "Luka is the financial wizard, balancing our books while guiding us towards sustainable success.",
       country: "Georgia",
-      thumbnail: "/OwlWebTeam/1.webp",
+      thumbnail: "/OwlWebTeam/32.webp",
       department: "Leadership Team",
     },
     {
@@ -861,6 +861,16 @@ export const navItems = [
       desc: "Nino is the creative force behind our marketing strategies, driving brand growth and innovation.",
       country: "Georgia",
       thumbnail: "/OwlWebTeam/3.webp",
+      department: "Leadership Team",
+    },
+    {
+      id: 1,
+      name: "Nino",
+      surname: "Beridze",      
+      position: "Chief Hoot (Founder & CEO)",
+      desc: "Nino is the visionary leader, ensuring the company's growth and strategic direction.",
+      country: "Georgia",
+      thumbnail: "/OwlWebTeam/1.webp",
       department: "Leadership Team",
     },
     {
