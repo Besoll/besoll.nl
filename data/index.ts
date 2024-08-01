@@ -649,6 +649,44 @@ export const navItems = [
     }
   ];
 
+  export const drm5Steps = [
+    {
+      id: 1,
+      title: "Focus on Customer Needs",
+      desc1: "We design DRM campaigns centered on your target audience's needs and interests. Instead of emphasizing your brand identity, we highlight how your offer benefits the customer. Whether it’s solving a common problem or showcasing a special promotion, we create compelling narratives that encourage your audience to take action.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Personalize Your Campaigns",
+      desc1: "We tailor DRM campaigns to specific segments of your audience, ensuring a personalized experience that resonates with each user. Our approach increases the likelihood of engagement and conversion, as personalized marketing is proven to enhance ROI. Explore our blog for deeper insights into our personalization strategies.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Implement Clear Calls to Action",
+      desc1: "A clear, concise call to action (CTA) is vital for the success of any DRM campaign. We craft bold, prominent CTAs that guide users on what to do next. In mobile marketing, where attention spans are limited, our expertly designed CTAs ensure that your audience knows exactly how to proceed.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 4,
+      title: "Create a Sense of Urgency",
+      desc1: "To boost conversions, we create a sense of urgency in your DRM campaigns. By highlighting limited-time offers, countdowns, and exclusive deals, we prompt your audience to act quickly. This strategy significantly enhances the effectiveness of your campaigns by encouraging immediate responses.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 5,
+      title: "Eliminate Distractions on Landing Pages",
+      desc1: "We streamline your landing pages to focus solely on the goal—whether it’s form submission or purchase. By removing unnecessary elements like multiple navigation links, phone numbers, and additional pages, we minimize distractions and keep users focused on completing the desired action. This targeted approach ensures higher conversion rates and maximizes the efficiency of your DRM efforts.",
+      desc2: "",
+      desc3: "",
+    }
+  ];
+
   export const secLPsteps2 = [
     {
       id: 1,

@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { FaLocationArrow, FaWpforms } from 'react-icons/fa'
 import { StepsWithNumeric } from "../ui/StepsWithNumeric";
 import { StepsWithoutNumeric } from "../ui/StepsWithoutNumeric";
-import { secLPsteps, secLPsteps2, secLPsteps3 } from "@/data";
+import { drm5Steps, secLPsteps, secLPsteps2, secLPsteps3 } from "@/data";
 
 
 import dynamic from 'next/dynamic'
-import Tag from "../global/Tag";
+const Tag = dynamic(() => import('@/components/global/Tag')) 
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 const CtaSection = dynamic(() => import('@/components/global/CtaSection')) 
-const SwiperLP = dynamic(() => import('@/components/ui/SwiperLP')) 
+const DRMtable = dynamic(() => import('@/components//global/lotties/Search')) 
 const QuestionMark = dynamic(() => import('@/components/global/lotties/QuestionMark')) 
 const AngryUser = dynamic(() => import('@/components/global/lotties/AngryUser')) 
 const PowerfulMagnet = dynamic(() => import('@/components/global/lotties/PowerfulMagnet')) 
@@ -19,7 +19,7 @@ const PowerfulMagnet = dynamic(() => import('@/components/global/lotties/Powerfu
 
 const SectionLP = () => {
   return (
-      <div className="w-full flex justify-center items-center bg-owlOrange/20 flex-col">        
+      <div className="w-full flex justify-center items-center bg-owlOrange/10 flex-col">        
       <Image
             src='/drm-page-hero.webp'
             alt='DRM - Direct response Marketing - 1'
@@ -35,32 +35,40 @@ const SectionLP = () => {
                 <h1 className='heading'>
                     Drive Immediate Results with Our Direct Response Marketing
                 </h1> 
+                <p className="text-md lg:text-xl text-lg  mt-2">
+                    Transform Your Leads into High-Value Contracts with Precision Marketing
+                </p>   
             </div>
 
             {/* Hero Section of the section */}
-            <div className='relative max-w-7xl w-full flex justify-center md:justify-between flex-col-reverse md:flex-row gap-4 items-center'>
-                <div className='w-full md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10'>
-                    <div className='w-full md:w-1/3 h-auto max-h-[280px] md:max-h-full flex md:hidden md:-mt-[8rem]'>
-                        <SwiperLP />     
-                    </div>               
+            
+            <div className='relative max-w-7xl w-full flex justify-center flex-col-reverse md:flex-row gap-4 items-center'>
+                <div className='w-full md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10'>                                 
                     
                     <h1 className='heading md:text-left'>
-                        Why {' '} 
-                        <span className='text-owlBrown'> Landing Pages</span> {' '}
-                        Matter
+                        What is {' '} 
+                        <span className='text-owlBrown'> Direct Response Marketing?</span> {' '}                        
                     </h1> 
 
-                    <p className="text-md lg:text-xl text-lg  md:mt-0">
-                        Landing pages are like a secret weapon for your business. They&apos;re designed to capture attention, drive conversions, and bring in qualified leads. Here&apos;s why they&apos;re essential:
+                    <p className="text-md lg:text-xl text-lg">
+                        Direct Response Marketing (DRM) is a strategy focused on eliciting immediate actions from your audience. Whether it&apos;s visiting your website, making a purchase, or engaging with your social media, our approach ensures your marketing efforts yield tangible, measurable results.
                     </p>                    
                 </div>
-                <div className='w-full md:w-2/3 h-auto hidden md:flex'>
-                    <SwiperLP />    
+                <div className='w-full h-auto -mt-24 -mb-32 md:-mt-6 md:-mb-6'>
+                    <DRMtable />
                 </div>
             </div>
 
-            <div className="max-w-7xl w-full h-full flex justify-center items-center flex-col md:flex-row gap-4 md:items-stretch">
-                <StepsWithNumeric steps={secLPsteps}  otherClasses="bg-white hover:bg-owlOrange hover:text-white" />      
+            <div className="max-w-7xl w-full h-full flex justify-center items-center flex-col gap-4 bg-owlOrange/15 px-6 py-16 rounded-lg">
+
+                    <h1 className='heading text-center'>
+                        {' '} 
+                        <span className='text-owlBrown'> 5</span> {' '}  Key Steps                      
+                    </h1> 
+                    <p className="text-center text-md lg:text-xl text-lg max-w-[500px]  md:mt-0">
+                        At OwlWeb Studio, we specialize in crafting direct response marketing (DRM) campaigns that drive immediate and measurable results. Here&apos;s how we do it:
+                    </p>  
+                <StepsWithNumeric steps={drm5Steps}  otherClasses="bg-white hover:bg-owlOrange hover:text-white" />      
             </div>           
 
 

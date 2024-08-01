@@ -19,9 +19,9 @@ export const StepsWithNumeric = ({
         // const evenRow = steps.filter((_, index) => index % 2 === 0);
         // const oddRow = steps.filter((_, index) => index % 2 !== 0);
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-4 md:px-2 mb-2 " id='stepsBuild'>
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-4 mb-2 " id='stepsBuild'>
         {steps.map((step) => (
-            <div key={step.id} className={`w-full flex flex-row justify-center items-start gap-4 rounded-xl p-4 md:p-8 md:m-4 md:mx-4 
+            <div key={step.id} className={`w-full flex flex-row justify-center items-start gap-4 rounded-xl p-4 md:p-6
              hover:scale-110 hover:skew-y-1  transition duration-300 hover:ease-in-out hover:shadow-xl cursor-pointer hover:rotate-1 ${otherClasses}`}>
                 <p className="text-owlBrown text-5xl font-extrabold
                 hover:scale-110hover:skew-y-1  transition duration-300 ease-in-out cursor-pointer hover:rotate-1">
