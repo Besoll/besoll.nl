@@ -1145,10 +1145,10 @@ export const navItems = [
     },
     {
       id: 31,
-      name: "Manana",
+      name: "Levan",
       surname: "Kiknadze",
       position: "Customer Support Representative",
-      desc: "Manana provides excellent support to our customers.",
+      desc: "Levani provides excellent support to our customers.",
       country: "Georgia",
       thumbnail: "/OwlWebTeam/31.webp",
       department: "Support Team",
