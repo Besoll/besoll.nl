@@ -4,10 +4,10 @@ import type { Metadata, Viewport  } from "next";
 import dynamic from 'next/dynamic'
 const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
-const titleBL = 'Direct Response Marketing';
-const urlBL = 'https://owlweb.nl/direct-response-marketing';
+const titleBL = 'Website as a Service';
+const urlBL = 'https://owlweb.nl/website-as-a-service';
 const imageBL = 'https://www.owlweb.nl/_next/image?url=%2FDRM-Why.webp&w=1920&q=75';
-const descriptionBL = 'Direct response marketing is a strategy focused on getting an immediate reaction from consumers, like visiting a website, making a purchase, or sharing a social media post. Unlike long-term brand building or awareness campaigns, direct response marketing aims for quick, specific actions. This approach makes it easier to track the return on investment (ROI) since the results are immediate and measurable.';
+const descriptionBL = 'For your B2B business, our Website as a Service (WaaS) solution offers unique benefits that help you excel in both the consumer and business sectors. Discover how our services can strengthen your business and differentiate it from the competition.';
 const creatorBL = "B. Kavzharadze - OwlWeb";
 
 export const metadata: Metadata = {

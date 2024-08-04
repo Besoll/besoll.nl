@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaWpforms } from 'react-icons/fa'
 import dynamic from 'next/dynamic'
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 
-const DrmMilestone = () => {
+const WaaSMilestone = () => {
   return (
     <div className='w-full flex flex-col justify-center items-center  text-black sm:px-8 xl:px-4 px-4 gap-8 md:gap-16 xl:gap-24 my-16 py-16 md:py-32'>  
 
@@ -139,17 +140,9 @@ const DrmMilestone = () => {
                 <div className="bg-white p-4 rounded border border-slate-200 text-owlBrown shadow ml-14 md:ml-44">Providing detailed monthly performance reports from the second month onward to keep you informed of progress and ROI.</div>
             </div>
             
-        </div>  
-
-        <Link href="/contact?package=DRM-Milestone" aria-label='Select the packla' className="w-full md:w-fit mt-12 md:mt-0">
-            <MagicButton 
-                title='Get started here'
-                icon={<FaWpforms/>}
-                position='right'
-            />
-        </Link>  
+        </div>    
     </div>
   )
 }
 
-export default DrmMilestone
+export default WaaSMilestone

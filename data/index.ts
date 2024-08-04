@@ -1,12 +1,12 @@
 export const navItems = [
     { id: 1, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
-    { id: 2, name: "Services", link: "#", ariaLabel: "Navigate to services page", },
+    { id: 2, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
     { id: 3, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
   ];
 
   export const navItemsStatic = [
     { id: 1, name: "DRM", link: "/direct-response-marketing", ariaLabel: "Navigate to DRM", },
-    { id: 2, name: "WaaS", link: "website-as-a-service", ariaLabel: "Navigate to WaaS", },
+    { id: 2, name: "WaaS", link: "/website-as-a-service", ariaLabel: "Navigate to WaaS", },
     { id: 3, name: "Top Speed", link: "/top-speed", ariaLabel: "Navigate to top speed page", },
     { id: 4, name: "Landing Page", link: "/landing-page", ariaLabel: "Navigate to landing page", },
     { id: 5, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
@@ -753,6 +753,82 @@ export const navItems = [
       desc1: "A crucial step in our DRM strategy is optimizing landing pages to eliminate distractions, or holes, that divert users from the desired action. We ensure that each landing page is laser-focused on a single goal, such as form submission or purchase, by removing unnecessary navigation links, phone numbers, and other potential distractions. This approach keeps users engaged and focused, significantly improving conversion rates.",
       desc2: "",
       desc3: "",
+    }
+  ];
+
+  export const waasBenefits = [
+    {
+      id: 1,
+      title: "Cost Saving:",
+      desc1: "Avoid high initial development costs with a predictable monthly subscription that covers everything from hosting to updates.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 2,
+      title: "Performance and Speed:",
+      desc1: "Optimized websites for the ultimate user experience, ensuring your visitors take action immediately.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 3,
+      title: "Up-to-Date Every Month:",
+      desc1: "Monthly updates keep your website aligned with your business needs and target audience.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 4,
+      title: "Strategic Building:",
+      desc1: "Equipped with necessary tools to achieve the objectives established during strategy meetings.",
+      desc2: "",
+      desc3: "",
+    },
+    {
+      id: 5,
+      title: "Starter Package Includes Landing Pages:",
+      desc1: "Get fully optimized landing pages, up to 5, with the option to add more as needed.",
+      desc2: "",
+      desc3: "",
+    }
+  ];
+
+  export const waasBenefits2 = [
+    {
+      id: 1,
+      title: "Leading Technology:",
+      desc1: "Stay ahead with cutting-edge technologies.",
+      desc2: "",
+      desc3: ""
+    },
+    {
+      id: 2,
+      title: "Top Security and Reliability:",
+      desc1: "Your website is secure and reliable, protecting your business and customers.",
+      desc2: "",
+      desc3: ""
+    },
+    {
+      id: 3,
+      title: "Dynamic Design and Custom Functionality:",
+      desc1: "Tailored to meet your specific needs and industry standards.",
+      desc2: "",
+      desc3: ""
+    },
+    {
+      id: 4,
+      title: "Advanced Plugins for Your Industry:",
+      desc1: "Specialized plugins to enhance functionality and user experience.",
+      desc2: "",
+      desc3: ""
+    },
+    {
+      id: 5,
+      title: "In-Depth Competitive Analysis:",
+      desc1: "Gain an edge with insights that keep you ahead of the competition.",
+      desc2: "",
+      desc3: ""
     }
   ];
 

@@ -16,7 +16,7 @@ const DrmMilestone = dynamic(() => import('@/components/direct-response-marketin
 
  
 
-const SectionLP = () => {
+const DRM = () => {
   return (
       <div className="w-full flex justify-center items-center bg-owlOrange/10 flex-col">        
         <Image
@@ -29,12 +29,12 @@ const SectionLP = () => {
         /> 
         <div className='w-full flex flex-col justify-center items-center  text-black sm:px-8 xl:px-4 px-4 gap-4 md:gap-8 xl:gap-12'>
 
-            <div className="w-full px-4 flex flex-col justify-center items-center pb-2 md:pb-12">
-                <Tag title="Start Package with 2499 €/month " otherClass="text-owlBrown font-bold" icon="tagLineBrown.svg"/>
+            <div className="w-full px-4 flex flex-col justify-center items-center pb-2 md:pb-12 text-center gap-4">
+                <Tag title="Start Package with €2499/month " otherClass="text-owlBrown font-bold" icon="tagLineBrown.svg"/>
                 <h1 className='heading'>
                     Drive Immediate Results with Our Direct Response Marketing
                 </h1> 
-                <p className="text-md lg:text-xl text-lg  mt-2">
+                <p className="text-md lg:text-xl text-lg mt-2  max-w-7xl">
                     Transform Your Leads into High-Value Contracts with Precision Marketing
                 </p>   
             </div>
@@ -115,4 +115,4 @@ const SectionLP = () => {
   )
 }
 
-export default SectionLP
+export default DRM
