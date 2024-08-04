@@ -5,9 +5,9 @@ import dynamic from 'next/dynamic'
 const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
 const titleBL = 'Our Services';
-const urlBL = 'https://owlweb.nl/website-as-a-service';
-const imageBL = 'https://www.owlweb.nl/_next/image?url=%2FDRM-Why.webp&w=1920&q=75';
-const descriptionBL = 'For your B2B business, our Website as a Service (WaaS) solution offers unique benefits that help you excel in both the consumer and business sectors. Discover how our services can strengthen your business and differentiate it from the competition.';
+const urlBL = 'https://owlweb.nl/services';
+const imageBL = 'https://www.owlweb.nl/_next/image?url=%2FwaasBenefits.webp&w=1920&q=75';
+const descriptionBL = 'For your B2B business, our B2B Service solution offers unique benefits that help you excel in both the consumer and business sectors. Discover how our services can strengthen your business and differentiate it from the competition.';
 const creatorBL = "B. Kavzharadze - OwlWeb";
 
 export const metadata: Metadata = {

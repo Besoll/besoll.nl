@@ -9,10 +9,11 @@ const MagicButton = dynamic(() => import('@/components/ui/MagicButton'))
 const Logo = dynamic(() => import('@/components/global/Logo')) 
 const SpotlightDivs = dynamic(() => import('@/components/ui/SpotlightDivs')) 
 const BgGrid = dynamic(() => import('@/components/ui/BgGrid')) 
+const CtaSection = dynamic(() => import('@/components/global/CtaSection')) 
 
 const OurServices = () => {
   return (
-    <div className='w-full flex justify-center items-center py-20 bg-owlBrown sm:px-4 px-4 relative'>
+    <div className='w-full flex justify-center items-center py-20 bg-owlBrown/10 sm:px-4 px-4 relative flex-col'>
         <div className='max-w-7xl w-full flex justify-center flex-col gap-4 items-center'>
 
         <SpotlightDivs />
@@ -27,6 +28,10 @@ const OurServices = () => {
                 <HoverEffect items={ourServices} />
             </div>
         </div>
+
+        <div className='w-full max-w-7xl px-4 py-16 md:py-32'>
+            <CtaSection title="Ready to Capture More Leads?" otherClasses="bg-blue_Light/30" />
+         </div>
     </div>
   )
 }
