@@ -26,7 +26,7 @@ const WaaS = () => {
       <div className="w-full flex justify-center items-center flex-col">
 
         {/* Hero on Desktop */}
-        <div className='w-full lg:flex hidden relative flex-col justify-center items-center'>
+        <div className='w-full lg:flex hidden 2xl:hidden relative flex-col justify-center items-center'>
             <Image
                 src='/waas-main-landscape.webp'
                 alt='DRM - Direct response Marketing - 1'
@@ -53,7 +53,7 @@ const WaaS = () => {
         </div> 
 
         {/* Hero on mobile */}
-        <div className='w-full flex relative flex-col justify-center items-center lg:hidden gap-4'>
+        <div className='w-full flex relative flex-col justify-center items-center lg:hidden 2xl:flex gap-4'>
             <Image
                 src='/waas-main-wide.webp'
                 alt='DRM - Direct response Marketing - 1'

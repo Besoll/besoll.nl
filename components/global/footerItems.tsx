@@ -21,7 +21,7 @@ export const FooterItemsPages = ({
   return (
     <>
         {footerItemsPages.map((item) => (
-            <li key={item.id} className='my-2 px-2'>
+            <li key={item.id} className='my-2 px-2 md:px-0'>
                 <Link 
                     href={item.link}
                     aria-label={item.ariaLabel}

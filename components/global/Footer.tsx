@@ -35,7 +35,7 @@ const Footer = () => {
 
             <div className='w-full flex flex-col lg:flex-row'>
                 <div className='sm:w-full flex flex-row  text-center lg:text-left justify-between gap-3 sm:gap-8 py-8 lg:px-2'>
-                    <ul className='w-1/3 sm:w-full flex flex-col text-left md:w-full max-w-[150px] md:max-w-[250px] gap-2'>
+                    <ul className='w-1/3 sm:w-full flex flex-col text-left md:w-full max-w-[150px] md:max-w-[300px] gap-2'>
                         <li className="w-full font-semibold uppercase my-2 px-2">
                             Pages
                             <hr className="my-2 border-black-400 md:mx-auto"/>
