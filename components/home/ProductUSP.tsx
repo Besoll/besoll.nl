@@ -77,7 +77,7 @@ const ProductUSP = () => {
                 Tags={peopleInvolvedWaaS}
                 OtherClasses='w-fit p-1 text-black outline outline-offset-2 place-self-auto outline-owlBrown/10 bg-owlBrown/20 uppercase font-semibold hover:outline-owlBrown flex justify-center items-center'
               />
-              <Link href="#" aria-label='navigate to WaaS page'>
+              <Link href="/website-as-a-service" aria-label='navigate to WaaS page'>
                   <MagicButton 
                       title='See more about WaaS'                            
                       position='right'
