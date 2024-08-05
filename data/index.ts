@@ -11,20 +11,20 @@ export const navItems = [
     { id: 4, name: "Landing Page", link: "/landing-page", ariaLabel: "Navigate to landing page", },
     { id: 5, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
     { id: 6, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
-    { id: 7, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
+    { id: 7, name: "Case Study", link: "/case-study-zongericht", ariaLabel: "Navigate to case study zongericht", },
   ];
 
   export const footerItemsPages = [
     { id: 1, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
     { id: 2, name: "Our Team", link: "/our-team/#ourTeam", ariaLabel: "Navigate to projects page", },
     { id: 3, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
-    { id: 4, name: "Testimonials", link: "#", ariaLabel: "Navigate to testimonials page", },
+    { id: 4, name: "Case Study", link: "/case-study-zongericht", ariaLabel: "Navigate to case study Zongericht", },
     { id: 5, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
   ];
   export const footerItemsPages2 = [
     { id: 1, name: "Package DRM", link: "/direct-response-marketing", ariaLabel: "Navigate to page Direct response marketing", },
     { id: 2, name: "Package WaaS", link: "/website-as-a-service", ariaLabel: "Navigate to page Website as a Service", },
-    { id: 3, name: "Package All in One", link: "/all-in-one", ariaLabel: "Navigate to All in One package", },
+    { id: 3, name: "Package All in One", link: "/contact", ariaLabel: "Navigate to All in One package", },
     { id: 4, name: "Landing Page", link: "/landing-page", ariaLabel: "Navigate to testimonials page", },
     { id: 5, name: "Top Speed", link: "/top-speed", ariaLabel: "Navigate to contact page", },
   ];
