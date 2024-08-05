@@ -6,7 +6,7 @@ const MagicButton = dynamic(() => import('@/components/ui/MagicButton'))
 
 const WaaSFAQ = () => {
   return (
-    <div className='w-full flex flex-col justify-center items-center   text-black sm:px-8 xl:px-4 px-4 gap-24 md:gap-24 xl:gap-24 my-0 md:my-16 py-4 md:py-16'>  
+    <div className='w-full flex flex-col justify-center items-center   text-black sm:px-8 xl:px-4 px-4 gap-24 md:gap-24 xl:gap-24 my-0 md:my-16 py-8 mb-8 md:mb-2 md:py-16'>  
 
         <div className='relative max-w-7xl w-full flex justify-center md:justify-between flex-col  gap-4 items-center'>
                 <h2 className="text-3xl font-semibold mb-4">Frequently Asked Questions</h2>

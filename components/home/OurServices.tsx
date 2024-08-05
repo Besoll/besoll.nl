@@ -13,13 +13,13 @@ const CtaSection = dynamic(() => import('@/components/global/CtaSection'))
 
 const OurServices = () => {
   return (
-    <div className='w-full flex justify-center items-center py-20 bg-owlBrown/10 sm:px-4 px-4 relative flex-col'>
+    <div className='w-full flex justify-center items-center py-20  sm:px-4 px-4 relative flex-col'>
         <div className='max-w-7xl w-full flex justify-center flex-col gap-4 items-center'>
 
         <SpotlightDivs />
         <BgGrid />  
         
-            <h1 className='heading z-30 md:py-10'>
+            <h1 className='heading z-30 pt-10 md:pt-2 md:py-10'>
                 Our  {' '}
                 <span className='text-owlOrange'>B2B services</span>
             </h1>

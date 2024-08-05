@@ -23,7 +23,7 @@ const WaaSMilestone = dynamic(() => import('@/components/WaaS/WaaSMilestone'))
 
 const WaaS = () => {
   return (
-      <div className="w-full flex justify-center items-center bg-owlOrange/10 flex-col">
+      <div className="w-full flex justify-center items-center flex-col">
 
         {/* Hero on Desktop */}
         <div className='w-full lg:flex hidden relative flex-col justify-center items-center'>
@@ -66,7 +66,7 @@ const WaaS = () => {
             <div className='w-[90%] flex bottom-10 padding-5  rounded-xl'>
                 <div className='w-full flex flex-col justify-center items-center  text-black sm:px-8 xl:px-4 px-4 gap-4 md:gap-8 xl:gap-12'>
                     <div className="w-full px-4 flex flex-col justify-center items-center pt-2 pb-2 md:pb-12 text-center gap-4">
-                        <Tag title="Start Package with €1499/month " otherClass="text-owlBrown font-bold" icon="tagLineBrown.svg"/>
+                        <Tag title="Start Package with €1799/month " otherClass="text-owlBrown font-bold" icon="tagLineBrown.svg"/>
                         <h1 className='heading'>
                             Website as a Service (WaaS)
                         </h1> 

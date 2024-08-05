@@ -12,8 +12,8 @@ const Metrics = dynamic(() => import('@/components/global/lotties/Metrics'))
 
 const SectionMetrics = () => {
   return (
-    <div className="w-full flex justify-center items-center bg-white">
-        <div className='w-full flex flex-col justify-center items-center py-20 bg-owlBrown/20 text-black sm:px-8 xl:px-4 px-4 gap-4 md:gap-8 xl:gap-12'>
+    <div className="w-full flex justify-center items-center">
+        <div className='w-full flex flex-col justify-center items-center py-20  text-black sm:px-8 xl:px-4 px-4 gap-4 md:gap-8 xl:gap-12'>
             <div className='relative max-w-7xl w-full flex justify-center md:justify-between flex-col-reverse md:flex-row gap-4 items-center'>
                 <div className='w-full md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10'>
                     <h1 className='heading md:text-left'>
@@ -23,7 +23,7 @@ const SectionMetrics = () => {
                     <div className='w-full md:w-1/3 h-auto flex md:hidden -mt-[6rem] md:-mt-[8rem]'>
                         <Metrics />    
                     </div>               
-                    <p className="text-md lg:text-base text-normal -mt-[6rem] md:mt-0">
+                    <p className="text-md lg:text-base text-normal -mt-[4rem] md:mt-0">
                     At OwlWeb Studio, we ensure your website stands out with blazing-fast speed and seamless navigation. <span className="font-bold">Here&apos;s why it matters:</span>
                     </p>
                 </div>
@@ -53,8 +53,8 @@ const SectionMetrics = () => {
                                     md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
                         />  
                     </div>
-                    <div className="w-full h-full flex justify-center flex-col md:gap-4 items-stretch md:pt-20">
-                        <StepsWithNumeric4row steps={secMetricsNumeric} otherClasses="hover:bg-owlOrange/10" />
+                    <div className="w-full h-full flex justify-center flex-col md:gap-4 items-stretch pt-8 md:pt-20">
+                        <StepsWithNumeric4row steps={secMetricsNumeric} otherClasses="bg-white hover:bg-owlOrange hover:text-white mb-4" />
                     </div>
 
                 </div>

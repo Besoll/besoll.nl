@@ -5,7 +5,7 @@ const MagicButton = dynamic(() => import('@/components/ui/MagicButton'))
 
 const WaaSPackage = () => {
   return (
-    <div className='w-full flex flex-col justify-center items-center bg-owlOrange/10 text-black sm:px-8 xl:px-4 px-4 gap-4 md:gap-8 xl:gap-12 my-16 py-16 md:py-32'>  
+    <div className='w-full flex flex-col justify-center items-center  text-black sm:px-8 xl:px-4 px-4 gap-4 md:gap-8 xl:gap-12 my-16 py-16 md:py-32'>  
 
         <h1 className='heading font-bold text-left'>
             Choose the Perfect Package for <span className="text-owlBrown">Your Business</span>

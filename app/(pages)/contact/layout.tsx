@@ -1,7 +1,7 @@
 import NavigationStatic from "@/components/global/NavigationStatic";
 import { navItemsStatic } from "@/data";
 import dynamic from 'next/dynamic'
-const Footer = dynamic(() => import('@/components/contact/Footer') ) 
+const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
 const titleBL = 'OwlWeb - contact';
 const colorBL = '#FDA800'; // orange

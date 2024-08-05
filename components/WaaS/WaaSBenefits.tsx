@@ -46,7 +46,7 @@ const WaaSBenefits = () => {
         </div>
 
         <div className="w-full max-w-7xl flex flex-col justify-center items-stretch gap-4 pb-4">
-            <StepsWithoutNumeric steps={waasBenefits} otherClasses="bg-blue_Light/10 " /> 
+            <StepsWithoutNumeric steps={waasBenefits} otherClasses="bg-white" /> 
         </div> 
 
        

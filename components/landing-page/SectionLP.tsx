@@ -17,8 +17,8 @@ const PowerfulMagnet = dynamic(() => import('@/components/global/lotties/Powerfu
 
 const SectionLP = () => {
   return (
-    <div className="w-full flex justify-center items-center bg-white">        
-        <div className='w-full flex flex-col justify-center items-center py-20 md:py-32 bg-cean/20 text-black sm:px-8 xl:px-4 px-4 gap-4 md:gap-8 xl:gap-12'>
+    <div className="w-full flex justify-center items-center">        
+        <div className='w-full flex flex-col justify-center items-center py-20 md:py-32  text-black sm:px-8 xl:px-4 px-4 gap-4 md:gap-8 xl:gap-12 mt-8'>
 
 
             <div className="w-full px-4 flex flex-col justify-center items-center pb-2 md:pb-12">
@@ -51,12 +51,12 @@ const SectionLP = () => {
             </div>
 
             <div className="max-w-7xl w-full h-full flex justify-center items-center flex-col md:flex-row gap-4 md:items-stretch">
-                <StepsWithNumeric steps={secLPsteps}  otherClasses="bg-white hover:bg-owlOrange hover:text-white" />      
+                <StepsWithNumeric steps={secLPsteps} otherClasses="bg-white hover:bg-owlOrange hover:text-white mb-4 md:mb-0"/>      
             </div>           
 
 
 
-            <div className="max-w-7xl w-full h-full flex justify-center flex-col gap-4 bg-owlBrown/10 rounded-lg pt-40 px-8 relative ">
+            <div className="max-w-7xl w-full h-full flex justify-center flex-col gap-4 rounded-lg pt-40 px-8 relative ">
 
                 <div className="absolute w-64 h-auto -top-12 right-0">
                     <QuestionMark />
@@ -80,12 +80,12 @@ const SectionLP = () => {
                 </p>
 
                 <div className="w-full flex flex-col md:flex-row justify-center items-stretch gap-4 pb-20">
-                    <StepsWithoutNumeric steps={secLPsteps2} otherClasses="bg-owlBrown/10" /> 
+                    <StepsWithoutNumeric steps={secLPsteps2} otherClasses="bg-white" /> 
                 </div>
             </div>
 
 
-            <Link href="/contact" className="mt-8 w-full md:w-fit md:-mt-8">
+            {/* <Link href="/contact" className="mt-8 w-full md:w-fit md:-mt-8">
                 <MagicButton 
                     title='Write us now'
                     icon={<FaLocationArrow/>}
@@ -93,7 +93,7 @@ const SectionLP = () => {
                     otherClassesButton="border-none bg-owlBrown mt-10"
                     otherClasses="bg-owlBrown/50"
                 />
-            </Link>
+            </Link> */}
 
             <CtaSection title="Ready to Capture More Leads?" otherClasses="bg-blue_Light/30" />
 

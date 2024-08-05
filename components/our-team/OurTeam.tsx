@@ -15,7 +15,7 @@ const OurTeam = () => {
     const isHomePage = pathname === '/'; // Check if the current path is the home page
 
   return (
-    <div className='w-full flex justify-center items-center py-20 bg-owlBrown/20 text-black pb-40'>
+    <div className='w-full flex justify-center items-center py-20  text-black pb-40' id='ourTeam'>
         <div className='w-full flex justify-center flex-col gap-4 items-center'>
             <div className="w-full max-w-7xl sm:px-10 px-5 flex justify-center items-center flex-col md:flex-row gap-4">
                 <div className='w-full md:max-w-xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10 py-20'>
@@ -33,13 +33,13 @@ const OurTeam = () => {
                     </Link>
                 </div>
             </div>
-            <div className="w-full bg-owlBrown flex justify-center items-center">
-                <div className="w-full max-w-7xl sm:px-10 px-5 py-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mb-2">
+            <div className="w-full  flex justify-center items-center mt-20">
+                <div className="w-full max-w-7xl sm:px-10 px-5 py-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mb-2">
                     <ThreeDCard ourTeam={ourTeam} />
                 </div>
             </div>
 
-            <div className='w-full md:max-w-7xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10 pt-40'>
+            <div className='w-full md:max-w-7xl px-4 flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10 pt-40'>
                 <h1 className='heading md:text-left'>
                     Why Work With {' '} 
                     <span className='text-owlBrown'> Us?</span>
@@ -51,7 +51,7 @@ const OurTeam = () => {
                     <span className=" text-owlBrown">Ready to get started?</span> Give us a hoot and let's create something amazing together!
                 </p>
             </div>
-            <Link href={isHomePage ? "#formSection" : "/#formSection"}>
+            <Link href={isHomePage ? "#formSection" : "/contact"}>
                 <MagicButton 
                     title='Write us now'
                     icon={<FaLocationArrow/>}

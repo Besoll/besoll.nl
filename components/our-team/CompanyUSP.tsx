@@ -11,7 +11,7 @@ const MagicButton = dynamic(() => import('@/components/ui/MagicButton'))
 
 const ProductUSP = () => {
   return (
-    <section className='w-full py-20 pb-40 px-4 md:px-8 flex justify-center items-center flex-col gap-16 md:gap-32' id='productUSP'>
+    <section className='w-full py-20 pb-4 px-4 md:px-8 flex justify-center items-center flex-col gap-16 md:gap-32' id='productUSP'>
       <div className='w-full flex flex-col gap-4 justify-center items-center pt-16'>
         <div className='relative max-w-7xl w-full flex justify-center flex-col-reverse  gap-4 items-center'>
           <div className='w-full md:w-2/3 md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4'>

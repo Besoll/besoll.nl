@@ -16,7 +16,7 @@ export const navItems = [
 
   export const footerItemsPages = [
     { id: 1, name: "About us", link: "/our-team", ariaLabel: "Navigate to about us page", },
-    { id: 2, name: "Projects", link: "#", ariaLabel: "Navigate to projects page", },
+    { id: 2, name: "Our Team", link: "/our-team/#ourTeam", ariaLabel: "Navigate to projects page", },
     { id: 3, name: "Services", link: "/services", ariaLabel: "Navigate to services page", },
     { id: 4, name: "Testimonials", link: "#", ariaLabel: "Navigate to testimonials page", },
     { id: 5, name: "Contact", link: "/contact", ariaLabel: "Navigate to contact page", },
@@ -955,13 +955,13 @@ export const navItems = [
 
   export const ourTeam = [
     {
-      id: 32,
-      name: "Luka",
-      surname: "Ramishvili",      
-      position: "Chief Financial Owl (Founder & CFO)",
-      desc: "Luka is the financial wizard, balancing our books while guiding us towards sustainable success.",
+      id: 1,
+      name: "Nino",
+      surname: "Beridze",      
+      position: "Chief Hoot (Founder & CEO)",
+      desc: "Nino is the visionary leader, ensuring the company's growth and strategic direction.",
       country: "Georgia",
-      thumbnail: "/OwlWebTeam/32.webp",
+      thumbnail: "/OwlWebTeam/1.webp",
       department: "Leadership Team",
     },
     {
@@ -985,13 +985,13 @@ export const navItems = [
       department: "Leadership Team",
     },
     {
-      id: 1,
-      name: "Nino",
-      surname: "Beridze",      
-      position: "Chief Hoot (Founder & CEO)",
-      desc: "Nino is the visionary leader, ensuring the company's growth and strategic direction.",
+      id: 32,
+      name: "Luka",
+      surname: "Ramishvili",      
+      position: "Chief Financial Owl (Founder & CFO)",
+      desc: "Luka is the financial wizard, balancing our books while guiding us towards sustainable success.",
       country: "Georgia",
-      thumbnail: "/OwlWebTeam/1.webp",
+      thumbnail: "/OwlWebTeam/32.webp",
       department: "Leadership Team",
     },
     {

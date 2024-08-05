@@ -13,10 +13,10 @@ const Approach = () => {
         </h1>
         <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
             <Card 
-                title="WaaS 1799€/month" 
+                title="WaaS €1799/month" 
                 icon={<AceternityIcon order='Website' />}
                 description="package offers custom website design with up to 10 landing pages. It includes professional photo shoots at your office. Starting with a mandatory 6-month period, we ensure your site is maintained and updated regularly."                
-                // link='/services/waas'
+                link='/services/website-as-a-service'
                 ariaLabel='Click here to learn more about our WaaS package.'
                 >
                     <CanvasRevealEffect
@@ -25,7 +25,7 @@ const Approach = () => {
                     />
             </Card>
             <Card 
-                title="DRM 2499€/month" 
+                title="DRM €2499/month" 
                 icon={<AceternityIcon order='Digital Marketing' />}
                 description="Direct Response Marketing includes deep analysis and strategy creation to plan and develop up to 100 Google Ads and campaigns. We also provide Google Analytics setup, Google Tag Management, and proper UTM parameters implementation to track and measure realistic ROI with conversion rates and re-marketing for non-deal conversions. Starting with a mandatory 6-month period, we offer monthly reporting from the second month onward."
                 link='/direct-response-marketing'
@@ -44,11 +44,11 @@ const Approach = () => {
                 {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)]  bg-black/90" /> */}
             </Card>
             <Card 
-                title="WaaS+DRM 4000€/month" 
+                title="WaaS+DRM €4000/month" 
                 icon={<AceternityIcon order='All in One' />}
                 description="This package is designed to enhance lead quality and reduce its average value to the lowest in the market. We control and track high-quality leads to achieve the lowest Cost Per Click (CPC). By combining these tools, we aim to deliver the highest market results. In our cases, one out of every three leads results in a contract with an average value of 8000 euros, while the lead cost is 300 euros. The package starts with a mandatory 6-month period with monthly payments."
-                // link='/services/package-content-creator'
-                ariaLabel='Click here to learn more about our All-in-One package.'
+                link='/cotnact?waas=fhp'
+                ariaLabel='Click here to request no-obligation meeting with us.'
                 >
                     <CanvasRevealEffect
                         animationSpeed={3}

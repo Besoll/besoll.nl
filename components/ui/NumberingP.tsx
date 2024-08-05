@@ -29,7 +29,7 @@ export const NumberingP = ({
                     {item.title}                     
                 </div>
             </div>
-            <p className='text-md font-thin pl-8'>
+            <p className='text-md  pl-8'>
                 {item.desc1} 
                 {item.desc2} 
                 {item.desc3}
