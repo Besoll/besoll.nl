@@ -14,7 +14,7 @@ const ProductUSP = () => {
     <section className='w-full py-20 pb-40 px-4 md:px-8 flex justify-center items-center flex-col gap-16 md:gap-32' id='productUSP'>
       <div className='w-full flex flex-col gap-4 justify-center items-center'>
         <h1 className='heading'>
-        What is <span className='text-owlOrange  tracking-wide'> DRM?</span> 
+        What is <span className='text-owlBrown  tracking-wide'> DRM?</span> 
         </h1>
         <div className='relative max-w-7xl w-full flex justify-center md:justify-between flex-col-reverse md:flex-row gap-4 items-center'>
           <div className='w-full md:w-2/3 md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4'>
@@ -30,7 +30,7 @@ const ProductUSP = () => {
               <PeopleTags 
                 Opener='People Involved: '
                 Tags={peopleInvolvedDRM}
-                OtherClasses='w-fit p-1 text-owlBrown/70 outline outline-offset-2 place-self-auto outline-owlOrange/40 bg-owlOrange/40 uppercase hover:text-owlBrown hover:outline-owlOrange flex justify-center items-center'
+                OtherClasses='w-fit p-1 text-black outline outline-offset-2 place-self-auto outline-owlBrown/10 bg-owlBrown/20 uppercase hover:text-white hover:outline-owlBrown flex justify-center items-center'
               />
 
               <Link href="/direct-response-marketing" aria-label='navigate to DRM page'>
@@ -56,7 +56,7 @@ const ProductUSP = () => {
 
       <div className='w-full flex flex-col gap-4 justify-center items-center md:mt-10'>
         <h1 className='heading tracking-wide'>
-        What is <span className='text-owlOrange'> WaaS?</span> 
+        What is <span className='text-owlBrown'> WaaS?</span> 
         </h1>
         <div className='relative max-w-7xl w-full flex justify-center md:justify-between flex-col-reverse md:flex-row-reverse gap-4 items-center'>
           <div className='w-full md:w-2/3 md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4'>
@@ -75,7 +75,7 @@ const ProductUSP = () => {
               <PeopleTags 
                 Opener='People Involved: '
                 Tags={peopleInvolvedWaaS}
-                OtherClasses='w-fit p-1 text-owlBrown/70 outline outline-offset-2 place-self-auto outline-owlOrange/40 bg-owlOrange/40 uppercase hover:text-owlBrown hover:outline-owlOrange flex justify-center items-center'
+                OtherClasses='w-fit p-1 text-black outline outline-offset-2 place-self-auto outline-owlBrown/10 bg-owlBrown/20 uppercase font-semibold hover:outline-owlBrown flex justify-center items-center'
               />
               <Link href="#" aria-label='navigate to WaaS page'>
                   <MagicButton 
