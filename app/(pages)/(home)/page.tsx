@@ -1,4 +1,4 @@
-import { LogoCarousel } from "@/components/global/LogoCarousel"
+// import { LogoCarousel } from "@/components/global/LogoCarousel"
 import Hero from "@/components/home/Hero"
 
 import dynamic from 'next/dynamic'
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="relative flex justify-center items-center flex-col mx-auto overflow-clip ">       
           <Hero />
-          <LogoCarousel />
+          {/* <LogoCarousel /> */}
           <CompanyUSP />
           <ProductUSP />
           <Approach />
