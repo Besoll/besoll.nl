@@ -1,8 +1,8 @@
-// import { LogoCarousel } from "@/components/global/LogoCarousel"
 import Hero from "@/components/home/Hero"
 
 import dynamic from 'next/dynamic'
 
+import { LogoCarousel } from "@/components/global/LogoCarousel"
 const SectionMetrics = dynamic(() => import('@/components/home/SectionMetrics')) 
 const SectionLP = dynamic(() => import('@/components/home/SectionLP')) 
 const OurServices = dynamic(() => import('@/components/home/OurServices')) 
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="relative flex justify-center items-center flex-col mx-auto overflow-clip ">       
           <Hero />
-          {/* <LogoCarousel /> */}
+          <LogoCarousel />
           <CompanyUSP />
           <ProductUSP />
           <Approach />
