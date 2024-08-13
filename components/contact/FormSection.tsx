@@ -1,10 +1,7 @@
-import { FaArrowAltCircleDown } from 'react-icons/fa'
-// import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
-import Link from 'next/link'
-
 import dynamic from 'next/dynamic'
-const FormMain = dynamic(() => import('@/components/ui/Form')) 
 const GetStarted = dynamic(() => import('@/components/global/lotties/GetStarted')) 
+
+const FormSMTP = dynamic(() => import('@/components/contact/FormSMTP')) 
 
 const FormSection = () => {
   return (
@@ -26,9 +23,10 @@ const FormSection = () => {
         </p>
             
         
-            <div className="w-full mx-auto px-0 md:px-8 z-30 py-12 ">
-                <FormMain />
-            </div>
+          <div className="w-full mx-auto px-0 md:px-8 z-30 py-12 ">
+              {/* <FormMain /> */}
+              <FormSMTP />
+          </div>
         </div>
     </div>
   )
