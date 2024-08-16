@@ -47,7 +47,7 @@ const CaseZongericht = () => {
             <div className="w-full max-w-7xl flex justify-start items-start pt-8 flex-col gap-2 md:gap-4 ">
                 <p className="heading">Strategy and Implementation:</p>
                 <p className="text-md lg:text-base text-normal md:mt-0">
-                    We implemented our <Link href="/all-in-one-package" aria-label="navigate to all-in -one package">All-in-One package</Link>, which includes Direct Response Marketing (DRM) with Website as a Service (WaaS) for an 18-month period.
+                    We implemented our All-in-One package, which includes Direct Response Marketing (DRM) with Website as a Service (WaaS) for an 18-month period.
                 </p>
 
                 <div className="w-full flex justify-center items-center flex-col md:flex-row-reverse gap-2 md:gap-6">
