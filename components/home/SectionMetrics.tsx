@@ -70,9 +70,11 @@ const SectionMetrics = () => {
             </div>
 
             <p className="text-lg font-bold text-left md:-mb-8 w-full max-w-7xl px-4 ">Why high rankings matter?</p>
-            <div className="max-w-7xl w-full h-full flex justify-center flex-col md:flex-row gap-4 items-stretch mt-2">
-                <StepsWithoutNumeric steps={secMetricsStepsMain} otherClasses="bg-white" />    
+            <p className="text-lg text-left md:-mb-8 w-full max-w-7xl px-4 ">High rankings on search engines like Google are crucial for several reasons:</p>
+            <div className="max-w-7xl w-full h-full flex justify-center flex-col md:flex-row md:flex-wrap gap-4 items-stretch mt-2">
+                <StepsWithoutNumeric steps={secMetricsStepsMain} otherClasses="bg-white md:max-w-72" />    
             </div>
+            <p className="text-lg text-left md:-mb-8 w-full max-w-7xl px-4 ">In short, high search engine rankings can significantly improve the visibility and effectiveness of your website, leading to a greater online presence and more business opportunities.</p>
 
             <Link href="/top-speed" aria-label='navigate to top-speed page' className="mt-4 md:mt-0 w-full md:w-fit">
                 <MagicButton 
