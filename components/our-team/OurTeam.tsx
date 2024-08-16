@@ -20,11 +20,34 @@ const OurTeam = () => {
             <div className="w-full max-w-7xl sm:px-10 px-5 flex justify-center items-center flex-col md:flex-row gap-4">
                 <div className='w-full md:max-w-xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10 py-20'>
                     <h1 className='heading md:text-left'>
-                        Our {' '} <br></br>
+                        Our {' '} 
                         <span className='text-owlOrange'> Team</span>
                     </h1>
                     <p className="text-md lg:text-base text-normal md:leading-3">
                     Welcome to OwlWeb Studio! Meet the fun-loving crew who turn your web dreams into reality. We're a quirky bunch of tech enthusiasts and creative geniuses dedicated to crafting awesome web experiences. Here's a bit about us:
+                    </p>
+                    <p className="text-md lg:text-base text-normal md:leading-3">
+                        Here&apos;s a glimpse of who we are:                        
+                    </p>
+                    <ul className="list-disc ml-6">
+                        <li className="ml-6">
+                            <span className="font-bold">Innovative Designers: </span>We craft visually engaging websites that captivate and convert.
+                        </li>
+                        <li className="ml-6">
+                            <span className="font-bold">Tech Wizards: </span> Our developers use cutting-edge technology to build powerful, high-performing platforms.
+                        </li>
+                        <li className="ml-6">
+                            <span className="font-bold">Marketing Gurus:  </span>We implement effective strategies to boost your online presence and drive results.
+                        </li>
+                        <li className="ml-6">
+                            <span className="font-bold">Creative Thinkers: </span> From brainstorming sessions to the final product, we infuse creativity into every aspect of our work.
+                        </li>
+                        <li className="ml-6">
+                            <span className="font-bold">Customer Champions:  </span> Our dedicated team ensures your needs are met with personalized support and exceptional service.
+                        </li>
+                    </ul>
+                    <p className="text-md lg:text-base text-normal md:leading-3">
+                        At OwlWeb Studio, we blend expertise with enthusiasm to create web solutions that not only meet your expectations but exceed them. Let&apos;s make magic happen together!
                     </p>
                 </div>
                 <div className='w-full md:w-1/3 h-auto'>
