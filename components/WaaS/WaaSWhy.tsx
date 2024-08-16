@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { FaWpforms } from 'react-icons/fa'
 import dynamic from 'next/dynamic'
 const TechStack = dynamic(() => import('@/components//global/lotties/TechStack'))

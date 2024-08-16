@@ -1,11 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import { FaWpforms } from 'react-icons/fa'
-import { StepsWithoutNumeric } from "../ui/StepsWithoutNumeric";
 import dynamic from 'next/dynamic'
-import { waasBenefits2 } from "@/data";
 const WebDevelopment = dynamic(() => import('@/components//global/lotties/WebDevelopment'))
-const DevelopmentBenefits = dynamic(() => import('@/components//global/lotties/DevelopmentBenefits'))
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 
 const WaaSAboutUs = () => {

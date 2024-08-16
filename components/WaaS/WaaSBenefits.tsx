@@ -1,10 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
-import { FaWpforms } from 'react-icons/fa'
 import { StepsWithoutNumeric } from "../ui/StepsWithoutNumeric";
 import { waasBenefits } from "@/data";
-import dynamic from 'next/dynamic'
-const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 
 const WaaSBenefits = () => {
   return (
@@ -23,15 +19,6 @@ const WaaSBenefits = () => {
                 <p className="text-center md:text-left text-md lg:text-xl text-lg ">
                     Our WaaS solution provides a wide range of advantages that ensure your website remains modern, efficient, and aligned with your business objectives. Here are some of the key benefits you can expect:
                 </p>  
-                             
-
-                {/* <Link href="/contact?package=waas-cta" aria-label='Start now - fill the form' className="w-full md:w-fit mt-12 md:mt-4">
-                    <MagicButton 
-                        title='Get started here'
-                        icon={<FaWpforms/>}
-                        position='right'
-                    />
-                </Link>                  */}
             </div>
             <div className='w-full flex flex-col justify-center items-center md:justify-start md:items-start gap-4 md:mr-6'>
                 <Image

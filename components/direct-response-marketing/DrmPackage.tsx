@@ -63,7 +63,7 @@ const DrmPackage = () => {
                     DRM Package + WaaS
                 </p>
                 <ul className="list-disc ml-6">
-                    <li><span className="font-semibold">Price: </span>€3999/month</li>
+                    <li><span className="font-semibold">Price: </span>€4099/month</li>
                     <li><span className="font-semibold">Description: </span>
                         <li className="ml-6">
                             Includes modern website                              

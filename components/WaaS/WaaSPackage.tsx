@@ -57,10 +57,10 @@ const WaaSPackage = () => {
             <div className='w-full md:w-1/2 md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4 p-8 bg-cean/50 hover:bg-cean/80  
             hover:scale-11 hover:skew-y-1 transition duration-300 ease-in-out cursor-pointer hover:rotate-1 hover:shadow-xl shadow-md rounded-lg '>
                 <p className="text-xl font-semibold">
-                    DRM Package + WaaS
+                    DRM Package + WaaS Package
                 </p>
                 <ul className="list-disc ml-6">
-                    <li><span className="font-semibold">Price: </span>€3999/month</li>
+                    <li><span className="font-semibold">Price: </span>€4099/month</li>
                     <li><span className="font-semibold">Description: </span>
                         <li className="ml-6">
                             Includes modern website                              

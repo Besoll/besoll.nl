@@ -44,7 +44,7 @@ const Approach = () => {
                 {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)]  bg-black/90" /> */}
             </Card>
             <Card 
-                title="WaaS+DRM €4000/month" 
+                title="WaaS+DRM €4099/month" 
                 icon={<AceternityIcon order='All in One' />}
                 description="This package is designed to enhance lead quality and reduce its average value to the lowest in the market. We control and track high-quality leads to achieve the lowest Cost Per Click (CPC). By combining these tools, we aim to deliver the highest market results. In our cases, one out of every three leads results in a contract with an average value of 8000 euros, while the lead cost is 300 euros. The package starts with a mandatory 6-month period with monthly payments."
                 link='/cotnact?waas=fhp'

@@ -1,8 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-import { FaWpforms } from 'react-icons/fa'
-import dynamic from 'next/dynamic'
-const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 
 const WaaSMilestone = () => {
   return (

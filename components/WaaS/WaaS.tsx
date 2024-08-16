@@ -1,15 +1,8 @@
 
 import Image from 'next/image';
-import { StepsWithNumeric } from "../ui/StepsWithNumeric";
-import { StepsWithoutNumeric } from "../ui/StepsWithoutNumeric";
-import { drm5Steps, drmExamples } from "@/data";
-
-
 import dynamic from 'next/dynamic'
 const Tag = dynamic(() => import('@/components/global/Tag')) 
 const CtaSection = dynamic(() => import('@/components/global/CtaSection')) 
-const TechStack = dynamic(() => import('@/components//global/lotties/TechStack')) 
-const Gads = dynamic(() => import('@/components/global/lotties/UserSearch')) 
 const WaaSWhy = dynamic(() => import('@/components/WaaS/WaaSWhy'))
 const WaaSTraditional = dynamic(() => import('@/components/WaaS/WaaSTraditional'))
 const WaaSBenefits = dynamic(() => import('@/components/WaaS/WaaSBenefits'))
@@ -17,7 +10,6 @@ const WaaSAboutUs = dynamic(() => import('@/components/WaaS/WaaSAboutUs'))
 const WaaSFAQ = dynamic(() => import('@/components/WaaS/WaaSFAQ'))
 const WaaSPackage = dynamic(() => import('@/components/WaaS/WaaSPackage')) 
 const WaaSWhat = dynamic(() => import('@/components/WaaS/WaaSWhat')) 
-const WaaSMilestone = dynamic(() => import('@/components/WaaS/WaaSMilestone')) 
 
  
 
@@ -39,7 +31,7 @@ const WaaS = () => {
             <div className='w-[90%] absolute bottom-10 padding-5 bg-white/70 rounded-xl'>
                 <div className='w-full flex flex-col justify-center items-center  text-black sm:px-8 xl:px-4 px-4 gap-4 md:gap-8 xl:gap-12'>
                     <div className="w-full px-4 flex flex-col justify-center items-center pt-2 pb-2 md:pb-12 text-center gap-4">
-                        <Tag title="Start Package with €1499/month " otherClass="text-owlBrown font-bold" icon="tagLineBrown.svg"/>
+                        <Tag title="Start Package with €1799/month " otherClass="text-owlBrown font-bold" icon="tagLineBrown.svg"/>
                         <h1 className='heading'>
                             Website as a Service (WaaS)
                         </h1> 

@@ -74,15 +74,17 @@ const OurTeam = () => {
                     <span className=" text-owlBrown">Ready to get started?</span> Give us a hoot and let's create something amazing together!
                 </p>
             </div>
-            <Link href={isHomePage ? "#formSection" : "/contact"}>
-                <MagicButton 
-                    title='Write us now'
-                    icon={<FaLocationArrow/>}
-                    position='right'
-                    otherClassesButton="border-none bg-owlBrown"
-                    otherClasses="bg-owlBrown/50"
-                />
-            </Link>
+            <div className="w-full max-w-7xl px-4 flex justify-center items-center md:justify-start mt-2">
+                <Link href={isHomePage ? "#formSection" : "/contact"}>
+                    <MagicButton 
+                        title='Write us now'
+                        icon={<FaLocationArrow/>}
+                        position='right'
+                        otherClassesButton="border-none bg-owlBrown"
+                        otherClasses="bg-owlBrown/50"
+                    />
+                </Link>
+            </div>
         </div>
     </div>
   )
