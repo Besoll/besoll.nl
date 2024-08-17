@@ -19,6 +19,10 @@ const getCurrentDate = () => {
 const CookiePolicy: React.FC = () => {
   const currentDate = getCurrentDate();
 
+  const companyAddress = process.env.NEXT_PUBLIC_COMPANY_ADDRESS || 'Your Address';
+  const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'Your Email';
+  const companyWebsite = process.env.NEXT_PUBLIC_COMPANY_WEBSITE || 'Your Website';
+
   const [cookies, setCookies] = useState<string[]>([]);
 
   useEffect(() => {
@@ -34,6 +38,11 @@ const CookiePolicy: React.FC = () => {
         <p className="mb-4">
           Effective Date: <span className='capitalize'>{currentDate}</span> <br />
           Last Updated: <span className='capitalize'>{currentDate}</span>
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">Introduction</h2>
+        <p className="mb-4">
+          Our website, {companyWebsite} (hereinafter: “the website”) uses cookies and other related technologies (for convenience all technologies are referred to as “cookies”). Cookies are also placed by third parties we have engaged. In the document below we inform you about the use of cookies on our website.
         </p>
 
         <p className="mb-4">
@@ -60,10 +69,11 @@ const CookiePolicy: React.FC = () => {
           Below is a list of the cookies set by our website:
         </p>
 
-        <ul className="list-disc pl-8">
+        <ul className="w-fit list-disc px-8 mb-2 font-light bg-owlBrown/10 py-4 rounded-xl shadow-lg">
           {cookies.map((cookie, index) => (
             <li key={index} className="mb-2">{cookie}</li>
           ))}
+          
         </ul>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">How can I control cookies?</h2>
@@ -72,21 +82,21 @@ const CookiePolicy: React.FC = () => {
         You can change your cookie preferences any time by clicking the above link. This will let you revisit the cookie consent banner and change your preferences or withdraw your consent right away.
       </p>
       <h5 className="text-lg font-semibold mb-4">Delete cookies from your browser</h5>
-      <ul className="list-inside list-disc">
+      <ul className="w-fit list-disc px-8 mb-4 font-light bg-owlBrown/10 py-4 rounded-xl shadow-lg">
         <li>
-          <Link href="https://support.google.com/accounts/answer/32050" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline" aria-label="Delete cookies in Chrome">Chrome
+          <Link href="https://support.google.com/accounts/answer/32050" target="_blank" rel="noopener noreferrer" className="text-owlBrown underline" aria-label="Delete cookies in Chrome">Chrome
           </Link>
         </li>
         <li>
-          <Link href="https://support.apple.com/en-in/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline" aria-label="Delete cookies in Safari">Safari
+          <Link href="https://support.apple.com/en-in/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-owlBrown underline" aria-label="Delete cookies in Safari">Safari
           </Link>
         </li>
         <li>
-          <Link href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&redirectlocale=en-US" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline" aria-label="Delete cookies in Firefox">Firefox
+          <Link href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&redirectlocale=en-US" target="_blank" rel="noopener noreferrer" className="text-owlBrown underline" aria-label="Delete cookies in Firefox">Firefox
           </Link>
         </li>
         <li>
-          <Link href="https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline" aria-label="Delete cookies in Internet Explorer">Internet Explorer
+          <Link href="https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc" target="_blank" rel="noopener noreferrer" className="text-owlBrown underline" aria-label="Delete cookies in Internet Explorer">Internet Explorer
           </Link>
         </li>
       </ul>
@@ -96,15 +106,16 @@ const CookiePolicy: React.FC = () => {
     </div>
 
         <p className="mb-4">
-          <strong>Email:</strong> info@owlweb.nl<br />
-          <strong>Address:</strong> Mendelssohnstraat 1, Numansdorp, 3281VH Zuid-Holland, The Netherlands
+          <strong>Email:</strong> {companyEmail}<br />
+          <strong>Address:</strong> {companyAddress}
         </p>
 
         <p className="mb-4">
           This Cookie Policy may be updated from time to time to reflect changes in technology, law, or our practices. We encourage you to review this policy periodically to stay informed about our use of cookies.
         </p>
 
-      </div>
+    </div>
+
   </div>
   );
 };

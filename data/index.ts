@@ -29,9 +29,9 @@ export const navItems = [
     { id: 5, name: "Top Speed", link: "/top-speed", ariaLabel: "Navigate to contact page", },
   ];
   export const footerItemsTerms = [
-    { id: 1, name: "Terms and Conditions", link: "/tems-and-conditions", ariaLabel: "Navigate to Terms and Conditions page", },
-    { id: 2, name: "Disclaimer", link: "#", ariaLabel: "Navigate to Disclaimer page", },
-    { id: 3, name: "Imprint", link: "#", ariaLabel: "Navigate to Imprint page", },
+    { id: 1, name: "Terms and Conditions", link: "/terms-and-conditions", ariaLabel: "Navigate to Terms and Conditions page", },
+    { id: 2, name: "Disclaimer", link: "/disclaimer", ariaLabel: "Navigate to Disclaimer page", },
+    { id: 3, name: "Imprint", link: "/imprint", ariaLabel: "Navigate to Imprint page", },
     { id: 4, name: "Cookie Policy (EU)", link: "/cookie-policy", ariaLabel: "Navigate to our team page", },
     { id: 5, name: "Privacy Statement (EU)", link: "/privacy-policy", ariaLabel: "Navigate to our team page", },
   ];
