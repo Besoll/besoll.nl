@@ -6,8 +6,18 @@ import dynamic from 'next/dynamic'
 const Logo = dynamic(() => import('@/components/global/Logo'))
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 
+// Helper function to format the current date
+const getCurrentDate = () => {
+    const date = new Date();
+    const options: Intl.DateTimeFormatOptions = {      
+      month: 'short',
+      year: 'numeric',
+    };
+    return date.toLocaleDateString('nl-NL', options);
+    };
 
 const Footer = () => {
+    const currentDateFooter = getCurrentDate();
   return (
     <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg bg-black text-gray-300 text-md md:text-base px-2 sm:px-4 py-10 md:py-20" >
 
@@ -70,7 +80,10 @@ const Footer = () => {
             <FooterItemsCredentials  footerItemsCredentials={footerItemsCredentials} />
             <hr className="w-full my-2 border-black-400 md:mx-auto"/>
             <div className='text-xs'>
-                    Besoll | Copyright © 2024. All right reserved.
+                    Besoll | Copyright © {' '}
+                    <span className='capitalize'>
+                        {currentDateFooter}
+                    </span>. {' '} All right reserved.
             </div>
         </div>
     </footer>
