@@ -22,8 +22,10 @@ const LanguageSwitcher: React.FC = () => {
   }, []);
 
   const addSubdomain = () => {
-    if (currentDomain && !currentDomain.startsWith('nl.')) {
-      window.location.href = `${window.location.protocol}//nl.${currentDomain}${window.location.pathname}`;
+    if (currentDomain) {
+      const newDomain = currentDomain.replace('www.', '').replace('nl.', '');
+      const newDomainWithSubdomain = newDomain.startsWith('www.') ? `www.nl.${newDomain}` : `nl.${newDomain}`;
+      window.location.href = `${window.location.protocol}//${newDomainWithSubdomain}${window.location.pathname}`;
     }
   };
 
