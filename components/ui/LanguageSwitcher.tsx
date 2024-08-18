@@ -52,6 +52,7 @@ const LanguageSwitcher: React.FC = () => {
         <button
           className="text-owlOrange font-bold  rounded"
           onClick={addSubdomain}
+          aria-label='Overstappen op Nederlands'
         >
           <Image
             src="/icons/flags/nl.svg"
@@ -68,6 +69,7 @@ const LanguageSwitcher: React.FC = () => {
           onClick={removeSubdomain}
           aria-checked
           disabled
+          aria-label='Switch to English'
         >
           <Image
             src="/icons/flags/gb.svg"
