@@ -67,7 +67,6 @@ const LanguageSwitcher: React.FC = () => {
         <button
           className=" text-owlOrange font-bold  rounded"
           onClick={removeSubdomain}
-          aria-checked
           disabled
           aria-label='Switch to English'
         >
