@@ -35,8 +35,8 @@ const NavigationStatic = ({
                 {navItemsStatic.map((navItem: any) => (  
                     <li
                         key={navItem.id}
-                        className="nav-links mx-2 cursor-pointer capitalize text-base hover:scale-105 text-neutral-300 hover:text-owlOrange duration-300 link-underline
-                        xl:mx-6 lg:mx-3 md:mx-1 "
+                        className="nav-links mx-1 cursor-pointer capitalize text-base font-bold hover:outline outline-1 outline-offset-1 rounded-md px-1 py-1 hover:scale-105 text-neutral-400 hover:text-neutral-100 outline-neutral-100 duration-300 link-underline
+                        xl:mx-2 lg:mx-2 md:mx-2"
                     >
                         <Link 
                             href={navItem.link} 
@@ -54,7 +54,7 @@ const NavigationStatic = ({
                             icon={<FaLocationArrow/>}
                             position='right'
                             otherClassesButton="border-none bg-owlBrown "
-                            otherClasses="bg-owlBrown/50"
+                            otherClasses=""
                         />
                     </Link>
                 </li>
