@@ -30,7 +30,7 @@ const CaseZongericht = () => {
                         width={1200}
                         height={912}
                         className="w-full h-auto                               
-                                md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
+                                hover:scale-110 hover:skew-y-1 transition duration-300 ease-in-out cursor-pointer hover:rotate-1"
                     />   
             </div>
             </div>
@@ -58,7 +58,7 @@ const CaseZongericht = () => {
                             width={1506}
                             height={2042}
                             className="w-full h-auto rounded-lg
-                                    md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
+                                    hover:scale-110 hover:skew-y-1 transition duration-300 ease-in-out cursor-pointer hover:rotate-1"
                         />  
                     </div>
                     <div className="w-full h-full flex justify-center flex-col md:gap-4 items-stretch md:pt-20">
@@ -164,7 +164,7 @@ const CaseZongericht = () => {
                         height={828}
                         className="w-full h-auto rounded-lg
                                 shadow-xl md:shadow-md md:hover:shadow-2xl
-                                md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
+                                hover:scale-110 hover:skew-y-1 transition duration-300 ease-in-out cursor-pointer hover:rotate-1"
                     />    
                 </div>
             </div>

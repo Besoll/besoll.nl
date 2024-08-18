@@ -1,10 +1,11 @@
 import Link from 'next/link'
-import { FooterItemsCredentials, FooterItemsIcons, FooterItemsPages, FooterItemsTerms } from '../global/footerItems'
-import { footerItemsCredentials, footerItemsIcons, footerItemsPages, footerItemsPages2, footerItemsTerms } from '@/data'
+import { FooterItemsCredentials, FooterItemsPages, FooterItemsTerms } from '../global/footerItems'
+import { footerItemsCredentials, footerItemsPages, footerItemsPages2, footerItemsTerms } from '@/data'
 import { FaLocationArrow } from 'react-icons/fa'
 import dynamic from 'next/dynamic'
 const Logo = dynamic(() => import('@/components/global/Logo'))
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
+const LanguageSwitcher = dynamic(() => import('@/components/ui/LanguageSwitcher'))
 
 // Helper function to format the current date
 const getCurrentDate = () => {
@@ -73,6 +74,8 @@ const Footer = () => {
             </div>
             
         </div>
+
+        <LanguageSwitcher />
 
         <hr className="my-6 border-black-400 sm:mx-auto lg:my-8" />
         

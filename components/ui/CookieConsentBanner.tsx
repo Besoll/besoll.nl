@@ -54,19 +54,19 @@ const CookieConsentBanner: React.FC = () => {
             <p className='text-center'>To provide the best experiences, we use technologies like cookies to store and/or access device information. Giving consent for these technologies allows us to process data like browsing behavior or unique IDs on this site. Not giving consent or withdrawing consent may negatively impact certain features and functionalities.</p>
             <div className='mt-4 w-full flex justify-center'>
                 <button 
-                    className='bg-blue-500 hover:bg-blue-600 text-white px-4 md:px-8 py-2 md:py-4 mr-2 rounded-md shadow-md'
+                    className='bg-blue-500 hover:bg-blue-600 text-white px-4 md:px-8 py-2 md:py-4 mr-2 rounded-md shadow-md z-50'
                     onClick={handleAccept}
                 >
                     Accept all 
                 </button>
                 <button 
-                    className='bg-owlBrown/10 hover:bg-owlBrown/20 text-black/80 px-4 md:px-8 py-2 md:py-4 mr-2 rounded-md shadow-md'
+                    className='bg-owlBrown/10 hover:bg-owlBrown/20 text-black/80 px-4 md:px-8 py-2 md:py-4 mr-2 rounded-md shadow-md z-50'
                     onClick={handleDeny}
                 >
                     Reject all 
                 </button>
                 <button 
-                    className='bg-owlBrown/10 hover:bg-owlBrown/20 text-black/80 px-4 md:px-8 py-2 md:py-4 rounded-md shadow-md'
+                    className='bg-owlBrown/10 hover:bg-owlBrown/20 text-black/80 px-4 md:px-8 py-2 md:py-4 rounded-md shadow-md z-50'
                     onClick={handleManage}
                 >
                     Manage preferences 

@@ -1,9 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-import { NumberingP } from '../ui/NumberingP';
-import { PeopleTags } from '../ui/PeopleTags';
-import { peopleInvolvedDRM, peopleInvolvedWaaS, pNumberingWaaS } from '@/data';
 
 import dynamic from 'next/dynamic'
 const Tag = dynamic(() => import('@/components/global/Tag'))
@@ -46,7 +43,7 @@ const CaseStudy = () => {
                   width={1200}
                   height={1141}
                   className="w-full h-auto rounded-lg 
-                          md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
+                          hover:scale-110 hover:skew-y-1 transition duration-300 ease-in-out cursor-pointer hover:rotate-1"
               />    
           </div>                
         </div>        

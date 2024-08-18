@@ -92,7 +92,7 @@ const ProductUSP = () => {
                   width={1500}
                   height={998}
                   className="w-full h-auto rounded-lg flex md:hidden
-                          md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
+                          hover:scale-110 hover:skew-y-1 transition duration-300 ease-in-out cursor-pointer hover:rotate-1"
               />  
               <Image
                   src='/waas-2-long.webp'
@@ -100,7 +100,7 @@ const ProductUSP = () => {
                   width={1000}
                   height={1724}
                   className="w-full h-auto rounded-lg hidden md:flex
-                          md:hover:scale-110 md:hover:skew-y-1 md:transition md:duration-300 md:ease-in-out md:cursor-pointer md:hover:rotate-1"
+                          hover:scale-110 hover:skew-y-1 transition duration-300 ease-in-out cursor-pointer hover:rotate-1"
               />    
           </div>                
         </div>        
