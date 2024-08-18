@@ -49,7 +49,7 @@ const CookieConsentBanner: React.FC = () => {
     }
 
     return (
-        <div className='fixed bottom-5 left-5 right-5 bg-white text-black/70 p-4 rounded-xl shadow-xl text-sm'>
+        <div className='fixed bottom-5 left-5 right-5 bg-white text-black/70 p-4 rounded-xl shadow-xl text-sm z-50'>
             <h2 className='text-center font-bold text-base mb-4'>Manage preferences</h2>
             <p className='text-center'>To provide the best experiences, we use technologies like cookies to store and/or access device information. Giving consent for these technologies allows us to process data like browsing behavior or unique IDs on this site. Not giving consent or withdrawing consent may negatively impact certain features and functionalities.</p>
             <div className='mt-4 w-full flex justify-center'>
