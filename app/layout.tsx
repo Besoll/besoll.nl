@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 // import dynamic from 'next/dynamic';
 import { GoogleTagManager } from '@next/third-parties/google'
-import CookieConsentBanner from "@/components/ui/CookieConsentBanner";
+// import CookieConsentBanner from "@/components/ui/CookieConsentBanner";
 // const ScriptCookies = dynamic(() => import('next/script'))
 
 
@@ -71,7 +71,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId="GTM-5MZFBJFC" />
       <body className={`${inter.className} bg-owlOrange/10 text-black`}> 
           {children}     
-          <CookieConsentBanner />   
+          {/* <CookieConsentBanner />    */}
       </body>
     </html>
   );
