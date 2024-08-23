@@ -61,6 +61,13 @@ const NavigationStatic = ({
 
             </ul>
 
+            <div onClick={() => setNav(!nav)}>
+                {nav && (
+                    <NavigationStaticMobile navItemsStatic={navItemsStatic} />
+                )}
+
+            </div>
+
             <div
                 onClick={() => setNav(!nav)}
                 className="cursor-pointer pr-4 z-10 lg:hidden"
@@ -72,9 +79,6 @@ const NavigationStatic = ({
                 }
             </div>
 
-            {nav && (
-                <NavigationStaticMobile navItemsStatic={navItemsStatic}/>
-            )}
         </div>
     </nav>
   )
