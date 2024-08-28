@@ -61,15 +61,10 @@ return (
             <strong>We display services or products on our site for which registration with the following professional association is required:</strong>  {' '}
             No <br />
             We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.
-          </p>
-          <p className="text-sm text-gray-500 mt-6">
-            Last updated: {currentDate}
-          </p>
-
+          </p>         
           <p className="text-sm text-gray-500 mt-6">
             Logo: 
           </p>
-
           <Image 
             src="/owlweb-logo.png"
             alt="owlweb logo"
@@ -79,6 +74,10 @@ return (
                   transition duration-300 ease-in-out cursor-pointer 
                   hover:scale-110 hover:skew-y-1 hover:rotate-1'
           /> 
+
+          <p className="text-sm text-gray-500 mt-6">
+            Last updated: {currentDate}
+          </p>
         </div>
       </div>
     );
