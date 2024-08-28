@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
 const titleBL = 'Website as a Service';
-const urlBL = 'https://owlweb.nl/website-as-a-service';
+const urlBL = 'https://www.owlweb.nl/website-as-a-service';
 const imageBL = 'https://www.owlweb.nl/_next/image?url=%2Fwaas-main-landscape.webp&w=1920&q=75';
 const descriptionBL = 'For your B2B business, our Website as a Service (WaaS) solution offers unique benefits that help you excel in both the consumer and business sectors. Discover how our services can strengthen your business and differentiate it from the competition.';
 const creatorBL = "B. Kavzharadze - OwlWeb";

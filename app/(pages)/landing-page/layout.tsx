@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
 const titleBL = 'Landing pages';
-const urlBL = 'https://owlweb.nl/landing-page';
+const urlBL = 'https://www.owlweb.nl/landing-page';
 const imageBL = 'https://owlweb.nl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.52d0400a.webp&w=1080&q=75';
 const descriptionBL = 'Landing pages are like a secret weapon for your business. They\'re designed to capture attention, drive conversions, and bring in qualified leads.';
 const creatorBL = "B. Kavzharadze - OwlWeb";

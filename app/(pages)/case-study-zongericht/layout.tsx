@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
 const titleBL = 'Case Study Zongericht';
-const urlBL = 'https://owlweb.nl/case-study-zongericht';
+const urlBL = 'https://www.owlweb.nl/case-study-zongericht';
 const imageBL = 'https://owlweb.nl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.52d0400a.webp&w=1080&q=75';
 const descriptionBL = 'At OwlWeb Studio, we ensure your website stands out with blazing-fast speed and seamless navigation.';
 const creatorBL = "B. Kavzharadze - OwlWeb";

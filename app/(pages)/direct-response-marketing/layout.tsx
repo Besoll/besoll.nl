@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 const Footer = dynamic(() => import('@/components/global/Footer') ) 
 
 const titleBL = 'Direct Response Marketing';
-const urlBL = 'https://owlweb.nl/direct-response-marketing';
+const urlBL = 'https://www.owlweb.nl/direct-response-marketing';
 const imageBL = 'https://www.owlweb.nl/_next/image?url=%2FDRM-Why.webp&w=1920&q=75';
 const descriptionBL = 'Direct response marketing is a strategy focused on getting an immediate reaction from consumers, like visiting a website, making a purchase, or sharing a social media post. Unlike long-term brand building or awareness campaigns, direct response marketing aims for quick, specific actions. This approach makes it easier to track the return on investment (ROI) since the results are immediate and measurable.';
 const creatorBL = "B. Kavzharadze - OwlWeb";

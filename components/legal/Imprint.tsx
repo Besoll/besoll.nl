@@ -1,5 +1,6 @@
 import React from 'react';
 import { NextPage } from 'next';
+import Image from 'next/image';
 
 // Helper function to format the current date
 const getCurrentDate = () => {
@@ -64,6 +65,20 @@ return (
           <p className="text-sm text-gray-500 mt-6">
             Last updated: {currentDate}
           </p>
+
+          <p className="text-sm text-gray-500 mt-6">
+            Logo: 
+          </p>
+
+          <Image 
+            src="/owlweb-logo.png"
+            alt="owlweb logo"
+            width={1639}
+            height={491}
+            className='w-full max-w-[400px] 
+                  transition duration-300 ease-in-out cursor-pointer 
+                  hover:scale-110 hover:skew-y-1 hover:rotate-1'
+          /> 
         </div>
       </div>
     );
