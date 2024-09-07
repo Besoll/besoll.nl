@@ -1376,10 +1376,10 @@ export const navItems = [
     id: 21,
     item: 'ZOHO',
   },
-  // {
-  //   id: 22,
-  //   name: 'github',
-  // },
+  {
+    id: 22,
+    item: 'Cookiebot',
+  },
   {
     id: 23,
     item: 'tailwindcss',

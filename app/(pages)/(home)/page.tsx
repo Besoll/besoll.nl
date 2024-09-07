@@ -5,9 +5,6 @@ import dynamic from 'next/dynamic'
 import { LogoCarousel } from "@/components/global/LogoCarousel"
 const SectionMetrics = dynamic(() => import('@/components/home/SectionMetrics')) 
 const SectionLP = dynamic(() => import('@/components/home/SectionLP')) 
-const OurServices = dynamic(() => import('@/components/home/OurServices')) 
-const FormSection = dynamic(() => import('@/components/home/FormSection')) 
-const HowWeBuild = dynamic(() => import('@/components/home/HowWeBuild')) 
 const Approach = dynamic(() => import('@/components/home/Approach')) 
 const CompanyUSP = dynamic(() => import('@/components/home/CompanyUSP')) 
 const ProductUSP = dynamic(() => import('@/components/home/ProductUSP')) 
