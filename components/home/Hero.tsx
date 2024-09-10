@@ -51,11 +51,11 @@ const Hero = () => {
 
                 <TextGenerateEffect 
                     className='text-center text-[30px] sm:text-[40px] md:text-5xl lg:text-6xl capitalize'
-                    words='ALL NEW! be NEW-ONLINE with our DRM and WaaS'
+                    words='Increase your companys sales in a short period of time'
                 />  
 
                 <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                    Maximize conversions and secure your content with our tailored DRM and WaaS packages—crafted to meet your business needs.
+                Maximize conversions and secure your content with our tailored DRM and WaaS packages—crafted to meet your business needs.
                 </p>
 
                 <div className='w-full flex flex-row justify-center items-center gap-4 lg:gap-8'>

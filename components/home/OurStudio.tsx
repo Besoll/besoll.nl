@@ -11,12 +11,12 @@ const OurStudio = () => {
         <div className='max-w-7xl w-full flex justify-center flex-col md:flex-row gap-4 items-center'>
             <div className='w-full md:max-w-xl flex flex-col items-center md:justify-start md:items-start gap-4 max-lg:mt-10'>
                 <h1 className='heading md:text-left'>
-                    Unleash Your Website’s Potential with {' '} <br></br>
+                    Unleash Your Website\’s Potential with {' '} <br></br>
                     <span className='text-owlBrown'> Top Performance</span>
                 </h1>
                 <Development />
                 <p className="text-md lg:text-base text-normal md:leading-3">
-                At OwlWeb Studio, we ensure your website stands out with blazing-fast speed and seamless navigation. Here’s why it matters:
+                At OwlWeb Studio, we ensure your website stands out with blazing-fast speed and seamless navigation. Here\’s why it matters:
                 </p>
                 <Link href="#formSection">
                     <MagicButton 
