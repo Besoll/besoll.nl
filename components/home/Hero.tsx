@@ -26,7 +26,7 @@ const Hero = () => {
                  
 
         <div className='flex justify-center relative z-10 flex-col items-center gap-8 md:gap-0'>
-            <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center'> 
+            <div className='max-w-[89vw] md:max-w-7xl flex flex-col justify-center items-center'> 
                 {/* <div className='relative w-[240px] h-[92.9025543px] md:w-[350px] md:h-[135.482892px] lg:w-[450px] lg:h-[174.192289px] xl:w-[500px] xl:h-[193,546988px] aspect-[0.38709398] mb-6'>
                     <Logo className='absolute object-cover bg-center right-0 top-0 w-full h-auto'/>
                 </div>       */}
