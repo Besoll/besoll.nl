@@ -23,7 +23,7 @@ const Hero = () => {
     <div className='relative w-full pb-20 pt-16 sm:pt-20 min-h-screen flex justify-center items-start xs:items-center
     '>
         <SpotlightDivs />
-        <BgGrid />          
+                 
 
         <div className='flex justify-center relative my-5 z-10 flex-col items-center gap-8 md:gap-0'>
             <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center'> 
@@ -38,10 +38,10 @@ const Hero = () => {
                             style={{position: 'absolute'}}
                             src='/hero-1.webp'
                             alt='owlweb studio surprising their clients'
-                            className='rounded-xl'
+                            className='rounded-xl '
                         />
                 </div>
-                <h2 className='uppercase tracking-widest text-xs text-center text-white max-w-80 mt-10 z-30'>
+                <h2 className='uppercase tracking-widest text-xs text-center text-blue max-w-80 mt-10 z-30'>
                     Introducing new technologies
                 </h2>
 
