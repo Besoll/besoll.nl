@@ -41,8 +41,8 @@ const Hero = () => {
                             className='rounded-xl'
                         />
                 </div>
-                <h2 className='uppercase tracking-widest text-xs text-center text-white max-w-80 -mt-10 z-30'>
-                    The first time ever
+                <h2 className='uppercase tracking-widest text-xs text-center text-white max-w-80 mt-10 z-30'>
+                    Introducing new technologies
                 </h2>
 
                 {/* <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
@@ -51,7 +51,7 @@ const Hero = () => {
 
                 <TextGenerateEffect 
                     className='text-center text-[30px] sm:text-[40px] md:text-5xl lg:text-6xl'
-                    words='Introducing DRM and WaaS Techniques to Boost Your Sales Rapidly'
+                    words='Boost Your Sales Rapidly with DRM and WaaS Techniques'
                 />  
 
                 <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>

@@ -1,14 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaCheckCircle, FaLocationArrow, FaStepForward, FaWpforms } from 'react-icons/fa'
+import { FaWpforms } from 'react-icons/fa'
 
 
 import dynamic from 'next/dynamic'
-import { StepsWithNumeric } from "../ui/StepsWithNumeric";
-import { secMetricsNumeric, secMetricsSteps, secMetricsStepsMain } from "@/data";
+import { secMetricsStepsMain } from "@/data";
 import { StepsWithoutNumeric } from "../ui/StepsWithoutNumeric";
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
-const Metrics = dynamic(() => import('@/components/global/lotties/Metrics')) 
 const Tag = dynamic(() => import('@/components/global/Tag'))  
 
 const SectionMetrics = () => {
