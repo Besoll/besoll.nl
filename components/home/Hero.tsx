@@ -51,11 +51,11 @@ const Hero = () => {
 
                 <TextGenerateEffect 
                     className='text-center text-[30px] sm:text-[40px] md:text-5xl lg:text-6xl capitalize'
-                    words='Increase your companys sales in a short period of time'
+                    words='ALL NEW! be NEW-ONLINE with our DRM and WaaS'
                 />  
 
                 <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                Achieve Remarkable Sales Growth with Direct Response Marketing (DRM) and Revolutionary Website as a Service (WaaS) – From Zero to €500,000, Depending on Your Case.
+                    Maximize conversions and secure your content with our tailored DRM and WaaS packages—crafted to meet your business needs.
                 </p>
 
                 <div className='w-full flex flex-row justify-center items-center gap-4 lg:gap-8'>
