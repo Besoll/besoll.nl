@@ -44,7 +44,7 @@ export const navItems = [
   export const footerItemsCredentials = [
     { id: 1, icon: "mobile", name: "+31 613 73 45 46", link: "tel:003613734546", ariaLabel: "Navigate to call us", },
     { id: 2, icon: "email", name: "info@owlweb.nl", link: "mailto:info@owlweb.nl", ariaLabel: "Navigate to email us", },
-    { id: 3, icon: "map", name: "Mendelssohnstraat 1, 3281VH South Holland", link: "https://www.google.com/maps/place/Mendelssohnstraat+1,+3281+VH+Numansdorp/@51.7369636,4.4336364,17z/data=!3m1!4b1!4m6!3m5!1s0x47c4399aa1cb360b:0x71b0380339d31d8d!8m2!3d51.7369636!4d4.4336364!16s%2Fg%2F11c5nqjmkg?entry=ttu", ariaLabel: "Navigate to our addres on google map", },
+    { id: 3, icon: "map", name: "Kopenhagen 1, 2993 LL, Barendrecht, The Netherlands", link: "https://www.google.com/maps/place/Kopenhagen+1,+2993+LL+Barendrecht/@51.8497618,4.5064342,17z/data=!3m1!4b1!4m6!3m5!1s0x47c4317d9a66708d:0xffea19de81e43b62!8m2!3d51.8497585!4d4.5090091!16s%2Fg%2F11b8v740nk?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D", ariaLabel: "Navigate to our addres on google map", },
   ];
   
   export const gridItems = [
