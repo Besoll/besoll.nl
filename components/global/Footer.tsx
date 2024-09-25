@@ -88,6 +88,19 @@ const Footer = () => {
                         {currentDateFooter}
                     </span>. {' '} All right reserved.
             </div>
+            <div className='text-xs hover:'>
+                Developed and continuously maintained by {' '} 
+
+                    <Link 
+                    href='https://besok.nl'
+                    aria-label='navigate to the developers website'
+                    className='nav-links cursor-pointer hover:scale-105 hover:text-[#0f90ae]  text-[#0f67ae] duration-300 ease-in-out'
+                >
+                    beSok.nl                  
+                </Link>
+            </div>
+
+            
         </div>
     </footer>
   )

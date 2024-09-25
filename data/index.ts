@@ -35,7 +35,6 @@ export const navItems = [
     { id: 4, name: "Cookie Policy (EU)", link: "/cookie-policy", ariaLabel: "Navigate to our team page", },
     { id: 5, name: "Privacy Statement (EU)", link: "/privacy-policy", ariaLabel: "Navigate to our team page", },
   ];
-
   export const footerItemsIcons = [
     { id: 1, as: "Image", icon: "/icons/Guarantee10Years-Big.svg", name: "Guarantee 10 years"},
     { id: 2, as: "IframeComponent", icon: "/icons/Guarantee10Years-Big.svg", name: "klientreviews"},
