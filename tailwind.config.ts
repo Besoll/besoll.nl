@@ -46,9 +46,11 @@ const config = {
           "100": "#E4ECFF",
         },
         purple: "#CBACF9",
+        owlRed: "#ff0000",
+        owlBlue: "#0f67ae",
 
-        owlOrange: "#FFFFFF",
-        owlBrown: "#000000", // owlBrown: "#883D07",
+        owlOrange: "#FF0000",
+        owlBrown: "#0f67ae", // owlBrown: "#883D07",
         cean: "#2EC6FE",
         magenta: "#E60C80",
         magenta_Light: "#FF1DCE",

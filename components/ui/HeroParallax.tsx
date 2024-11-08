@@ -109,12 +109,14 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-10 md:py-20 px-4 w-full left-0 top-0 z-10">
-      <Logo className="md:w-1/3"/>
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        Modern marketing & <br></br> development studio <br></br> <span className="text-owlOrange">in the Netherlands </span>
+      <Logo className="hidden md:flex md:w-1/3 mb-8"/>
+      
+      <h1 className="text-7xl md:text-8xl font-bold text-white">
+        Connect <br></br>  <span className="text-owlOrange">the Caucasus </span> to EU
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-4 dark:text-neutral-200 mb-4">
-      At OwlWeb, we specialize in creating high-performance websites and landing pages using the latest technologies. Our team of experts ensures your site is fast, optimized, and ranks higher on search engines.
+      
+      <p className="max-w-2xl text-base md:text-xl mt-4 text-neutral-200 mb-4">
+      We bridge the gap between European businesses and top-tier developers from the Caucasus, offering a streamlined, risk-free INSTANT hiring solution.
       </p>
 
       <Link href="#formSection">

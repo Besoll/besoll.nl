@@ -1384,4 +1384,134 @@ export const navItems = [
     item: 'tailwindcss',
   },
   ];
-  
+
+
+
+
+
+  // Section Problems and solutions
+  // data.ts
+
+export type PsSection = {
+  title: string;
+  description: string;
+};
+
+export const psHeadings = {
+  mainTitle: "Why Choose Us",
+  highlightTitle: "As Your Agency?",
+  problemsTitle: "Problems",
+  solutionsTitle: "OWLWEB Agency's Solutions",
+  description: "We\’re here to make things easy for you. With OwlWeb Agency, you get a team that\’s dedicated to helping you reach your goals without the hassle. From finding the right talent to delivering reliable solutions that grow with you, we\’re all about making your life easier and your business stronger. Let us handle the details so you can focus on what you do best!",
+};
+
+export const psProblems: PsSection[] = [
+  {
+    title: "Time and resource-consuming hiring process",
+    description: `On average, companies spend significant resources (financial, HR, and time) on recruiting tech talent, which can take up to three months or more to find suitable candidates. This lengthy process often leads to 
+    project delays and impacts a company's competitiveness.`,
+  },
+  {
+    title: "High risk in visa sponsorship",
+    description: `Hiring highly qualified developers from outside the EU requires visa sponsorship, which introduces 
+    financial and logistical risks. Even after investing in relocation and integration, companies can lose these 
+    developers after a short period, leading to wasted resources.`,
+  },
+  {
+    title: "Challenges of remote hiring and market conditions",
+    description: `Businesses often struggle with complexities such as cultural differences, legalities, and market 
+    variability when hiring remotely from regions outside the EU. These challenges can impact team integration and productivity.`,
+  },
+];
+
+export const psSolutions: PsSection[] = [
+  {
+    title: "Risk-free, instant hiring process",
+    description: `OWLWEB offers a streamlined, instant hiring solution that gives businesses immediate access to a 
+    pool of pre-vetted, highly skilled developers from the Caucasus region, allowing companies to significantly 
+    reduce the typical three-month hiring process.`,
+  },
+  {
+    title: "No visa sponsorship required",
+    description: `OWLWEB's model eliminates the need for physical relocation or visa sponsorship by enabling developers 
+    to work remotely as service providers, reducing the complexities and risks of traditional employment.`,
+  },
+  {
+    title: "Flexible on-demand talent arrangements",
+    description: `Businesses can scale their teams up or down based on project needs through OWLWEB's flexible, on-demand talent solutions, allowing quick adaptation to fluctuating demands.`,
+  },
+  {
+    title: "Risk-free developer exchange program",
+    description: `OWLWEB offers a developer exchange program, allowing companies to trial developers before making 
+    long-term commitments, ensuring a cultural and technical fit without hiring risks.`,
+  },
+];
+
+
+
+// studioData.ts
+export type PsSectionStudio = {
+  title: string;
+  description: string;
+};
+
+export const psHeadingsStudio = {
+  mainTitle: "Why do you",
+  highlightTitle: "need us as a Studio?",
+  problemsTitle: "Challenges for Startups and Established Businesses",
+  solutionsTitle: "OWLWEB Studio's Solutions",
+  description: "With OwlWeb Studio, you\’re getting more than just a service—you\’re getting a creative partner. We\’re here to bring your ideas to life with custom web solutions, dynamic marketing campaigns, and ongoing support that grows with your business. Whether you're just starting out or looking to level up, we make sure you have everything you need to succeed. Let\’s build something amazing together! Let\’s build something amazing together!"
+};
+
+export const psProblemsStudio: PsSectionStudio[] = [
+  {
+    title: "Ineffective Marketing Strategies",
+    description: `Many businesses struggle with marketing campaigns that fail to generate immediate and measurable results, 
+    leading to wasted resources and missed opportunities. This is especially challenging for startups that need quick 
+    traction to establish a market presence.`,
+  },
+  {
+    title: "Outdated or Underperforming Websites",
+    description: `Companies often have websites that are not optimized for performance, user experience, or search engine 
+    rankings, resulting in low engagement and conversion rates.`,
+  },
+  {
+    title: "High Costs and Maintenance of Web Development",
+    description: `Developing and maintaining a modern, high-performing website can be costly and time-consuming, especially 
+    for businesses just starting that want everything handled by experts to ensure a professional and high-impact launch.`,
+  },
+];
+
+export const psSolutionsStudio: PsSectionStudio[] = [
+  {
+    title: "Direct Response Marketing (DRM)",
+    description: `OWLWEB specializes in crafting DRM campaigns that drive immediate and measurable results. By focusing on 
+    customer needs, personalizing campaigns, implementing clear calls to action, creating a sense of urgency, and 
+    eliminating distractions on landing pages, OWLWEB ensures your marketing efforts yield tangible outcomes.`,
+  },
+  {
+    title: "Website as a Service (WaaS)",
+    description: `OWLWEB offers a WaaS solution that provides a state-of-the-art, custom-designed website featuring tailored 
+    landing pages. This service ensures your site is always up-to-date, fully optimized, and designed to achieve high search 
+    engine rankings, ensuring maximum visibility and engagement.`,
+  },
+  {
+    title: "Social Media Management",
+    description: `Our Social Media Management service helps you build and maintain an engaging presence on platforms where 
+    your audience spends time. We handle strategy, content creation, posting schedules, and engagement tracking, so you 
+    can focus on your core business while we grow your online community.`,
+  },
+  {
+    title: "Landing Pages and Lead Qualification",
+    description: `We create high-converting landing pages tailored to your marketing goals and manage lead qualification, 
+    ensuring your sales team focuses on the most promising leads. Our optimization techniques improve conversions, 
+    maximizing the impact of your campaigns.`,
+  },
+  {
+    title: "Cost-Effective and Dynamic Web Solutions",
+    description: `With WaaS, OWLWEB provides a dynamic platform that grows with your business. This approach offers cost 
+    savings by avoiding high initial development costs, ensuring your website remains modern and efficient without the need 
+    for constant redevelopment.`,
+  },
+];
+

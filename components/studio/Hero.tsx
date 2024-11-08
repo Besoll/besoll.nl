@@ -1,6 +1,4 @@
-"use client"
 import Link from 'next/link'
-import { motion } from "framer-motion";
 import Image from 'next/image'
 // import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect'
 // import { FaLocationArrow, FaWhatsapp } from 'react-icons/fa'
@@ -33,7 +31,7 @@ const Hero = () => {
                     <Logo className='absolute object-cover bg-center right-0 top-0 w-full h-auto'/>
                 </div>       */}
                 <div className='relative w-full rounded-xl h-[230px] sm:h-[330px] md:h-[350px] lg:max-w-[600px] lg:h-[350px] xl:max-w-[650px] xl:h-[350px] 2xl:max-w-[1000px] 2xl:h-[350px] mb-6'>
-                        {/* <Image
+                        <Image
                             layout='fill'
                             objectFit='cover'
                             objectPosition='center'
@@ -41,21 +39,8 @@ const Hero = () => {
                             src='/hero-1.webp'
                             alt='owlweb studio surprising their clients'
                             className='rounded-b-full '
-                        /> */}                      
-
+                        />
                 </div>
-                            
-                            <video
-                                id="intro-video"
-                                className="hidden md:block absolute  w-full h-full"
-                                src="/videos/video.mp4" // Replace with actual path
-                                aria-label='play video'
-                                autoPlay 
-                                controls
-                                loop
-                                muted
-                                playsInline
-                            />
                 {/* <h2 className='uppercase tracking-widest text-xs text-center text-blue max-w-80 mt-10 z-30'>
                     Introducing new technologies
                 </h2> */}
