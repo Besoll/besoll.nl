@@ -13,27 +13,23 @@ const ProductUSP = () => {
         <div className='relative max-w-7xl w-full flex justify-center flex-col-reverse  gap-4 items-center'>
           <div className='w-full flex flex-col items-center gap-4'>
               {/* <Tag title="OwlWeb Studio" otherClass="text-owlBrown font-bold" icon="tagLineBrown.svg"/>                     */}
-              <h1 className='heading md:text-left tracking-wide'>
-                  OwlWeb {' '} 
-                  <span className='text-owlBrown'> Studio</span> {' '}                  
+              <h1 className='heading md:text-left tracking-wide mt-4'>
+                  From a {' '} Cozy Little Office to
+                  <span className='text-owlBrown'></span> {' '}
+                  <span className='text-owlBrown'> OwlWeb Agency</span> {' '} & {' '}
+                  <span className='text-owlBrown'> OwlWeb Studio</span>                  
               </h1>                                   
-              <p className="text-md lg:text-xl text-lg text-center">
-                At OwlWeb Studio, we are pioneers in delivering advanced digital solutions with a focus on SEA and SEM within Direct Response Marketing. As the only agency offering seamless Website as a Service (WaaS), we provide businesses with an easy, subscription-based web management system that takes the hassle out of maintaining a high-performing digital presence.
+              <p className="text-md lg:text-xl text-lg text-center md:text-left">
+                In a cozy little office with big dreams, a small team of passionate tech enthusiasts came together, united by one goal: to help businesses grow in ways they never imagined. The world was changing fast, with technology advancing at lightning speed, but they saw a common problem. Companies were either drowning in the complexities of digital marketing or struggling to make an impact online. There was no clear guide to help them navigate both the creative and technical landscapes, and that\’s where we knew we could help.
               </p>
-              <p className="text-md lg:text-xl text-lg text-center">
-                Our team of seasoned experts excels in both front-end and back-end development, utilizing the latest technologies to build websites that are not only visually stunning but also optimized for performance. We pride ourselves on our technical skills and our ability to integrate modern technologies to create platforms that stand out in both functionality and design.
+              <p className="text-md lg:text-xl text-lg text-center md:text-left">
+                Our founders envisioned OwlWeb not just as another agency or studio, but as a partner to bridge this gap, guiding businesses through the maze of modern marketing and digital development. With a mix of dramatic vision and a whole lot of humor, they embraced the owl as their mascot – wise, sharp, and always adaptable. And just like owls, we\’ve kept a sharp focus on our mission, delivering precise, impactful solutions, whether that means building beautiful websites, running powerful marketing campaigns, or simplifying complex processes.
               </p>
-              <p className="text-md lg:text-xl text-lg text-center">
-                We specialize in generating qualified leads through effective Google Ads campaigns, ensuring that every marketing dollar you spend brings you closer to your business goals. Our expertise in SEO and SEA enables us to craft strategies that drive traffic, increase conversions, and enhance your overall digital footprint.
+              <p className="text-md lg:text-xl text-lg text-center md:text-left">
+                Fast-forward to today, and OwlWeb has grown beyond our wildest dreams. We\’re now OwlWeb Agency and OwlWeb Studio, two wings of the same owl, working together to provide a full suite of services. Our Agency side is your team\’s best friend in remote hiring, connecting you with world-class developers and designers without the hassle of relocation. Meanwhile, our Studio team dives into creative projects, from crafting captivating social media campaigns and designing landing pages to developing dynamic marketing strategies like Direct Response Marketing (DRM) and Website as a Service (WaaS).
               </p>
-              <p className="text-md lg:text-xl text-lg text-center">
-                At OwlWeb Studio, we understand the importance of a cohesive digital strategy. Our multidisciplinary team includes developers, content creators, designers, and marketing specialists who work together to bring your vision to life. We are passionate about delivering creative solutions that meet business objectives and enhance user experiences.
-              </p>
-              <p className="text-md lg:text-xl text-lg text-center">
-                With our WaaS model, we make web management as simple as subscribing to a service. This innovative approach allows us to provide continuous updates, maintenance, and improvements, ensuring your website remains at the forefront of technological advancements without any effort on your part.
-              </p>
-              <p className="text-md lg:text-xl text-lg text-center">
-                Join us at OwlWeb Studio, where we combine creativity, technology, and a deep understanding of digital marketing to help your business thrive in the digital age. Experience the difference with our cutting-edge solutions and dedicated team, committed to your success.
+              <p className="text-md lg:text-xl text-lg text-center md:text-left">
+                We love a good story, and we love creating one with our clients even more. Our values are rooted in tradition, but we\’re constantly innovating, blending time-tested principles with fresh, modern ideas. We believe in hard work, a good laugh, and always finding a new way to get the job done right. Together, let\’s build something remarkable – the kind of digital experience that leaves an impact, with a story worth telling.
               </p>
               {/* <PeopleTags 
                 Opener='People Involved: '
@@ -51,7 +47,7 @@ const ProductUSP = () => {
           </div>
           <div className='w-full md:w-2/3 h-auto'>
               <Image
-                  src='/owlweb-studio.webp'
+                  src='/owlweb-studio2.webp'
                   alt='DRM - Direct response Marketing - 1'
                   width={800}
                   height={800}

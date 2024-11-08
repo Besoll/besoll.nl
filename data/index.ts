@@ -1515,3 +1515,108 @@ export const psSolutionsStudio: PsSectionStudio[] = [
   },
 ];
 
+
+
+
+//About our team
+
+export type Founder = {
+  name: string;
+  position: string;
+  headline: string;
+  story: string;
+  imageSrc: string;
+  youtubeLink: string;
+  languages: string[]; // Array of language codes representing languages spoken
+};
+
+export const founders: Founder[] = [
+  {
+    name: "Olga Lucasciuc",
+    position: "CEO, Co-Founder",
+    headline: "Experienced CEO and Strategic Leader",
+    story: `Holding a master\’s degree in Law, I bring eight years of experience in business negotiation and strategic buying. My mission as CEO of OwlWeb is to foster cross-border collaboration and deliver innovative, client-centered strategies that make a measurable impact. 2016-2018 Co-Foudner BO Production - Advertising and Production house`,
+    imageSrc: "/founders/olga.webp",
+    youtubeLink: "",
+    languages: ["en", "ru", "ua", "ro", "md", "ge", "nl", "fr", "it"],
+  },
+  {
+    name: "Beso Kavzharadze",
+    position: "CTO, Co-Founder",
+    headline: "Senior Front End Developer, Senior Marketing Specialist",
+    story: `I\’m a senior Front End Web Developer with 12 years of experience, complemented by expertise in Back End Development. My technical and marketing background allows me to build brands, drive growth, and create stunning, high-performing digital experiences. My recent work in the Dutch Solar Panel industry, designing high-converting landing pages, has led to a conversion rate where one in three leads turns into an €8,000 contract, with one year total revenue more then 12 mln euros. I am also founder of FAP (Full AD Partneship) - 2008-2012, Founder of Tbilisi Informational Stand - 2009-2021, 2011-2016 Founder of Smart Printing Network - Printing Solutions, 2016-2018 Co-Foudner BO Production - Advertising and Production house, 2016-2018 2BE Production  - Innovative production house - 3D mapping, 2021-2024 - Founder - E-commerce Canvas24`,
+    imageSrc: "/founders/beso.webp",
+    youtubeLink: "https://www.youtube.com/embed/dEgkElZYGXg",
+    languages: ["en", "ru", "ge", "ro"],
+  },
+  {
+    name: "Nini Kavzharadze",
+    position: "CMO, Co-Founder",
+    headline: "Strategic Marketing Leader and Visionary",
+    story: `With 12 years of experience as a Head of Marketing, I’ve had the privilege of leading highly successful campaigns, each contributing to my journey and growth in this industry. In addition to my marketing experience, I am a lawyer by profession, which has added a unique depth to my strategic approach. My partners and I have launched two marketing companies—OwlWeb.nl and Willingson.ge —in the Netherlands and Georgia. These companies represent a new era and vision in the marketing industry, dedicated to innovation and connecting talent across borders. Through these ventures, I aim to create impactful strategies that genuinely resonate with audiences and inspire growth`,
+    imageSrc: "/founders/nini.webp",
+    youtubeLink: "https://www.youtube.com/embed/0gYc9eb5slU",
+    languages: ["en", "ru", "ge", "fr"],
+  },
+  {
+    name: "Eka Urekadze",
+    position: "Co-Founder",
+    headline: "Brand Management and Marketing Expert",
+    story: `I\’m Eka Urekadze, co-founder of Willingson Group and OwlWeb. With over a decade of experience in brand management, marketing, and business development, I\’ve had the chance to work with leading international companies and gain valuable insights from industries like real estate, agriculture, entertainment and perfumery. My dual MBA from Northern Illinois University and Sapienza Università di Roma has equipped me with the skills to lead impactful campaigns and manage dynamic, cross-functional teams. Fluent in four languages, I bring a global perspective to my work at Willingson and OwlWeb, where we\’re dedicated to setting a new standard in marketing, delivering innovative growth solutions that push the boundaries of this industry.`,
+    imageSrc: "/founders/eka.webp",
+    youtubeLink: "https://www.youtube.com/embed/UcIm3St3SLI",
+    languages: ["en", "ru", "ge", "it", "fr"],
+  },
+  {
+    name: "Luka Ramishvili",
+    position: "VP, Co-Founder",
+    headline: "Sales and Business Development",
+    story: `As a British university student pursuing a BSc (Hons) in Business Management, I offer a unique combination of academic rigor and hands-on experience in administration, international procurement, and marketing. With additional skills in gaming and programming, my background equips me with a solid foundation in data analysis, strategic problem-solving, and collaborative teamwork. My expertise at the intersection of business and technology drives my commitment to advancing OwlWeb’s growth. Through innovative, data-driven strategies, I aim to create meaningful impact and help establish OwlWeb as a leader in its field.
+`,
+    imageSrc: "/founders/luka.webp",
+    youtubeLink: "",
+    languages: ["en", "ru", "ge", "fr"],
+  },
+  {
+    name: "Nina Nozadze",
+    position: "Head of Digital Department",
+    headline: "Passionate Digital Marketing Leader",
+    story: `Hello, I am Nino, a digital marketing manager. I have been working in this field about 4 years and it has become an integral part of my life. The initial steps were not easy. There were many internships and experience-giving small companies that I met along the way. As a result, I have grown professionally and at this stage I am working with several large companies as an SMM and Digital Marketer. It becomes more and more interesting when creating a new project.
+
+I have worked in both B2B and Retail sector and I would like to mention that each of them is very interesting
+
+The list of companies is as follows
+
+- [ ] Goergian BAR (PR Intern)
+
+- [ ] LTD Biodiesel Georgia (SMM)
+
+- [ ] Biblusi Group (Pepela and XStoys) (SMM)
+
+- [ ] LTD Ultra (SMM x Digital)
+
+- [ ] LTD Big Crane Georgia (SMM x Digital)
+
+- [ ] LTD Alneo Electronics (SMM)`,
+    imageSrc: "/founders/nina.webp",
+    youtubeLink: "https://www.youtube.com/embed/P2Z1XedpJZc",
+    languages: ["en", "ru", "ge"],
+  },
+  {
+    name: "Dave Sigmund",
+    position: "Head of Sales Department",
+    headline: "Expert Sales Leader and Client Advocate",
+    story: `With over seven years in sales, I\’ve led teams with sales, becoming the voice of our clients at OwlWeb. I understand client needs deeply and create win-win negotiations, ensuring client satisfaction and long-term partnerships.`,
+    imageSrc: "/founders/dave.webp",
+    youtubeLink: "",
+    languages: ["en", "nl"],
+  },
+];
+
+export const headings = {
+  sectionTitle: "Meet the Founders of OwlWeb",
+  buttonText: "Learn More",
+};
+
+
+

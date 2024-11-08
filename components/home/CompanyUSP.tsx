@@ -18,20 +18,15 @@ const CompanyUSP = () => {
         </h2>
         <div className='relative max-w-7xl w-full flex justify-center md:justify-between flex-col-reverse md:flex-row gap-4 items-center'>
           <div className='w-full md:w-2/3 md:max-w-md xl:max-w-3xl flex flex-col items-center md:justify-start md:items-start gap-4'>
-              <Tag title="OwlWeb Studio" otherClass="text-owlBrown font-bold" icon="tagLineBrown.svg"/>                    
+              <Tag title="Two Wings of the Same Owl" otherClass="text-owlBlue " icon="tagLineBlue.svg"/>                    
               <h1 className='heading md:text-left tracking-wide'>
-                  Multinational {' '} 
-                  <span className='text-owlBrown'> Modern</span> {' '}
-                  Agency with 17 years of the experience
+                  From a {' '} Cozy Little Office to
+                  <span className='text-owlBrown'></span> {' '}
+                  <span className='text-owlBrown'> OwlWeb Agency</span> {' '} & {' '}
+                  <span className='text-owlBrown'> OwlWeb Studio</span>                  
               </h1>                                   
               <p className="text-md lg:text-xl text-lg text-center md:text-left">
-                At OwlWeb Studio, we specialize in SEA and SEM within Direct Response Marketing, providing cutting-edge Website as a Service (WaaS) solutions. As the only agency offering seamless, subscription-based web management, we simplify your digital presence.
-              </p>
-              <p className="text-md lg:text-xl text-lg text-center md:text-left">
-                Our expert team excels in both front-end and back-end development, leveraging the latest technologies to create high-performing, visually stunning websites. From generating qualified leads to optimizing Google Ads campaigns, we deliver innovative strategies that drive results.
-              </p>
-              <p className="text-md lg:text-xl text-lg text-center md:text-left">
-                Experience the future of web development and marketing with OwlWeb Studio – your partner in digital excellence.
+              So, it all started in this tiny office, just a handful of us with big dreams to help businesses succeed online. Now we’re OwlWeb Agency and Studio – one side connects companies with top remote talent, and the other dives into creative work like building websites and running smart marketing campaigns. We keep things simple, blend old-school values with fresh ideas, and make sure businesses shine—all while having a little fun along the way!
               </p>
               {/* <PeopleTags 
                 Opener='People Involved: '
