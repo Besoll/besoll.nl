@@ -112,11 +112,11 @@ export const Header = () => {
       <Logo className="hidden md:flex md:w-1/3 mb-8"/>
       
       <h1 className="text-7xl md:text-8xl font-bold text-white">
-        Connect <br></br>  <span className="text-owlOrange">the Caucasus </span> to EU
+      Global Access to <br></br>  <span className="text-owlOrange">High-Skilled Developers, </span> Tailored for You
       </h1>
       
       <p className="max-w-2xl text-base md:text-xl mt-4 text-neutral-200 mb-4">
-      We bridge the gap between European businesses and top-tier developers from the Caucasus, offering a streamlined, risk-free INSTANT hiring solution.
+      We bridge the gap between global businesses and top-tier developers from the Caucasus, offering a streamlined, risk-free INSTANT hiring solution.
       </p>
 
       <Link href="#formSection">
