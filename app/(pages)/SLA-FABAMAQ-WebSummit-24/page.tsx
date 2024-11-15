@@ -1,15 +1,24 @@
 "use client"
 
 // pages/SLA-FABAMAQ-WebSummit-24.tsx
+// pages/SLA-FABAMAQ-WebSummit-24.tsx
 
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const SLAFabamaqWebSummit24 = () => {
   const [password, setPassword] = useState('');
   const [isAuthorized, setIsAuthorized] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const correctPassword = 'WEBSUMMIT24FABAMAQ'; // Replace with actual password
+
+  useEffect(() => {
+    // Detect if the user is on a mobile device
+    setIsMobile(window.innerWidth <= 768);
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,20 +52,31 @@ const SLAFabamaqWebSummit24 = () => {
           </form>
         </div>
       ) : (
-        <div className="w-full h-screen flex justify-center items-center bg-gray-100 overflow-hidden">
-          <div className="w-full h-full max-w-4xl max-h-screen overflow-auto">
-            <iframe
-              src="/SLA-FABAMAQ-WebSummit-24.pdf"
-              className="w-full h-full min-h-[80vh] lg:min-h-full border"
-              title="Protected PDF Document"
-              style={{
-                minHeight: '80vh',
-                height: '100%',
-                width: '100%',
-                border: 'none',
-              }}
-            />
-          </div>
+        <div className="w-full h-screen flex justify-center items-center bg-gray-100">
+          {isMobile ? (
+            <a
+              href="/SLA-FABAMAQ-WebSummit-24.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition-colors"
+            >
+              Open PDF in New Tab
+            </a>
+          ) : (
+            <div className="w-full h-full max-w-4xl max-h-screen overflow-auto">
+              <iframe
+                src="/SLA-FABAMAQ-WebSummit-24.pdf"
+                className="w-full h-full min-h-[80vh] lg:min-h-full border"
+                title="Protected PDF Document"
+                style={{
+                  minHeight: '80vh',
+                  height: '100%',
+                  width: '100%',
+                  border: 'none',
+                }}
+              />
+            </div>
+          )}
         </div>
       )}
     </div>
