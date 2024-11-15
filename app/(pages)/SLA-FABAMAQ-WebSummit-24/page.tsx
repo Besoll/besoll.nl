@@ -2,6 +2,7 @@
 
 // pages/SLA-FABAMAQ-WebSummit-24.tsx
 
+
 import { useState } from 'react';
 
 const SLAFabamaqWebSummit24 = () => {
@@ -20,7 +21,7 @@ const SLAFabamaqWebSummit24 = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
+    <div className="flex items-center justify-center h-screen bg-gray-100 p-4">
       {!isAuthorized ? (
         <div className="bg-white shadow-md rounded-lg p-8 max-w-md w-full text-center">
           <h2 className="text-2xl font-semibold mb-4">Protected Document</h2>
@@ -42,12 +43,20 @@ const SLAFabamaqWebSummit24 = () => {
           </form>
         </div>
       ) : (
-        <div className="w-full h-screen flex justify-center items-center bg-gray-100">
-          <iframe
-            src="/SLA-FABAMAQ-WebSummit-24.pdf"
-            className="w-full h-full max-w-4xl border"
-            title="Protected PDF Document"
-          />
+        <div className="w-full h-screen flex justify-center items-center bg-gray-100 overflow-hidden">
+          <div className="w-full h-full max-w-4xl max-h-screen overflow-auto">
+            <iframe
+              src="/SLA-FABAMAQ-WebSummit-24.pdf"
+              className="w-full h-full min-h-[80vh] lg:min-h-full border"
+              title="Protected PDF Document"
+              style={{
+                minHeight: '80vh',
+                height: '100%',
+                width: '100%',
+                border: 'none',
+              }}
+            />
+          </div>
         </div>
       )}
     </div>
