@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic'
 const Logo = dynamic(() => import('@/components/global/Logo'))
 const MagicButton = dynamic(() => import('@/components/ui/MagicButton')) 
 const LanguageSwitcher = dynamic(() => import('@/components/ui/LanguageSwitcher'))
+const WebSummitFooter = dynamic(() => import('@/components/home/WebSummitFooter')) 
 
 // Helper function to format the current date
 const getCurrentDate = () => {
@@ -19,6 +20,10 @@ const getCurrentDate = () => {
 
 const Footer = () => {
     const currentDateFooter = getCurrentDate();
+
+
+    const companyVAT = process.env.NEXT_PUBLIC_COMPANY_VAT || 'Legal VAT';
+    const companyKVK = process.env.NEXT_PUBLIC_COMPANY_KVK || 'Legal KVK';
   return (
     <footer className="w-full max-w-full overflow-hidden flex flex-col justify-center items-center shadow-lg bg-black text-gray-300 text-md md:text-base px-2 sm:px-4 py-16 md:py-20" >
 
@@ -75,7 +80,10 @@ const Footer = () => {
             
         </div>
 
+        <WebSummitFooter />
         <LanguageSwitcher />
+
+        KVK: {companyKVK}
 
         <hr className="my-6 border-black-400 sm:mx-auto lg:my-8" />
         

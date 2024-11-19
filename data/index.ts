@@ -1620,3 +1620,20 @@ export const headings = {
 
 
 
+// WebSummit data - temporary
+export const webSummitData = {
+  title: "Startup at Web Summit",
+  dateLocation: "Web Summit 2024, Lisbon, Portugal",
+  appointmentText: "ALPHA",
+  bottomSection: {
+    mainText: "",
+    subText: "Lisbon, November 11-14, 2024",
+  },
+  backgroundImage: "/websummit/LIS24-horiz.webp", 
+  backgroundImage2: "/websummit/LIS24-square.webp", 
+  websummitLogo: "/websummit/WS24.webp",
+  websummitLogoWhite: "/websummit/WS24-white.svg",
+};
+
+
+
