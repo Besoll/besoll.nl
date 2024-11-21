@@ -69,7 +69,7 @@ export default function RootLayout({
           strategy="beforeInteractive" 
       />    */}
       <GoogleTagManager gtmId="GTM-5MZFBJFC" />
-      <body className={`${inter.className} bg-owlOrange/10 text-black`}> 
+      <body className={`${inter.className} bg-white text-black`}> 
           {children}     
           {/* <CookieConsentBanner />    */}
       </body>

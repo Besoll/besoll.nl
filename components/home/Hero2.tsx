@@ -29,32 +29,32 @@ export const products = [
     title: "Landing Page",
     link: "",
     thumbnail:
-      "/portfolio/7.webp",
+      "/portfolio/5.webp",
   },
   {
     title: "Website",
     link: "",
     thumbnail:
-      "/portfolio/13.webp",
+      "/portfolio/8.webp",
   },
   {
     title: "Website",
     link: "",
     thumbnail:
-      "/portfolio/11.webp",
+      "/portfolio/6.webp",
   },
 
   {
     title: "Landing Page",
     link: "",
     thumbnail:
-      "/portfolio/14.webp",
+      "/portfolio/2.webp",
   },
   {
     title: "E-Commerce",
     link: "",
     thumbnail:
-      "/portfolio/8.webp",
+      "/portfolio/9.webp",
   },
   {
     title: "Landing Page",
@@ -66,20 +66,20 @@ export const products = [
     title: "website",
     link: "",
     thumbnail:
-      "/portfolio/14.webp",
+      "/portfolio/20.webp",
   },
   {
     title: "Website",
     link: "",
     thumbnail:
-      "/portfolio/27.webp",
+      "/portfolio/22.webp",
   },
 
   {
     title: "Website",
     link: "",
     thumbnail:
-      "/portfolio/17.webp",
+      "/portfolio/7.webp",
   },
 //   {
 //     title: "Golden Bells Academy",

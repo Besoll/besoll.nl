@@ -119,7 +119,7 @@ export const Header = () => {
       We bridge the gap between global businesses and top-tier developers from the Caucasus, offering a streamlined, risk-free INSTANT hiring solution.
       </p>
 
-      <Link href="#formSection">
+      <Link href="#problemSolution">
         <MagicButton 
             title='Find out more'
             icon={<FaLocationArrow/>}

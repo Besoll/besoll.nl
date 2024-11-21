@@ -4,13 +4,16 @@ import { cn } from "@/utils/cn";
 import { useEffect, useRef } from "react";
 import lottie from "lottie-web";
 import animationData from "@/data/owlweb.json";
+import Link from "next/link";
 
 const Logo = ({
     className,
+    otherClass,
     children,
   }: {
     className?: string;
     children?: React.ReactNode;
+    otherClass?: string;
   }) => {
 
     const animationContainer = useRef<HTMLDivElement>(null); // Specify the type for the ref
@@ -34,10 +37,15 @@ const Logo = ({
     }, []);
 
   return (
+    <Link
+        href='/'
+        aria-label='navigate to main page' 
+    >
     <div className={cn(
-        " ",
-        className
-      )} ref={animationContainer}></div>
+      otherClass,
+      className
+    )} ref={animationContainer}></div>
+    </Link>
   )
 }
 
