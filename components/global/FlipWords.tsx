@@ -11,7 +11,11 @@ export function FlipWordsDemo({
   return (
     <div className="flex justify-center items-center ">
       <div className="text-4xl mx-auto heading md:text-left tracking-wide">
-        {textPrefix} <FlipWords words={words} /> <br />
+        {textPrefix} 
+          <span className="md:hidden">
+            <br></br>
+          </span> 
+        <FlipWords words={words} /> <br />
       </div>
     </div>
   );
