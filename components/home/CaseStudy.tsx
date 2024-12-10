@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NumberingP } from '../ui/NumberingP';
 import { PeopleTags } from '../ui/PeopleTags';
-import { peopleInvolvedDRM, peopleInvolvedWaaS, pNumberingWaaS } from '@/data';
+import { peopleInvolvedDRM, peopleInvolvedWaaS } from '@/data';
 
 import dynamic from 'next/dynamic'
 const Tag = dynamic(() => import('@/components/global/Tag'))
