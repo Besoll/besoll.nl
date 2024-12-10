@@ -873,36 +873,36 @@ export const navItems = [
     }
   ];
 
-  export const pNumberingWaaS = [
-    {
-      id: 1,
-      title: "Discovery Phase: ",
-      desc1: "We start with an in-depth interview to understand your goals, review your previous websites, and explore your products and services.",
-      desc2: "",
-      desc3: "",
-    },
-    {
-      id: 2,
-      title: "Content Creation: ",
-      desc1: "Our photographer collaborates with you to capture compelling visuals of your team and offerings.",
-      desc2: "",
-      desc3: "",
-    },
-    {
-      id: 3,
-      title: "Copywriting: ",
-      desc1: "Our expert copywriters develop engaging and memorable headlines and subheadlines to captivate your audience.",
-      desc2: "",
-      desc3: "",
-    },
-    {
-      id: 4,
-      title: "Development & Optimization: ",
-      desc1: "Our skilled Back-End and Front-End Developers, alongside SEO specialists, build your site, including up to 30 targeted landing pages (depending on your product and service range). ",
-      desc2: "The basic package includes 5 landing pages.",
-      desc3: "",
-    }
-  ];
+  // export const pNumberingWaaS = [
+  //   {
+  //     id: 1,
+  //     title: "Discovery Phase: ",
+  //     desc1: "We start with an in-depth interview to understand your goals, review your previous websites, and explore your products and services.",
+  //     desc2: "",
+  //     desc3: "",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Content Creation: ",
+  //     desc1: "Our photographer collaborates with you to capture compelling visuals of your team and offerings.",
+  //     desc2: "",
+  //     desc3: "",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Copywriting: ",
+  //     desc1: "Our expert copywriters develop engaging and memorable headlines and subheadlines to captivate your audience.",
+  //     desc2: "",
+  //     desc3: "",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Development & Optimization: ",
+  //     desc1: "Our skilled Back-End and Front-End Developers, alongside SEO specialists, build your site, including up to 30 targeted landing pages (depending on your product and service range). ",
+  //     desc2: "The basic package includes 5 landing pages.",
+  //     desc3: "",
+  //   }
+  // ];
 
   export const peopleInvolvedWaaS = [
     {
@@ -1391,6 +1391,8 @@ export const navItems = [
 
 
 
+
+
 //Company USP data - Who we are
 export const companyUSPData = {
   heading: "Who we ARE?",
@@ -1505,10 +1507,101 @@ export const psData = {
     ],
   },
 };
+
+// Product USP - Why DRM/WaaS
+// data.ts
+
+export const productUSPData = {
+  drm: {
+    heading: "What is DRM?",
+    tagline: {
+      title: "Direct Response Marketing",
+      icon: "tagLineBrown.svg",
+    },
+    subheading: "immediate reaction from consumers",
+    description: `Direct response marketing is a strategy focused on getting an immediate reaction from consumers, like visiting a website, making a purchase, or sharing a social media post. Unlike long-term brand building or awareness campaigns, direct response marketing aims for quick, specific actions. This approach makes it easier to track the return on investment (ROI) since the results are immediate and measurable.`,
+    peopleTags: {
+      opener: "People Involved: ",
+      tags: [
+        { id: 1, title: "Marketing Specialist" },
+        { id: 2, title: "Creative Designer" },
+        { id: 3, title: "Data Analyst" },
+      ],
+    },
+    button: {
+      title: "See more about DRM",
+      link: "/direct-response-marketing",
+      ariaLabel: "navigate to DRM page",
+    },
+    image: {
+      src: "/drm-1.webp",
+      alt: "DRM - Direct response Marketing - 1",
+    },
+  },
+  waas: {
+    heading: "What is WaaS?",
+    tagline: {
+      title: "Website as a Service",
+      icon: "tagLineBrown.svg",
+    },
+    subheading: "Website plus up to 30 Landing Pages",
+    numberingP: {
+      opener: "We craft bespoke websites tailored to your business with an ultra-personalized design. Here's our process:",
+      closer: "Experience a website that not only reflects your brand but also drives results.",
+      items: [
+        {
+          id: 1,
+          title: "Discovery Phase: ",
+          desc1: "We start with an in-depth interview to understand your goals, review your previous websites, and explore your products and services.",
+          desc2: "",
+          desc3: "",
+        },
+        {
+          id: 2,
+          title: "Content Creation: ",
+          desc1: "Our photographer collaborates with you to capture compelling visuals of your team and offerings.",
+          desc2: "",
+          desc3: "",
+        },
+        {
+          id: 3,
+          title: "Copywriting: ",
+          desc1: "Our expert copywriters develop engaging and memorable headlines and subheadlines to captivate your audience.",
+          desc2: "",
+          desc3: "",
+        },
+        {
+          id: 4,
+          title: "Development & Optimization: ",
+          desc1: "Our skilled Back-End and Front-End Developers, alongside SEO specialists, build your site, including up to 30 targeted landing pages (depending on your product and service range). ",
+          desc2: "The basic package includes 5 landing pages.",
+          desc3: "",
+        },
+      ],
+    },
+    peopleTags: {
+      opener: "People Involved: ",
+      tags: [
+        { id: 1, title: "Web Developer" },
+        { id: 2, title: "UI/UX Designer" },
+        { id: 3, title: "Content Strategist" },
+      ],
+    },
+    button: {
+      title: "See more about WaaS",
+      link: "/website-as-a-service",
+      ariaLabel: "navigate to WaaS page",
+    },
+    images: [
+      { src: "/waas-2.webp", alt: "WaaS - website as a service - 2", width: 1500, height: 998 },
+      { src: "/waas-2-long.webp", alt: "WaaS - website as a service - 2", width: 1000, height: 1724 },
+    ],
+  },
+};
+
   
 
 //About our team
-
 export type Founder = {
   name: string;
   position: string;
@@ -1519,15 +1612,15 @@ export type Founder = {
   languages: string[]; // Array of language codes representing languages spoken
 };
 export const founders: Founder[] = [
-  {
-    name: "Olga Lucasciuc",
-    position: "CEO, Co-Founder",
-    headline: "Experienced CEO and Strategic Leader",
-    story: `Holding a master\’s degree in Law, I bring eight years of experience in business negotiation and strategic buying. My mission as CEO of OwlWeb is to foster cross-border collaboration and deliver innovative, client-centered strategies that make a measurable impact. 2016-2018 Co-Foudner BO Production - Advertising and Production house`,
-    imageSrc: "/founders/olga.webp",
-    youtubeLink: "",
-    languages: ["en", "ru", "ua", "ro", "md", "ge", "nl", "fr", "it"],
-  },
+  // {
+  //   name: "Olga Lucasciuc",
+  //   position: "CEO, Co-Founder",
+  //   headline: "Experienced CEO and Strategic Leader",
+  //   story: `Holding a master\’s degree in Law, I bring eight years of experience in business negotiation and strategic buying. My mission as CEO of OwlWeb is to foster cross-border collaboration and deliver innovative, client-centered strategies that make a measurable impact. 2016-2018 Co-Foudner BO Production - Advertising and Production house`,
+  //   imageSrc: "/founders/olga.webp",
+  //   youtubeLink: "",
+  //   languages: ["en", "ru", "ua", "ro", "md", "ge", "nl", "fr", "it"],
+  // },
   {
     name: "Beso Kavzharadze",
     position: "CTO, Co-Founder",
